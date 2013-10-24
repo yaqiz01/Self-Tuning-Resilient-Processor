@@ -1,5 +1,5 @@
 Fitter report for skeleton
-Sat Apr 27 04:09:23 2013
+Thu Oct 24 12:20:23 2013
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -61,7 +61,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +------------------------------------+----------------------------------------------+
-; Fitter Status                      ; Successful - Sat Apr 27 04:09:23 2013        ;
+; Fitter Status                      ; Successful - Thu Oct 24 12:20:23 2013        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; skeleton                                     ;
 ; Top-level Entity Name              ; processor                                    ;
@@ -170,7 +170,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/quartus/quartus/project/final/final project/skeleton.pin.
+The pin-out file can be found in C:/quartus/quartus/project/ECE552FinalProject/5_stage_pipeline/skeleton.pin.
 
 
 +--------------------------------------------------------------------------+
@@ -1287,17 +1287,17 @@ Note: User assignments will override these defaults. The user specified values a
 ;          |onebitadder:\IFF2:2:IFF3:0:G2:halfadder3|      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:2:IFF3:0:G2:halfadder3                   ; work         ;
 ;          |onebitadder:\IFF2:30:IFF3:0:G2:halfadder3|     ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:0:G2:halfadder3                  ; work         ;
 ;          |onebitadder:\IFF2:30:IFF3:1:G2:halfadder3|     ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:1:G2:halfadder3                  ; work         ;
-;          |onebitadder:\IFF2:30:IFF3:25:G2:halfadder3|    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:25:G2:halfadder3                 ; work         ;
-;          |onebitadder:\IFF2:30:IFF3:26:G2:halfadder3|    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:26:G2:halfadder3                 ; work         ;
-;          |onebitadder:\IFF2:30:IFF3:27:G2:halfadder3|    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:27:G2:halfadder3                 ; work         ;
-;          |onebitadder:\IFF2:30:IFF3:28:G2:halfadder3|    ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:28:G2:halfadder3                 ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:25:G2:halfadder3|    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:25:G2:halfadder3                 ;              ;
+;          |onebitadder:\IFF2:30:IFF3:26:G2:halfadder3|    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:26:G2:halfadder3                 ;              ;
+;          |onebitadder:\IFF2:30:IFF3:27:G2:halfadder3|    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:27:G2:halfadder3                 ;              ;
+;          |onebitadder:\IFF2:30:IFF3:28:G2:halfadder3|    ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:28:G2:halfadder3                 ;              ;
 ;          |onebitadder:\IFF2:30:IFF3:2:G2:halfadder3|     ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:2:G2:halfadder3                  ; work         ;
 ;          |onebitadder:\IFF2:30:IFF3:3:G2:halfadder3|     ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:3:G2:halfadder3                  ; work         ;
 ;          |onebitadder:\IFF2:30:IFF3:4:G2:halfadder3|     ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:4:G2:halfadder3                  ; work         ;
 ;          |onebitadder:\IFF2:31:IFF3:10:G1:G3:halfadder1| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:10:G1:G3:halfadder1              ;              ;
-;          |onebitadder:\IFF2:31:IFF3:11:G1:G3:halfadder1| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:11:G1:G3:halfadder1              ;              ;
-;          |onebitadder:\IFF2:31:IFF3:12:G1:G3:halfadder1| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:12:G1:G3:halfadder1              ;              ;
-;          |onebitadder:\IFF2:31:IFF3:13:G1:G3:halfadder1| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:13:G1:G3:halfadder1              ;              ;
+;          |onebitadder:\IFF2:31:IFF3:11:G1:G3:halfadder1| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:11:G1:G3:halfadder1              ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:12:G1:G3:halfadder1| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:12:G1:G3:halfadder1              ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:13:G1:G3:halfadder1| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:13:G1:G3:halfadder1              ; work         ;
 ;          |onebitadder:\IFF2:31:IFF3:14:G1:G3:halfadder1| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:14:G1:G3:halfadder1              ;              ;
 ;          |onebitadder:\IFF2:31:IFF3:15:G1:G3:halfadder1| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:15:G1:G3:halfadder1              ;              ;
 ;          |onebitadder:\IFF2:31:IFF3:16:G1:G3:halfadder1| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:16:G1:G3:halfadder1              ;              ;
@@ -1314,14 +1314,14 @@ Note: User assignments will override these defaults. The user specified values a
 ;          |onebitadder:\IFF2:31:IFF3:27:G1:G3:halfadder1| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:27:G1:G3:halfadder1              ;              ;
 ;          |onebitadder:\IFF2:31:IFF3:28:G1:G3:halfadder1| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:28:G1:G3:halfadder1              ;              ;
 ;          |onebitadder:\IFF2:31:IFF3:29:G1:G3:halfadder1| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:29:G1:G3:halfadder1              ;              ;
-;          |onebitadder:\IFF2:31:IFF3:2:G1:G3:halfadder1|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:2:G1:G3:halfadder1               ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:2:G1:G3:halfadder1|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:2:G1:G3:halfadder1               ;              ;
 ;          |onebitadder:\IFF2:31:IFF3:30:G1:G3:halfadder1| ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:30:G1:G3:halfadder1              ;              ;
-;          |onebitadder:\IFF2:31:IFF3:3:G1:G3:halfadder1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:3:G1:G3:halfadder1               ; work         ;
-;          |onebitadder:\IFF2:31:IFF3:4:G1:G3:halfadder1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:4:G1:G3:halfadder1               ; work         ;
-;          |onebitadder:\IFF2:31:IFF3:5:G1:G3:halfadder1|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:5:G1:G3:halfadder1               ; work         ;
-;          |onebitadder:\IFF2:31:IFF3:6:G1:G3:halfadder1|  ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:6:G1:G3:halfadder1               ; work         ;
-;          |onebitadder:\IFF2:31:IFF3:7:G1:G3:halfadder1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:7:G1:G3:halfadder1               ; work         ;
-;          |onebitadder:\IFF2:31:IFF3:8:G1:G3:halfadder1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:8:G1:G3:halfadder1               ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:3:G1:G3:halfadder1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:3:G1:G3:halfadder1               ;              ;
+;          |onebitadder:\IFF2:31:IFF3:4:G1:G3:halfadder1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:4:G1:G3:halfadder1               ;              ;
+;          |onebitadder:\IFF2:31:IFF3:5:G1:G3:halfadder1|  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:5:G1:G3:halfadder1               ;              ;
+;          |onebitadder:\IFF2:31:IFF3:6:G1:G3:halfadder1|  ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:6:G1:G3:halfadder1               ;              ;
+;          |onebitadder:\IFF2:31:IFF3:7:G1:G3:halfadder1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:7:G1:G3:halfadder1               ;              ;
+;          |onebitadder:\IFF2:31:IFF3:8:G1:G3:halfadder1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:8:G1:G3:halfadder1               ;              ;
 ;          |onebitadder:\IFF2:31:IFF3:9:G1:G3:halfadder1|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:9:G1:G3:halfadder1               ;              ;
 ;          |onebitadder:\IFF2:3:IFF3:0:G2:halfadder3|      ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:3:IFF3:0:G2:halfadder3                   ; work         ;
 ;          |onebitadder:\IFF2:3:IFF3:1:G2:halfadder3|      ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |processor|alu:alu_compo|carrysaveadder:addsub|onebitadder:\IFF2:3:IFF3:1:G2:halfadder3                   ; work         ;
@@ -4855,7 +4855,7 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Apr 27 04:08:49 2013
+    Info: Processing started: Thu Oct 24 12:19:53 2013
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off skeleton -c skeleton
 Info: Selected device EP2C35F672C7 for design "skeleton"
 Info: Low junction temperature is 0 degrees C
@@ -4893,7 +4893,7 @@ Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info: Fitter placement operations beginning
 Info: Fitter placement was successful
-Info: Fitter placement operations ending: elapsed time is 00:00:03
+Info: Fitter placement operations ending: elapsed time is 00:00:02
 Info: Estimated most critical path is memory to register delay of 52.027 ns
     Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = M4K_X26_Y24; Fanout = 1; MEM Node = 'dmem:data_memory|altsyncram:altsyncram_component|altsyncram_vqc1:auto_generated|ram_block1a15~porta_address_reg11'
     Info: 2: + IC(0.000 ns) + CELL(3.377 ns) = 3.377 ns; Loc. = M4K_X26_Y24; Fanout = 3; MEM Node = 'dmem:data_memory|altsyncram:altsyncram_component|altsyncram_vqc1:auto_generated|q_a[15]'
@@ -4947,7 +4947,7 @@ Info: Fitter routing operations beginning
 Info: 35 (of 16189) connections in the design require a large routing delay to satisfy hold requirements. Refer to the Fitter report for a summary of the relevant clock transfers. Also, check the circuit's timing constraints and clocking methodology, especially multicycles and gated clocks.
 Info: Average interconnect usage is 7% of the available device resources
     Info: Peak interconnect usage is 45% of the available device resources in the region that extends from location X44_Y12 to location X54_Y23
-Info: Fitter routing operations ending: elapsed time is 00:00:17
+Info: Fitter routing operations ending: elapsed time is 00:00:16
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
     Info: Optimizations that may affect the design's timing were skipped
@@ -4972,8 +4972,8 @@ Info: Design uses memory blocks. Violating setup or hold times of memory block a
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II Fitter was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 272 megabytes
-    Info: Processing ended: Sat Apr 27 04:09:25 2013
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Processing ended: Thu Oct 24 12:20:25 2013
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:31
 
 
