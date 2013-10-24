@@ -1,0 +1,94 @@
+Restore Archived Project report for skeleton
+Wed Mar 27 09:31:57 2013
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Wed Mar 27 09:31:57 2013 ;
+; Revision Name                   ; skeleton                              ;
+; Top-level Entity Name           ; skeleton                              ;
+; Family                          ; Cyclone II                            ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/quartus/quartus/project/hw5/skeleton.qar' into the 'C:/quartus/quartus/project/hw5/skeleton/' directory
+Info: Generated report 'skeleton.restore.rpt'
+Info: Evaluation of Tcl script c:/quartus/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 111 megabytes
+    Info: Processing ended: Wed Mar 27 09:31:57 2013
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++----------------------------------+
+; Files Restored                   ;
++----------------------------------+
+; File Name                        ;
++----------------------------------+
+; db/skeleton.sim.cvwf             ;
+; dmem.cmp                         ;
+; dmem.mif                         ;
+; dmem.qip                         ;
+; dmem.vhd                         ;
+; dmem_inst.vhd                    ;
+; imem.cmp                         ;
+; imem.mif                         ;
+; imem.qip                         ;
+; imem.vhd                         ;
+; imem_inst.vhd                    ;
+; lcd.vhd                          ;
+; pll.vhd                          ;
+; processor.vhd                    ;
+; ps2.vhd                          ;
+; skeleton.dpf                     ;
+; skeleton.qpf                     ;
+; skeleton.qsf                     ;
+; skeleton.vhd                     ;
+; skeleton.vwf                     ;
+; skeleton_assignment_defaults.qdf ;
++----------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

@@ -1,0 +1,91 @@
+-- Copyright (C) 1991-2010 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=4096;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+0000   :   0;
+0001   :   0;
+0002   :   0;
+0003   :   8400012;
+0004   :   8800009;
+0005   :   8c00015;
+0006   :   9000020;
+0007   :   0;
+0008   :   0;
+0009   :   20820001;
+000a   :   8800000;
+000b   :   0;
+000c   :   0;
+000d   :   20c20001;
+000e   :   8c00000;
+000f   :   0;
+0010   :   0;
+0011   :   21020001;
+0012   :   9000000;
+0013   :   0;
+0014   :   0;
+0015   :   68020001;
+0016   :   0;
+0017   :   0;
+0018   :   68020000;
+0019   :   0;
+001a   :   0;
+001b   :   68040001;
+001c   :   0;
+001d   :   0;
+001e   :   68040000;
+001f   :   0;
+0020   :   0;
+0021   :   68060001;
+0022   :   0;
+0023   :   0;
+0024   :   68060000;
+0025   :   0;
+0026   :   0;
+0027   :   68080001;
+0028   :   0;
+0029   :   0;
+002a   :   68080000;
+002b   :   0;
+002c   :   0;
+002d   :   48000032;
+002e   :   50000036;
+002f   :   5800003a;
+0030   :   6000003e;
+0031   :   30000009;
+0032   :   68020000;
+0033   :   843fffb;
+0034   :   68020001;
+0035   :   40000000;
+0036   :   68020000;
+0037   :   8420005;
+0038   :   68020001;
+0039   :   40000000;
+003a   :   68020000;
+003b   :   843ffff;
+003c   :   68020001;
+003d   :   40000000;
+003e   :   68020000;
+003f   :   8420001;
+0040   :   68020001;
+0041   :   40000000;
+[0046..0FFF]  :   00000000;
+END;
