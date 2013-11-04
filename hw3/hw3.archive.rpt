@@ -1,0 +1,95 @@
+Archive Project report for hw3
+Sun Feb 17 17:47:10 2013
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Sun Feb 17 17:47:10 2013 ;
+; Revision Name          ; hw3                                   ;
+; Top-level Entity Name  ; alu                                   ;
+; Family                 ; Stratix II                            ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/quartus/quartus/project/hw3/hw3.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'hw3.archive.rpt'
+Info: Evaluation of Tcl script c:/quartus/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 140 megabytes
+    Info: Processing ended: Sun Feb 17 17:47:10 2013
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++------------------------------------------------+
+; Files Archived                                 ;
++------------------------------------------------+
+; File Name                                      ;
++------------------------------------------------+
+; alu.vhd                                        ;
+; bitwiseand.vhd                                 ;
+; bitwiseor.vhd                                  ;
+; c:/quartus/quartus/bin/assignment_defaults.qdf ;
+; carrysaveadder.vhd                             ;
+; db/hw3.sim.cvwf                                ;
+; hw3.qpf                                        ;
+; hw3.qsf                                        ;
+; hw3.vwf                                        ;
+; ls_1bit.vhd                                    ;
+; ls_2bit.vhd                                    ;
+; ls_4bit.vhd                                    ;
+; ls_8bit.vhd                                    ;
+; ls_16bit.vhd                                   ;
+; ls_32bit.vhd                                   ;
+; onebitadder.vhd                                ;
+; rs_1bit.vhd                                    ;
+; rs_2bit.vhd                                    ;
+; rs_4bit.vhd                                    ;
+; rs_8bit.vhd                                    ;
+; rs_16bit.vhd                                   ;
+; rs_32bit.vhd                                   ;
+; tristate.vhd                                   ;
++------------------------------------------------+
+
+

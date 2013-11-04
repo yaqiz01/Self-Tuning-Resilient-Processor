@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.438 ns
+From           : ctrl_writeEnable
+To             : reg:\IFF:12:regcomp|dflipflop:\IFF:24:dffcomp|output
+From Clock     : --
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.660 ns
+From           : reg:\IFF:26:regcomp|dflipflop:\IFF:4:dffcomp|output
+To             : data_readRegB[4]
+From Clock     : clock
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.425 ns
+From           : ctrl_readRegA[0]
+To             : data_readRegA[31]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -2.451 ns
+From           : data_writeReg[23]
+To             : reg:\IFF:2:regcomp|dflipflop:\IFF:23:dffcomp|output
+From Clock     : --
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

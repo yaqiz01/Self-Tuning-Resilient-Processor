@@ -1,0 +1,1825 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+onebitadder
+# storage
+db|hw3.(0).cnf
+db|hw3.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+onebitadder.vhd
+a192d1bd476e62513cc9d445c3fa2d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+carrysaveadder:addsub|onebitadder:\IFF1:31:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:30:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:29:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:28:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:27:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:26:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:25:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:24:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:23:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:22:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:21:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:20:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:19:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:18:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:17:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:16:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:15:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:14:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:13:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:12:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:11:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:10:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:9:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:8:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:7:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:6:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:5:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:4:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:3:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:2:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:1:firstrow
+carrysaveadder:addsub|onebitadder:\IFF1:0:firstrow
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:31:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:30:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:29:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:28:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:27:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:26:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:25:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:24:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:23:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:22:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:21:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:20:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:19:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:18:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:17:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:16:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:15:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:14:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:13:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:12:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:11:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:10:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:9:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:8:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:7:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:6:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:5:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:4:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:3:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:2:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:1:G1:G3:halfadder1
+carrysaveadder:addsub|onebitadder:\IFF2:31:IFF3:0:G1:G4:halfadder2
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:30:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:29:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:28:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:27:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:26:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:25:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:24:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:23:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:22:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:21:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:20:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:30:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:29:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:28:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:27:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:26:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:25:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:24:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:23:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:22:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:21:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:20:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:29:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:28:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:27:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:26:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:25:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:24:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:23:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:22:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:21:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:20:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:28:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:27:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:26:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:25:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:24:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:23:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:22:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:21:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:20:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:27:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:26:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:25:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:24:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:23:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:22:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:21:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:20:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:26:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:25:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:24:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:23:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:22:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:21:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:20:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:25:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:24:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:23:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:22:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:21:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:20:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:24:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:23:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:22:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:21:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:20:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:23:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:22:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:21:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:20:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:22:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:21:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:20:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:21:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:20:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:20:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:19:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:19:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:18:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:18:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:17:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:17:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:16:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:16:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:15:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:15:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:14:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:14:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:13:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:13:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:12:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:12:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:11:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:11:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:10:IFF3:10:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:10:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:10:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:10:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:10:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:10:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:10:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:10:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:10:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:10:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:10:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:9:IFF3:9:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:9:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:9:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:9:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:9:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:9:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:9:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:9:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:9:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:9:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:8:IFF3:8:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:8:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:8:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:8:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:8:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:8:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:8:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:8:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:8:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:7:IFF3:7:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:7:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:7:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:7:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:7:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:7:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:7:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:7:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:6:IFF3:6:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:6:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:6:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:6:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:6:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:6:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:6:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:5:IFF3:5:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:5:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:5:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:5:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:5:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:5:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:4:IFF3:4:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:4:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:4:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:4:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:4:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:3:IFF3:3:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:3:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:3:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:3:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:2:IFF3:2:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:2:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:2:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:1:IFF3:1:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:1:IFF3:0:G2:halfadder3
+carrysaveadder:addsub|onebitadder:\IFF2:0:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF1:31:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:30:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:29:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:28:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:27:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:26:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:25:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:24:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:23:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:22:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:21:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:20:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:19:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:18:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:17:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:16:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:15:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:14:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:13:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:12:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:11:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:10:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:9:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:8:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:7:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:6:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:5:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:4:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:3:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:2:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:1:firstrow
+carrysaveadder:comp|onebitadder:\IFF1:0:firstrow
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:31:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:30:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:29:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:28:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:27:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:26:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:25:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:24:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:23:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:22:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:21:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:20:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:19:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:18:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:17:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:16:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:15:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:14:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:13:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:12:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:11:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:10:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:9:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:8:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:7:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:6:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:5:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:4:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:3:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:2:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:1:G1:G3:halfadder1
+carrysaveadder:comp|onebitadder:\IFF2:31:IFF3:0:G1:G4:halfadder2
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:30:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:29:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:28:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:27:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:26:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:25:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:24:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:23:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:22:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:21:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:20:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:30:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:29:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:28:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:27:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:26:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:25:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:24:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:23:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:22:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:21:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:20:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:29:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:28:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:27:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:26:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:25:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:24:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:23:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:22:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:21:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:20:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:28:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:27:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:26:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:25:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:24:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:23:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:22:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:21:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:20:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:27:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:26:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:25:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:24:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:23:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:22:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:21:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:20:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:26:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:25:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:24:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:23:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:22:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:21:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:20:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:25:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:24:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:23:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:22:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:21:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:20:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:24:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:23:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:22:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:21:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:20:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:23:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:22:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:21:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:20:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:22:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:21:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:20:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:21:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:20:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:20:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:19:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:19:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:18:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:18:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:17:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:17:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:16:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:16:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:15:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:15:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:14:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:14:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:13:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:13:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:12:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:12:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:11:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:11:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:10:IFF3:10:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:10:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:10:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:10:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:10:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:10:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:10:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:10:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:10:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:10:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:10:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:9:IFF3:9:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:9:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:9:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:9:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:9:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:9:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:9:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:9:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:9:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:9:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:8:IFF3:8:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:8:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:8:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:8:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:8:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:8:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:8:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:8:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:8:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:7:IFF3:7:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:7:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:7:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:7:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:7:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:7:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:7:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:7:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:6:IFF3:6:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:6:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:6:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:6:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:6:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:6:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:6:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:5:IFF3:5:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:5:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:5:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:5:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:5:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:5:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:4:IFF3:4:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:4:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:4:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:4:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:4:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:3:IFF3:3:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:3:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:3:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:3:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:2:IFF3:2:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:2:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:2:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:1:IFF3:1:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:1:IFF3:0:G2:halfadder3
+carrysaveadder:comp|onebitadder:\IFF2:0:IFF3:0:G2:halfadder3
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+bitwiseand
+# storage
+db|hw3.(2).cnf
+db|hw3.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+bitwiseand.vhd
+b145dcb8ddcc39ef2fa0b75f7fc256cc
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+bitwiseand:op_and
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+carrysaveadder
+# storage
+db|hw3.(1).cnf
+db|hw3.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+carrysaveadder.vhd
+f61ce580c1e61dd5b1ceb31c046b993
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+carrysaveadder:addsub
+carrysaveadder:comp
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ls_2bit
+# storage
+db|hw3.(4).cnf
+db|hw3.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ls_2bit.vhd
+6be9dffb089acfc1fb4a337e97f37b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+ls_32bit:leftshift|ls_2bit:ls2
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ls_16bit
+# storage
+db|hw3.(6).cnf
+db|hw3.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ls_16bit.vhd
+dacd25c2efb9a3d32ba73cf76ae49
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+ls_32bit:leftshift|ls_16bit:ls16
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ls_32bit
+# storage
+db|hw3.(7).cnf
+db|hw3.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ls_32bit.vhd
+1655395a96a1c2eb9a3cc1e1d0c1f7ae
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+ls_32bit:leftshift
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ls_4bit
+# storage
+db|hw3.(8).cnf
+db|hw3.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ls_4bit.vhd
+5085a5db2bbe59b730fc2d8315a3a552
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+ls_32bit:leftshift|ls_4bit:ls4
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ls_1bit
+# storage
+db|hw3.(9).cnf
+db|hw3.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ls_1bit.vhd
+9bda6ae63cc7c96b39f30774262544
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+ls_32bit:leftshift|ls_1bit:ls1
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+rs_1bit
+# storage
+db|hw3.(10).cnf
+db|hw3.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+rs_1bit.vhd
+6793ec59279c2c31a1dce855bd0c5bc
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+rs_32bit:rightshift|rs_1bit:rs1
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+rs_2bit
+# storage
+db|hw3.(11).cnf
+db|hw3.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+rs_2bit.vhd
+2ecd84782379467b72bd4f128fbb9bee
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+rs_32bit:rightshift|rs_2bit:rs2
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+ls_8bit
+# storage
+db|hw3.(5).cnf
+db|hw3.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ls_8bit.vhd
+551a69edd354abbdd1328137a520c694
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+ls_32bit:leftshift|ls_8bit:ls8
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+rs_32bit
+# storage
+db|hw3.(12).cnf
+db|hw3.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+rs_32bit.vhd
+e158ed837e4f522e12d9f06b96a29
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+rs_32bit:rightshift
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+rs_16bit
+# storage
+db|hw3.(13).cnf
+db|hw3.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+rs_16bit.vhd
+5060fabd7f78cfcc26e61da61c8892a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+rs_32bit:rightshift|rs_16bit:rs16
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+rs_8bit
+# storage
+db|hw3.(14).cnf
+db|hw3.(14).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+rs_8bit.vhd
+416a47b2b18087dca4bcb8a51451db51
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+rs_32bit:rightshift|rs_8bit:rs8
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+rs_4bit
+# storage
+db|hw3.(15).cnf
+db|hw3.(15).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+rs_4bit.vhd
+9e9ea6f95ce461e955d95815bbd173e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+rs_32bit:rightshift|rs_4bit:rs4
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+bitwiseor
+# storage
+db|hw3.(16).cnf
+db|hw3.(16).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+bitwiseor.vhd
+b7ee27d769f644d2b3d2715921d510
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_operandb)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+bitwiseor:op_or
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+tristate
+# storage
+db|hw3.(17).cnf
+db|hw3.(17).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+tristate.vhd
+08461a46b1fae2fd072b8ad3e34248
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(input)
+0 to 31
+PARAMETER_STRING
+USR
+ constraint(output)
+0 to 31
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+tristate:control1
+tristate:control2
+tristate:control3
+tristate:control4
+tristate:control5
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu
+# storage
+db|hw3.(3).cnf
+db|hw3.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu.vhd
+85577bcd4e7090a3dcd031c0e29145fa
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+|quartus|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

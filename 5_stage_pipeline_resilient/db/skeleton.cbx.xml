@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="skeleton">
-		<CBX_INST_ENTRY INSTANCE_NAME="|processor|dmem:data_memory|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vqc1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|processor|imem:instr_memory|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7h81.tdf"/>
-	</PROJECT>
-</LOG_ROOT>

@@ -1,0 +1,23 @@
+Quartus II Archive log --	C:/quartus/quartus/project/regfile/regfile.qarlog
+
+Archive:	C:/quartus/quartus/project/regfile/regfile.qar
+Date:		Fri Feb 01 06:18:13 2013
+Quartus II		9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/quartus/quartus/project/regfile/db/regfile.sim.cvwf
+C:/quartus/quartus/project/regfile/decoder2to4.vhd
+C:/quartus/quartus/project/regfile/decoder3to8.vhd
+C:/quartus/quartus/project/regfile/decoder5to32.vhd
+C:/quartus/quartus/project/regfile/dflipflop.vhd
+C:/quartus/quartus/project/regfile/reg.vhd
+C:/quartus/quartus/project/regfile/regfile.qpf
+C:/quartus/quartus/project/regfile/regfile.qsf
+C:/quartus/quartus/project/regfile/regfile.vhd
+C:/quartus/quartus/project/regfile/regfile.vwf
+C:/quartus/quartus/project/regfile/tristate.vhd
+c:/quartus/quartus/bin/assignment_defaults.qdf
+	======= Total: 12 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

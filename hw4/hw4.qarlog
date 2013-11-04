@@ -1,0 +1,26 @@
+Quartus II Archive log --	C:/quartus/quartus/project/hw4/hw4.qarlog
+
+Archive:	C:/quartus/quartus/project/hw4/hw4.qar
+Date:		Tue Mar 05 04:31:27 2013
+Quartus II		9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/quartus/quartus/project/hw4/FSM.vhd
+C:/quartus/quartus/project/hw4/add_sub_16.vhd
+C:/quartus/quartus/project/hw4/counter.vhd
+C:/quartus/quartus/project/hw4/db/hw4.sim.cvwf
+C:/quartus/quartus/project/hw4/dflipflop.vhd
+C:/quartus/quartus/project/hw4/hw4.qpf
+C:/quartus/quartus/project/hw4/hw4.qsf
+C:/quartus/quartus/project/hw4/hw4.vwf
+C:/quartus/quartus/project/hw4/multdiv.vhd
+C:/quartus/quartus/project/hw4/negate_16.vhd
+C:/quartus/quartus/project/hw4/onebitadder.vhd
+C:/quartus/quartus/project/hw4/or_16.vhd
+C:/quartus/quartus/project/hw4/reg_16.vhd
+C:/quartus/quartus/project/hw4/reg_32.vhd
+c:/quartus/quartus/bin/assignment_defaults.qdf
+	======= Total: 15 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
