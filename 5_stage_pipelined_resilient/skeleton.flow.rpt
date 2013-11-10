@@ -1,5 +1,5 @@
 Flow report for skeleton
-Mon Nov 04 03:40:11 2013
+Sat Nov 09 21:40:10 2013
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -38,23 +38,23 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 04 03:40:11 2013        ;
+; Flow Status                        ; Flow Failed - Sat Nov 09 21:40:09 2013       ;
 ; Quartus II Version                 ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name                      ; skeleton                                     ;
-; Top-level Entity Name              ; processor                                    ;
+; Top-level Entity Name              ; razor_latch                                  ;
 ; Family                             ; Cyclone II                                   ;
 ; Device                             ; EP2C35F672C7                                 ;
 ; Timing Models                      ; Final                                        ;
-; Met timing requirements            ; No                                           ;
-; Total logic elements               ; 4,367 / 33,216 ( 13 % )                      ;
-;     Total combinational functions  ; 3,942 / 33,216 ( 12 % )                      ;
-;     Dedicated logic registers      ; 1,286 / 33,216 ( 4 % )                       ;
-; Total registers                    ; 1286                                         ;
-; Total pins                         ; 20 / 475 ( 4 % )                             ;
-; Total virtual pins                 ; 0                                            ;
-; Total memory bits                  ; 262,144 / 483,840 ( 54 % )                   ;
-; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                               ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                ;
+; Met timing requirements            ; N/A                                          ;
+; Total logic elements               ; N/A until Partition Merge                    ;
+;     Total combinational functions  ; N/A until Partition Merge                    ;
+;     Dedicated logic registers      ; N/A until Partition Merge                    ;
+; Total registers                    ; N/A until Partition Merge                    ;
+; Total pins                         ; N/A until Partition Merge                    ;
+; Total virtual pins                 ; N/A until Partition Merge                    ;
+; Total memory bits                  ; N/A until Partition Merge                    ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                    ;
+; Total PLLs                         ; N/A until Partition Merge                    ;
 +------------------------------------+----------------------------------------------+
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/04/2013 03:38:48 ;
+; Start date & time ; 11/09/2013 21:40:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; skeleton            ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 123250727100888.138355432806848 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 123250727100888.138405120806444 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; ROM: 1-PORT                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; RAM: 1-PORT                     ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
@@ -87,50 +87,41 @@ applicable agreement for further details.
 ; MISC_FILE                          ; dmem_inst.vhd                   ; --            ; --          ; --             ;
 ; MISC_FILE                          ; dmem.cmp                        ; --            ; --          ; --             ;
 ; MISC_FILE                          ; hw5/skeleton/skeleton.dpf       ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                        ; --            ; processor   ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; processor   ; Top            ;
+; PARTITION_COLOR                    ; 16764057                        ; --            ; razor_latch ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; razor_latch ; Top            ;
 ; SEARCH_PATH                        ; hw3/                            ; --            ; --          ; --             ;
 ; SEARCH_PATH                        ; hw4/                            ; --            ; --          ; --             ;
 ; SEARCH_PATH                        ; hw5/skeleton/                   ; --            ; --          ; --             ;
 ; SEARCH_PATH                        ; regfile/                        ; --            ; --          ; --             ;
 ; SYNTH_TIMING_DRIVEN_SYNTHESIS      ; Off                             ; On            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                   ; processor                       ; skeleton      ; --          ; --             ;
+; TOP_LEVEL_ENTITY                   ; razor_latch                     ; skeleton      ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                           ;
-+-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:39     ; 1.0                     ; 268 MB              ; 00:00:35                           ;
-; Fitter                  ; 00:00:28     ; 1.0                     ; 298 MB              ; 00:00:27                           ;
-; Assembler               ; 00:00:03     ; 1.0                     ; 269 MB              ; 00:00:02                           ;
-; Classic Timing Analyzer ; 00:00:04     ; 1.0                     ; 222 MB              ; 00:00:03                           ;
-; Total                   ; 00:01:14     ; --                      ; --                  ; 00:01:07                           ;
-+-------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 223 MB              ; 00:00:02                           ;
+; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                          ;
-+-------------------------+------------------+---------------+------------+----------------+
-; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
-+-------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis    ; Yaqi-PC          ; Windows Vista ; 6.1        ; x86_64         ;
-; Fitter                  ; Yaqi-PC          ; Windows Vista ; 6.1        ; x86_64         ;
-; Assembler               ; Yaqi-PC          ; Windows Vista ; 6.1        ; x86_64         ;
-; Classic Timing Analyzer ; Yaqi-PC          ; Windows Vista ; 6.1        ; x86_64         ;
-+-------------------------+------------------+---------------+------------+----------------+
++---------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                       ;
++----------------------+------------------+---------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
++----------------------+------------------+---------------+------------+----------------+
+; Analysis & Synthesis ; Yaqi-PC          ; Windows Vista ; 6.1        ; x86_64         ;
++----------------------+------------------+---------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
-quartus_fit --read_settings_files=off --write_settings_files=off skeleton -c skeleton
-quartus_asm --read_settings_files=off --write_settings_files=off skeleton -c skeleton
-quartus_tan --read_settings_files=off --write_settings_files=off skeleton -c skeleton --timing_analysis_only
 
 
 

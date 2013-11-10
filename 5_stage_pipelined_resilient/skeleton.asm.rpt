@@ -1,5 +1,5 @@
 Assembler report for skeleton
-Mon Nov 04 03:40:06 2013
+Sat Nov 09 21:33:54 2013
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Yaqi/Dropbox/2013 Fall/ECE 552/Final Project/5_stage_pipelined_resilient/skeleton.sof
-  6. Assembler Device Options: C:/Users/Yaqi/Dropbox/2013 Fall/ECE 552/Final Project/5_stage_pipelined_resilient/skeleton.pof
+  5. Assembler Device Options: C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/skeleton.sof
+  6. Assembler Device Options: C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/skeleton.pof
   7. Assembler Messages
 
 
@@ -38,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Nov 04 03:40:06 2013 ;
+; Assembler Status      ; Successful - Sat Nov 09 21:33:54 2013 ;
 ; Revision Name         ; skeleton                              ;
-; Top-level Entity Name ; processor                             ;
+; Top-level Entity Name ; razor_latch                           ;
 ; Family                ; Cyclone II                            ;
 ; Device                ; EP2C35F672C7                          ;
 +-----------------------+---------------------------------------+
@@ -76,37 +76,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                      ;
-+------------------------------------------------------------------------------------------------+
-; File Name                                                                                      ;
-+------------------------------------------------------------------------------------------------+
-; C:/Users/Yaqi/Dropbox/2013 Fall/ECE 552/Final Project/5_stage_pipelined_resilient/skeleton.sof ;
-; C:/Users/Yaqi/Dropbox/2013 Fall/ECE 552/Final Project/5_stage_pipelined_resilient/skeleton.pof ;
-+------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                           ;
++-------------------------------------------------------------------------------------+
+; File Name                                                                           ;
++-------------------------------------------------------------------------------------+
+; C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/skeleton.sof ;
+; C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/skeleton.pof ;
++-------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Yaqi/Dropbox/2013 Fall/ECE 552/Final Project/5_stage_pipelined_resilient/skeleton.sof ;
-+----------------+---------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                 ;
-+----------------+---------------------------------------------------------------------------------------------------------+
-; Device         ; EP2C35F672C7                                                                                            ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                                              ;
-; Checksum       ; 0x006CCE89                                                                                              ;
-+----------------+---------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/skeleton.sof ;
++----------------+----------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                      ;
++----------------+----------------------------------------------------------------------------------------------+
+; Device         ; EP2C35F672C7                                                                                 ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                                   ;
+; Checksum       ; 0x0037B73D                                                                                   ;
++----------------+----------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Yaqi/Dropbox/2013 Fall/ECE 552/Final Project/5_stage_pipelined_resilient/skeleton.pof ;
-+--------------------+-----------------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                             ;
-+--------------------+-----------------------------------------------------------------------------------------------------+
-; Device             ; EPCS16                                                                                              ;
-; JTAG usercode      ; 0x00000000                                                                                          ;
-; Checksum           ; 0x1C0E8087                                                                                          ;
-; Compression Ratio  ; 2                                                                                                   ;
-+--------------------+-----------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/skeleton.pof ;
++--------------------+------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                  ;
++--------------------+------------------------------------------------------------------------------------------+
+; Device             ; EPCS16                                                                                   ;
+; JTAG usercode      ; 0x00000000                                                                               ;
+; Checksum           ; 0x1C69E02C                                                                               ;
+; Compression Ratio  ; 3                                                                                        ;
++--------------------+------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -115,15 +115,15 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Nov 04 03:40:03 2013
+    Info: Processing started: Sat Nov 09 21:33:52 2013
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off skeleton -c skeleton
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: The Active Serial/Parallel mode CONF_DONE pin error check is disabled
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 269 megabytes
-    Info: Processing ended: Mon Nov 04 03:40:06 2013
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 250 megabytes
+    Info: Processing ended: Sat Nov 09 21:33:54 2013
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

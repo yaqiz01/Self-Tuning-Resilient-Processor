@@ -5,17 +5,17 @@ ENTITY processor IS
     PORT (	clock	: IN STD_LOGIC;
 			reset: IN STD_LOGIC;
 			keyboard_in	: IN STD_LOGIC_VECTOR(3 downto 0);
-			led_14: out std_logic_vector(14 downto 1)
+			led_14: out std_logic_vector(14 downto 1);
 --			lcd_data	: OUT STD_LOGIC_VECTOR(31 downto 0);
 --			debug: out std_logic_vector(31 downto 0);
 --			instr_FD: out std_logic_vector(31 downto 0);
 --			instr_DX: out std_logic_vector(31 downto 0);
 --			instr_XM: out std_logic_vector(31 downto 0);
 --			instr_MW: out std_logic_vector(31 downto 0);
---			dmem_out_d: out std_logic_vector(31 downto 0);
---			alu_a: out std_logic_vector(31 downto 0);
---			alu_b: out std_logic_vector(31 downto 0);
---			rf_in: out std_logic_vector(31 downto 0);
+			dmem_out_d: out std_logic_vector(31 downto 0);
+			alu_a: out std_logic_vector(31 downto 0);
+			alu_b: out std_logic_vector(31 downto 0);
+			rf_in: out std_logic_vector(31 downto 0)
 --			pc_out_d: out std_logic_vector(31 downto 0);
 --			pc_set_d: out std_logic_vector(31 downto 0)
 --			b4: out std_logic
@@ -426,10 +426,10 @@ BEGIN
 --	instr_FD <= imem_out;
 --	instr_XM <= ir_XM;
 --	instr_MW <= ir_MW;
---	dmem_out_d<= dmem_q;
---	alu_a <= alu_a_in;
---	alu_b <= alu_b_in;
---	rf_in<= regFile_in;
+	dmem_out_d<= dmem_q;
+	alu_a <= alu_a_in;
+	alu_b <= alu_b_in;
+	rf_in<= regFile_in;
 --	pc_out_d <= pc_out;
 --	pc_set_d <=  pc_set;
 --	b2_d <= branch_reg;
