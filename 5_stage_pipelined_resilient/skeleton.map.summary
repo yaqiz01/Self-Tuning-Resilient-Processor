@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Failed - Sat Nov 09 21:40:09 2013
+Analysis & Synthesis Status : Successful - Mon Nov 18 22:31:50 2013
 Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
 Revision Name : skeleton
 Top-level Entity Name : razor_latch
 Family : Cyclone II
-Total logic elements : N/A until Partition Merge
-    Total combinational functions : N/A until Partition Merge
-    Dedicated logic registers : N/A until Partition Merge
-Total registers : N/A until Partition Merge
-Total pins : N/A until Partition Merge
-Total virtual pins : N/A until Partition Merge
-Total memory bits : N/A until Partition Merge
-Embedded Multiplier 9-bit elements : N/A until Partition Merge
-Total PLLs : N/A until Partition Merge
+Total logic elements : 710
+    Total combinational functions : 678
+    Dedicated logic registers : 64
+Total registers : 64
+Total pins : 100
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

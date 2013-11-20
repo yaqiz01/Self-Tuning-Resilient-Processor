@@ -3520,43 +3520,10 @@ ON
 
 # end
 # entity
-razor_latch
-# storage
-db|skeleton.(46).cnf
-db|skeleton.(46).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-razor_latch.vhd
-aa14dcdd74f0e2ea3a4c82cc660bceb
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-|
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 razor_dflipflop
 # storage
-db|skeleton.(45).cnf
-db|skeleton.(45).cnf
+db|skeleton.(46).cnf
+db|skeleton.(46).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -3564,7 +3531,7 @@ ON
 # case_insensitive
 # source_file
 razor_dflipflop.vhd
-5ac223b1c4a57ace09431b45584550
+87d6bc3c80d1b5d1d79321599296ec59
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -3575,6 +3542,12 @@ AUTO_RAM_RECOGNITION
 ON
 AUTO_ROM_RECOGNITION
 ON
+}
+# user_parameter {
+ constraint(enable)
+1 downto 0
+PARAMETER_STRING
+USR
 }
 # hierarchies {
 razor_dflipflop:\G1:31:d
@@ -3609,6 +3582,39 @@ razor_dflipflop:\G1:3:d
 razor_dflipflop:\G1:2:d
 razor_dflipflop:\G1:1:d
 razor_dflipflop:\G1:0:d
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+razor_latch
+# storage
+db|skeleton.(45).cnf
+db|skeleton.(45).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+razor_latch.vhd
+7fc387f218f8fff837333b76736796f2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
 }
 # lmf
 ..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf

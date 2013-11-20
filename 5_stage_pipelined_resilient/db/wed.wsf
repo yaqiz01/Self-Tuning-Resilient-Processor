@@ -3989,17 +3989,17 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/t
 	}
 }
 
-VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/db/skeleton.sim.cvwf")
+VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/razor_test.vwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 249856;
-		NUMERATOR = 1117;
-		DENOMINATOR = 249856;
+		ZBEGIN = 22900;
+		ZEND = 131100;
+		NUMERATOR = 1082;
+		DENOMINATOR = 108200;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
-		PERIOD = 10000;
+		PERIOD = 30000;
 		OFFSET = 0;
 		DUTY_CYCLE = 50;
 	}
@@ -4832,17 +4832,92 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 	}
 }
 
-VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/razor_test.vwf")
+VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/razor_dff_test.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 219800;
+		ZEND = 879200;
 		NUMERATOR = 1099;
-		DENOMINATOR = 219800;
+		DENOMINATOR = 879200;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
-		PERIOD = 50000;
+		PERIOD = 100000;
+		OFFSET = 0;
+		DUTY_CYCLE = 50;
+	}
+	RANDOM_VALUE{
+		INTERVAL_TYPE = HALF_GRID;
+	}
+	LINE{
+		SIGNAL = "clock";
+		INDEX = 0;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "data";
+		INDEX = 1;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "enable";
+		INDEX = 2;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "reset";
+		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "restore";
+		INDEX = 4;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "restore_data";
+		INDEX = 5;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "output";
+		INDEX = 6;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+}
+
+VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/db/skeleton.sim.cvwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 185504;
+		NUMERATOR = 917;
+		DENOMINATOR = 185504;
+		TOP_INDEX = 0;
+	}
+	CLOCK{
+		PERIOD = 10000;
 		OFFSET = 0;
 		DUTY_CYCLE = 50;
 	}

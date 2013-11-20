@@ -30,19 +30,22 @@ END component;
 
 component razor_dflipflop
    port
-   ( clock, reset,enable,data,restore,restore_data : in std_logic;
+   ( clock, reset,data,restore_data : in std_logic;
+   enable : in  STD_LOGIC_VECTOR(1 downto 0);
       output : out std_logic
    );
 end component;
 
 signal main_ff_out: STD_LOGIC_VECTOR(31 downto 0);
 signal shadow_latch_out: STD_LOGIC_VECTOR(31 downto 0);
+signal enable_comb: STD_LOGIC_VECTOR(1 downto 0);
 signal main_shadow_equal: std_logic;
 
 BEGIN
-
+enable_comb(0) <= main_shadow_equal;
+enable_comb(1) <= write_enable;
 G1: for i in 31 downto 0 generate
-	d: razor_dflipflop port map(clock,reset,write_enable,input(i),'0',shadow_latch_out(i),main_ff_out(i));
+	d: razor_dflipflop port map(clock,reset,input(i),shadow_latch_out(i),enable_comb,main_ff_out(i));
 end generate;
 
 shadow_latch: reg_32 port map (input, write_enable, not clock, reset, shadow_latch_out);

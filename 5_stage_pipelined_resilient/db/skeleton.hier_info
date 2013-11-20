@@ -63,39 +63,39 @@ input[30] => reg_32:shadow_latch.input[30]
 input[30] => razor_dflipflop:G1:30:d.data
 input[31] => reg_32:shadow_latch.input[31]
 input[31] => razor_dflipflop:G1:31:d.data
+write_enable => razor_dflipflop:G1:0:d.enable[1]
+write_enable => razor_dflipflop:G1:1:d.enable[1]
+write_enable => razor_dflipflop:G1:2:d.enable[1]
+write_enable => razor_dflipflop:G1:3:d.enable[1]
+write_enable => razor_dflipflop:G1:4:d.enable[1]
+write_enable => razor_dflipflop:G1:5:d.enable[1]
+write_enable => razor_dflipflop:G1:6:d.enable[1]
+write_enable => razor_dflipflop:G1:7:d.enable[1]
+write_enable => razor_dflipflop:G1:8:d.enable[1]
+write_enable => razor_dflipflop:G1:9:d.enable[1]
+write_enable => razor_dflipflop:G1:10:d.enable[1]
+write_enable => razor_dflipflop:G1:11:d.enable[1]
+write_enable => razor_dflipflop:G1:12:d.enable[1]
+write_enable => razor_dflipflop:G1:13:d.enable[1]
+write_enable => razor_dflipflop:G1:14:d.enable[1]
+write_enable => razor_dflipflop:G1:15:d.enable[1]
+write_enable => razor_dflipflop:G1:16:d.enable[1]
+write_enable => razor_dflipflop:G1:17:d.enable[1]
+write_enable => razor_dflipflop:G1:18:d.enable[1]
+write_enable => razor_dflipflop:G1:19:d.enable[1]
+write_enable => razor_dflipflop:G1:20:d.enable[1]
+write_enable => razor_dflipflop:G1:21:d.enable[1]
+write_enable => razor_dflipflop:G1:22:d.enable[1]
+write_enable => razor_dflipflop:G1:23:d.enable[1]
+write_enable => razor_dflipflop:G1:24:d.enable[1]
+write_enable => razor_dflipflop:G1:25:d.enable[1]
+write_enable => razor_dflipflop:G1:26:d.enable[1]
+write_enable => razor_dflipflop:G1:27:d.enable[1]
+write_enable => razor_dflipflop:G1:28:d.enable[1]
+write_enable => razor_dflipflop:G1:29:d.enable[1]
+write_enable => razor_dflipflop:G1:30:d.enable[1]
+write_enable => razor_dflipflop:G1:31:d.enable[1]
 write_enable => reg_32:shadow_latch.write_enable
-write_enable => razor_dflipflop:G1:0:d.enable
-write_enable => razor_dflipflop:G1:1:d.enable
-write_enable => razor_dflipflop:G1:2:d.enable
-write_enable => razor_dflipflop:G1:3:d.enable
-write_enable => razor_dflipflop:G1:4:d.enable
-write_enable => razor_dflipflop:G1:5:d.enable
-write_enable => razor_dflipflop:G1:6:d.enable
-write_enable => razor_dflipflop:G1:7:d.enable
-write_enable => razor_dflipflop:G1:8:d.enable
-write_enable => razor_dflipflop:G1:9:d.enable
-write_enable => razor_dflipflop:G1:10:d.enable
-write_enable => razor_dflipflop:G1:11:d.enable
-write_enable => razor_dflipflop:G1:12:d.enable
-write_enable => razor_dflipflop:G1:13:d.enable
-write_enable => razor_dflipflop:G1:14:d.enable
-write_enable => razor_dflipflop:G1:15:d.enable
-write_enable => razor_dflipflop:G1:16:d.enable
-write_enable => razor_dflipflop:G1:17:d.enable
-write_enable => razor_dflipflop:G1:18:d.enable
-write_enable => razor_dflipflop:G1:19:d.enable
-write_enable => razor_dflipflop:G1:20:d.enable
-write_enable => razor_dflipflop:G1:21:d.enable
-write_enable => razor_dflipflop:G1:22:d.enable
-write_enable => razor_dflipflop:G1:23:d.enable
-write_enable => razor_dflipflop:G1:24:d.enable
-write_enable => razor_dflipflop:G1:25:d.enable
-write_enable => razor_dflipflop:G1:26:d.enable
-write_enable => razor_dflipflop:G1:27:d.enable
-write_enable => razor_dflipflop:G1:28:d.enable
-write_enable => razor_dflipflop:G1:29:d.enable
-write_enable => razor_dflipflop:G1:30:d.enable
-write_enable => razor_dflipflop:G1:31:d.enable
 clock => razor_dflipflop:G1:0:d.clock
 clock => razor_dflipflop:G1:1:d.clock
 clock => razor_dflipflop:G1:2:d.clock
@@ -232,384 +232,384 @@ error <= comparator_32:comparator.not_equal
 |razor_latch|razor_dflipflop:\G1:31:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:30:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:29:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:28:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:27:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:26:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:25:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:24:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:23:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:22:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:21:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:20:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:19:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:18:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:17:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:16:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:15:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:14:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:13:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:12:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:11:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:10:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:9:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:8:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:7:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:6:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:5:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:4:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:3:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:2:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:1:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |razor_latch|razor_dflipflop:\G1:0:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
-enable => process_0~1.IN0
-enable => process_0~0.IN0
-data => output~0.DATAB
-restore => process_0~0.IN1
-restore => process_0~1.IN1
-restore_data => output~1.DATAB
+data => output~1.DATAB
+restore_data => output~0.DATAB
+enable[0] => Equal0.IN0
+enable[0] => Equal1.IN0
+enable[1] => Equal0.IN1
+enable[1] => Equal1.IN1
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

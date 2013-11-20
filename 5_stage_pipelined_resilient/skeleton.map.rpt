@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Sat Nov 09 21:40:10 2013
+Mon Nov 18 22:31:50 2013
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -9,7 +9,47 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
   1. Legal Notice
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
-  4. Analysis & Synthesis Messages
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Multiplexer Restructuring Statistics (Restructuring Performed)
+  9. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:0:IFF3:0:G2:halfadder3"
+ 10. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:1:IFF3:1:G2:halfadder3"
+ 11. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:2:IFF3:2:G2:halfadder3"
+ 12. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:3:IFF3:3:G2:halfadder3"
+ 13. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:4:IFF3:4:G2:halfadder3"
+ 14. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:5:IFF3:5:G2:halfadder3"
+ 15. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:6:IFF3:6:G2:halfadder3"
+ 16. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:7:IFF3:7:G2:halfadder3"
+ 17. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:8:IFF3:8:G2:halfadder3"
+ 18. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:9:IFF3:9:G2:halfadder3"
+ 19. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:10:IFF3:10:G2:halfadder3"
+ 20. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:11:IFF3:11:G2:halfadder3"
+ 21. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:12:IFF3:12:G2:halfadder3"
+ 22. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:13:IFF3:13:G2:halfadder3"
+ 23. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:14:IFF3:14:G2:halfadder3"
+ 24. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:15:IFF3:15:G2:halfadder3"
+ 25. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:16:IFF3:16:G2:halfadder3"
+ 26. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:17:IFF3:17:G2:halfadder3"
+ 27. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:18:IFF3:18:G2:halfadder3"
+ 28. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:19:G2:halfadder3"
+ 29. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:20:G2:halfadder3"
+ 30. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:21:G2:halfadder3"
+ 31. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:22:G2:halfadder3"
+ 32. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:23:G2:halfadder3"
+ 33. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:24:G2:halfadder3"
+ 34. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:25:G2:halfadder3"
+ 35. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:26:G2:halfadder3"
+ 36. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:27:G2:halfadder3"
+ 37. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:28:G2:halfadder3"
+ 38. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:29:G2:halfadder3"
+ 39. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:30:G2:halfadder3"
+ 40. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:31:G1:G3:halfadder1"
+ 41. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF1:31:firstrow"
+ 42. Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction"
+ 43. Port Connectivity Checks: "comparator_32:comparator"
+ 44. Analysis & Synthesis Messages
 
 
 
@@ -35,20 +75,20 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sat Nov 09 21:40:09 2013            ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 18 22:31:50 2013        ;
 ; Quartus II Version                 ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name                      ; skeleton                                     ;
 ; Top-level Entity Name              ; razor_latch                                  ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; N/A until Partition Merge                    ;
-;     Total combinational functions  ; N/A until Partition Merge                    ;
-;     Dedicated logic registers      ; N/A until Partition Merge                    ;
-; Total registers                    ; N/A until Partition Merge                    ;
-; Total pins                         ; N/A until Partition Merge                    ;
-; Total virtual pins                 ; N/A until Partition Merge                    ;
-; Total memory bits                  ; N/A until Partition Merge                    ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                    ;
-; Total PLLs                         ; N/A until Partition Merge                    ;
+; Total logic elements               ; 710                                          ;
+;     Total combinational functions  ; 678                                          ;
+;     Dedicated logic registers      ; 64                                           ;
+; Total registers                    ; 64                                           ;
+; Total pins                         ; 100                                          ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
 +------------------------------------+----------------------------------------------+
 
 
@@ -127,13 +167,751 @@ applicable agreement for further details.
 +--------------------------------------------------------------+--------------------+--------------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                  ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+
+; regfile/dflipflop.vhd            ; yes             ; User VHDL File  ; C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/regfile/dflipflop.vhd  ;
+; hw3/carrysaveadder.vhd           ; yes             ; User VHDL File  ; C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/hw3/carrysaveadder.vhd ;
+; hw3/onebitadder.vhd              ; yes             ; User VHDL File  ; C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/hw3/onebitadder.vhd    ;
+; hw4/reg_32.vhd                   ; yes             ; User VHDL File  ; C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/hw4/reg_32.vhd         ;
+; comparator_32.vhd                ; yes             ; User VHDL File  ; C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/comparator_32.vhd      ;
+; razor_latch.vhd                  ; yes             ; User VHDL File  ; C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/razor_latch.vhd        ;
+; razor_dflipflop.vhd              ; yes             ; User VHDL File  ; C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/razor_dflipflop.vhd    ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 710          ;
+;                                             ;              ;
+; Total combinational functions               ; 678          ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 465          ;
+;     -- 3 input functions                    ; 190          ;
+;     -- <=2 input functions                  ; 23           ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 678          ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 64           ;
+;     -- Dedicated logic registers            ; 64           ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 100          ;
+; Maximum fan-out node                        ; write_enable ;
+; Maximum fan-out                             ; 96           ;
+; Total fan-out                               ; 2797         ;
+; Average fan-out                             ; 3.32         ;
++---------------------------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                  ;
++----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                            ; Library Name ;
++----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; |razor_latch                                             ; 678 (0)           ; 64 (0)       ; 0           ; 0            ; 0       ; 0         ; 100  ; 0            ; |razor_latch                                                                                                   ; work         ;
+;    |comparator_32:comparator|                            ; 646 (21)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator                                                                          ; work         ;
+;       |carrysaveadder:subtraction|                       ; 625 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction                                               ; work         ;
+;          |onebitadder:\IFF2:10:IFF3:2:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:10:IFF3:2:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:10:IFF3:3:G2:halfadder3|     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:10:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:10:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:10:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:10:IFF3:6:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:10:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:10:IFF3:7:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:10:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:11:IFF3:1:G2:halfadder3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:11:IFF3:1:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:11:IFF3:3:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:11:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:11:IFF3:4:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:11:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:11:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:11:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:11:IFF3:7:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:11:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:11:IFF3:9:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:11:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:12:IFF3:2:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:12:IFF3:2:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:12:IFF3:3:G2:halfadder3|     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:12:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:12:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:12:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:12:IFF3:6:G2:halfadder3|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:12:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:12:IFF3:8:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:12:IFF3:8:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:12:IFF3:9:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:12:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:13:IFF3:11:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:13:IFF3:11:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:13:IFF3:3:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:13:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:13:IFF3:4:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:13:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:13:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:13:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:13:IFF3:6:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:13:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:13:IFF3:7:G2:halfadder3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:13:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:13:IFF3:9:G2:halfadder3|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:13:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:14:IFF3:10:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:14:IFF3:10:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:14:IFF3:11:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:14:IFF3:11:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:14:IFF3:2:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:14:IFF3:2:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:14:IFF3:3:G2:halfadder3|     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:14:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:14:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:14:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:14:IFF3:6:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:14:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:14:IFF3:8:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:14:IFF3:8:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:14:IFF3:9:G2:halfadder3|     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:14:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:15:IFF3:13:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:15:IFF3:13:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:15:IFF3:1:G2:halfadder3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:15:IFF3:1:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:15:IFF3:3:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:15:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:15:IFF3:4:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:15:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:15:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:15:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:15:IFF3:6:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:15:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:15:IFF3:7:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:15:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:16:IFF3:13:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:16:IFF3:13:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:16:IFF3:2:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:16:IFF3:2:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:16:IFF3:3:G2:halfadder3|     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:16:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:16:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:16:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:16:IFF3:6:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:16:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:16:IFF3:8:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:16:IFF3:8:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:16:IFF3:9:G2:halfadder3|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:16:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:17:IFF3:10:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:17:IFF3:10:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:17:IFF3:11:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:17:IFF3:11:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:17:IFF3:12:G2:halfadder3|    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:17:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:17:IFF3:3:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:17:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:17:IFF3:4:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:17:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:17:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:17:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:17:IFF3:6:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:17:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:17:IFF3:7:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:17:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:18:IFF3:11:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:18:IFF3:11:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:18:IFF3:12:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:18:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:18:IFF3:13:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:18:IFF3:13:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:18:IFF3:2:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:18:IFF3:2:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:18:IFF3:3:G2:halfadder3|     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:18:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:18:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:18:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:18:IFF3:6:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:18:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:18:IFF3:8:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:18:IFF3:8:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:18:IFF3:9:G2:halfadder3|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:18:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:10:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:10:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:11:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:11:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:12:G2:halfadder3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:14:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:14:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:15:G2:halfadder3|    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:15:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:17:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:17:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:1:G2:halfadder3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:1:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:3:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:4:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:6:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:19:IFF3:7:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:1:IFF3:0:G2:halfadder3|      ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:1:IFF3:0:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:20:IFF3:12:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:20:IFF3:13:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:13:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:20:IFF3:16:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:16:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:20:IFF3:17:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:17:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:20:IFF3:2:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:2:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:20:IFF3:3:G2:halfadder3|     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:20:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:20:IFF3:6:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:20:IFF3:8:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:8:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:20:IFF3:9:G2:halfadder3|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:21:IFF3:10:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:10:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:21:IFF3:12:G2:halfadder3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:21:IFF3:14:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:14:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:21:IFF3:15:G2:halfadder3|    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:15:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:21:IFF3:19:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:19:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:21:IFF3:3:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:21:IFF3:4:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:21:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:21:IFF3:6:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:21:IFF3:7:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:11:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:11:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:12:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:13:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:13:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:15:G2:halfadder3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:15:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:16:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:16:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:19:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:19:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:2:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:2:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:3:G2:halfadder3|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:6:G2:halfadder3|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:8:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:8:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:22:IFF3:9:G2:halfadder3|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:10:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:10:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:12:G2:halfadder3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:14:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:14:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:15:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:15:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:17:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:17:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:18:G2:halfadder3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:18:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:1:G2:halfadder3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:1:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:3:G2:halfadder3|     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:4:G2:halfadder3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:6:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:23:IFF3:7:G2:halfadder3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:11:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:11:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:12:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:13:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:13:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:15:G2:halfadder3|    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:15:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:17:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:17:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:19:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:19:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:21:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:21:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:2:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:2:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:3:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:4:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:6:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:8:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:8:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:24:IFF3:9:G2:halfadder3|     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:10:G2:halfadder3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:10:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:11:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:11:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:12:G2:halfadder3|    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:14:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:14:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:15:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:15:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:16:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:16:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:17:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:17:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:18:G2:halfadder3|    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:18:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:20:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:20:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:21:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:21:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:23:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:23:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:3:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:4:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:25:IFF3:7:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:11:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:11:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:12:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:13:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:13:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:15:G2:halfadder3|    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:15:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:17:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:17:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:18:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:18:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:19:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:19:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:21:G2:halfadder3|    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:21:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:22:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:22:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:23:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:23:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:2:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:2:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:3:G2:halfadder3|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:4:G2:halfadder3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:6:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:8:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:8:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:26:IFF3:9:G2:halfadder3|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:10:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:10:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:12:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:14:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:14:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:15:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:15:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:16:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:16:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:18:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:18:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:1:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:1:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:20:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:20:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:21:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:21:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:22:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:22:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:23:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:23:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:25:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:25:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:3:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:4:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:27:IFF3:7:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:11:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:11:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:12:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:13:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:13:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:15:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:15:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:17:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:17:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:18:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:18:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:19:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:19:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:21:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:21:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:23:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:23:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:24:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:24:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:25:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:25:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:2:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:2:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:3:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:4:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:5:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:6:G2:halfadder3|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:8:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:8:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:28:IFF3:9:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:10:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:10:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:12:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:13:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:13:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:14:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:14:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:15:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:15:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:16:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:16:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:18:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:18:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:19:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:19:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:1:G2:halfadder3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:1:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:20:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:20:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:21:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:21:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:22:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:22:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:23:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:23:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:24:G2:halfadder3|    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:24:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:25:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:25:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:27:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:27:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:3:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:4:G2:halfadder3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:5:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:6:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:7:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:29:IFF3:9:G2:halfadder3|     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:10:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:10:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:11:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:11:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:12:G2:halfadder3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:12:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:13:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:13:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:14:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:14:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:15:G2:halfadder3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:15:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:16:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:16:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:17:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:17:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:18:G2:halfadder3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:18:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:19:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:19:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:20:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:20:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:21:G2:halfadder3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:21:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:22:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:22:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:23:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:23:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:24:G2:halfadder3|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:24:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:25:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:25:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:26:G2:halfadder3|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:26:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:27:G2:halfadder3|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:27:G2:halfadder3    ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:2:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:2:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:3:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:3:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:4:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:4:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:5:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:5:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:6:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:6:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:7:G2:halfadder3|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:7:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:8:G2:halfadder3|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:8:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:30:IFF3:9:G2:halfadder3|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:9:G2:halfadder3     ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:11:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:11:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:12:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:12:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:14:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:14:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:15:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:15:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:17:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:17:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:18:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:18:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:20:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:20:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:21:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:21:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:23:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:23:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:24:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:24:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:26:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:26:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:27:G1:G3:halfadder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:27:G1:G3:halfadder1 ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:8:G1:G3:halfadder1|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:8:G1:G3:halfadder1  ; work         ;
+;          |onebitadder:\IFF2:31:IFF3:9:G1:G3:halfadder1|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:9:G1:G3:halfadder1  ; work         ;
+;          |onebitadder:\IFF2:5:IFF3:1:G2:halfadder3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:5:IFF3:1:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:5:IFF3:3:G2:halfadder3|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:5:IFF3:3:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:6:IFF3:2:G2:halfadder3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:6:IFF3:2:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:6:IFF3:3:G2:halfadder3|      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:6:IFF3:3:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:7:IFF3:1:G2:halfadder3|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:7:IFF3:1:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:7:IFF3:3:G2:halfadder3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:7:IFF3:3:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:7:IFF3:5:G2:halfadder3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:7:IFF3:5:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:8:IFF3:2:G2:halfadder3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:8:IFF3:2:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:8:IFF3:3:G2:halfadder3|      ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:8:IFF3:3:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:8:IFF3:5:G2:halfadder3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:8:IFF3:5:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:9:IFF3:3:G2:halfadder3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:9:IFF3:3:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:9:IFF3:4:G2:halfadder3|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:9:IFF3:4:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:9:IFF3:5:G2:halfadder3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:9:IFF3:5:G2:halfadder3      ; work         ;
+;          |onebitadder:\IFF2:9:IFF3:7:G2:halfadder3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:9:IFF3:7:G2:halfadder3      ; work         ;
+;    |razor_dflipflop:\G1:0:d|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:0:d                                                                           ; work         ;
+;    |razor_dflipflop:\G1:10:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:10:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:11:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:11:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:12:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:12:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:13:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:13:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:14:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:14:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:15:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:15:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:16:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:16:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:17:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:17:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:18:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:18:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:19:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:19:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:1:d|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:1:d                                                                           ; work         ;
+;    |razor_dflipflop:\G1:20:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:20:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:21:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:21:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:22:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:22:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:23:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:23:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:24:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:24:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:25:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:25:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:26:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:26:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:27:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:27:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:28:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:28:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:29:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:29:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:2:d|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:2:d                                                                           ; work         ;
+;    |razor_dflipflop:\G1:30:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:30:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:31:d|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:31:d                                                                          ; work         ;
+;    |razor_dflipflop:\G1:3:d|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:3:d                                                                           ; work         ;
+;    |razor_dflipflop:\G1:4:d|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:4:d                                                                           ; work         ;
+;    |razor_dflipflop:\G1:5:d|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:5:d                                                                           ; work         ;
+;    |razor_dflipflop:\G1:6:d|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:6:d                                                                           ; work         ;
+;    |razor_dflipflop:\G1:7:d|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:7:d                                                                           ; work         ;
+;    |razor_dflipflop:\G1:8:d|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:8:d                                                                           ; work         ;
+;    |razor_dflipflop:\G1:9:d|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|razor_dflipflop:\G1:9:d                                                                           ; work         ;
+;    |reg_32:shadow_latch|                                 ; 0 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch                                                                               ; work         ;
+;       |dflipflop:\G1:0:d|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:0:d                                                             ; work         ;
+;       |dflipflop:\G1:10:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:10:d                                                            ; work         ;
+;       |dflipflop:\G1:11:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:11:d                                                            ; work         ;
+;       |dflipflop:\G1:12:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:12:d                                                            ; work         ;
+;       |dflipflop:\G1:13:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:13:d                                                            ; work         ;
+;       |dflipflop:\G1:14:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:14:d                                                            ; work         ;
+;       |dflipflop:\G1:15:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:15:d                                                            ; work         ;
+;       |dflipflop:\G1:16:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:16:d                                                            ; work         ;
+;       |dflipflop:\G1:17:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:17:d                                                            ; work         ;
+;       |dflipflop:\G1:18:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:18:d                                                            ; work         ;
+;       |dflipflop:\G1:19:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:19:d                                                            ; work         ;
+;       |dflipflop:\G1:1:d|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:1:d                                                             ; work         ;
+;       |dflipflop:\G1:20:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:20:d                                                            ; work         ;
+;       |dflipflop:\G1:21:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:21:d                                                            ; work         ;
+;       |dflipflop:\G1:22:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:22:d                                                            ; work         ;
+;       |dflipflop:\G1:23:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:23:d                                                            ; work         ;
+;       |dflipflop:\G1:24:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:24:d                                                            ; work         ;
+;       |dflipflop:\G1:25:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:25:d                                                            ; work         ;
+;       |dflipflop:\G1:26:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:26:d                                                            ; work         ;
+;       |dflipflop:\G1:27:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:27:d                                                            ; work         ;
+;       |dflipflop:\G1:28:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:28:d                                                            ; work         ;
+;       |dflipflop:\G1:29:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:29:d                                                            ; work         ;
+;       |dflipflop:\G1:2:d|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:2:d                                                             ; work         ;
+;       |dflipflop:\G1:30:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:30:d                                                            ; work         ;
+;       |dflipflop:\G1:31:d|                               ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:31:d                                                            ; work         ;
+;       |dflipflop:\G1:3:d|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:3:d                                                             ; work         ;
+;       |dflipflop:\G1:4:d|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:4:d                                                             ; work         ;
+;       |dflipflop:\G1:5:d|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:5:d                                                             ; work         ;
+;       |dflipflop:\G1:6:d|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:6:d                                                             ; work         ;
+;       |dflipflop:\G1:7:d|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:7:d                                                             ; work         ;
+;       |dflipflop:\G1:8:d|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:8:d                                                             ; work         ;
+;       |dflipflop:\G1:9:d|                                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |razor_latch|reg_32:shadow_latch|dflipflop:\G1:9:d                                                             ; work         ;
++----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 64    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 64    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 64    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |razor_latch|razor_dflipflop:\G1:0:d|output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:0:IFF3:0:G2:halfadder3" ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:1:IFF3:1:G2:halfadder3" ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:2:IFF3:2:G2:halfadder3" ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:3:IFF3:3:G2:halfadder3" ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:4:IFF3:4:G2:halfadder3" ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:5:IFF3:5:G2:halfadder3" ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:6:IFF3:6:G2:halfadder3" ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:7:IFF3:7:G2:halfadder3" ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:8:IFF3:8:G2:halfadder3" ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:9:IFF3:9:G2:halfadder3" ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                   ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.       ;
++----------+--------+----------+-------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:10:IFF3:10:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:11:IFF3:11:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:12:IFF3:12:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:13:IFF3:13:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:14:IFF3:14:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:15:IFF3:15:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:16:IFF3:16:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:17:IFF3:17:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:18:IFF3:18:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:19:IFF3:19:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:20:IFF3:20:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:21:IFF3:21:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:22:IFF3:22:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:23:IFF3:23:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:24:IFF3:24:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:25:IFF3:25:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:26:IFF3:26:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:27:IFF3:27:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:28:IFF3:28:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:29:IFF3:29:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:30:IFF3:30:G2:halfadder3" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                     ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF2:31:IFF3:31:G1:G3:halfadder1" ;
++----------+--------+----------+------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                        ;
++----------+--------+----------+------------------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.            ;
++----------+--------+----------+------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF1:31:firstrow"      ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator|carrysaveadder:subtraction"                                    ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; carryin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carryout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; subtract ; Input  ; Info     ; Stuck at VCC                                                                        ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator_32:comparator"                                                                ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; less_than ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Nov 09 21:40:07 2013
+    Info: Processing started: Mon Nov 18 22:31:42 2013
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Info: Found 2 design units, including 1 entities, in source file regfile/decoder.vhd
     Info: Found design unit 1: decoder-structure
@@ -303,15 +1081,24 @@ Info: Found 2 design units, including 1 entities, in source file comparator_32_f
 Info: Found 2 design units, including 1 entities, in source file razor_check.vhd
     Info: Found design unit 1: razor_check-Behavioral
     Info: Found entity 1: razor_check
-Error (10500): VHDL syntax error at razor_dflipflop.vhd(23) near text "port";  expecting "(", or "'", or "." File: C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/razor_dflipflop.vhd Line: 23
-Error (10500): VHDL syntax error at razor_dflipflop.vhd(23) near text ";";  expecting ":=", or "<=" File: C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/razor_dflipflop.vhd Line: 23
-Error (10500): VHDL syntax error at razor_dflipflop.vhd(24) near text "port";  expecting "(", or "'", or "." File: C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/razor_dflipflop.vhd Line: 24
-Error (10500): VHDL syntax error at razor_dflipflop.vhd(24) near text ";";  expecting ":=", or "<=" File: C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/razor_dflipflop.vhd Line: 24
-Info: Found 0 design units, including 0 entities, in source file razor_dflipflop.vhd
-Error: Quartus II Analysis & Synthesis was unsuccessful. 4 errors, 0 warnings
-    Error: Peak virtual memory: 223 megabytes
-    Error: Processing ended: Sat Nov 09 21:40:10 2013
-    Error: Elapsed time: 00:00:03
-    Error: Total CPU time (on all processors): 00:00:02
+Info: Found 2 design units, including 1 entities, in source file razor_dflipflop.vhd
+    Info: Found design unit 1: razor_dflipflop-Behavioral
+    Info: Found entity 1: razor_dflipflop
+Info: Elaborating entity "razor_latch" for the top level hierarchy
+Info: Elaborating entity "razor_dflipflop" for hierarchy "razor_dflipflop:\G1:31:d"
+Info: Elaborating entity "reg_32" for hierarchy "reg_32:shadow_latch"
+Info: Elaborating entity "dflipflop" for hierarchy "reg_32:shadow_latch|dflipflop:\G1:31:d"
+Info: Elaborating entity "comparator_32" for hierarchy "comparator_32:comparator"
+Info: Elaborating entity "carrysaveadder" for hierarchy "comparator_32:comparator|carrysaveadder:subtraction"
+Info: Elaborating entity "onebitadder" for hierarchy "comparator_32:comparator|carrysaveadder:subtraction|onebitadder:\IFF1:31:firstrow"
+Info: Implemented 810 device resources after synthesis - the final resource count might be different
+    Info: Implemented 35 input pins
+    Info: Implemented 65 output pins
+    Info: Implemented 710 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 238 megabytes
+    Info: Processing ended: Mon Nov 18 22:31:50 2013
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
 
 
