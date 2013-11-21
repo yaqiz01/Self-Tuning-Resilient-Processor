@@ -193,19 +193,29 @@ ARCHITECTURE Structure OF processor IS
 	signal pc_set_val_buff: std_logic_vector(31 downto 0);
 	signal ctrl_pc_set_delay: std_logic;
 			
---	signal ir_DX_in: STD_LOGIC_VECTOR(31 downto 0);
+	signal ir_FD_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal ir_FD: STD_LOGIC_VECTOR(31 downto 0);
 	signal ir_DX_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal ir_DX: STD_LOGIC_VECTOR(31 downto 0);
+	signal ir_XM_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal ir_XM: STD_LOGIC_VECTOR(31 downto 0);
+	signal ir_MW_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal ir_MW: STD_LOGIC_VECTOR(31 downto 0);
+	signal pc_FD_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal pc_FD: STD_LOGIC_VECTOR(31 downto 0);
+	signal pc_DX_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal pc_DX: STD_LOGIC_VECTOR(31 downto 0);
+	signal pc_XM_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal pc_XM: STD_LOGIC_VECTOR(31 downto 0);
+	signal a_DX_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal a_DX: STD_LOGIC_VECTOR(31 downto 0);
+	signal b_DX_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal b_DX: STD_LOGIC_VECTOR(31 downto 0);
+	signal b_XM_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal b_XM: STD_LOGIC_VECTOR(31 downto 0);
+	signal o_XM_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal o_XM: STD_LOGIC_VECTOR(31 downto 0);
+	signal o_MW_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal o_MW: STD_LOGIC_VECTOR(31 downto 0);
 	
 	signal ctrl_I_instr: std_logic;
@@ -261,40 +271,42 @@ ARCHITECTURE Structure OF processor IS
 	
 	-- Recovery Signals for Error Detection Scheme
 	signal rec_ir_FD: std_logic;
-	signal rec_ir_dx: std_logic;
-	signal rec_ir_xm: std_logic;
-	signal rec_ir_mw: std_logic;
-	signal rec_pc_fd: std_logic;
-	signal rec_pc_dx: std_logic;
-	signal rec_pc_xm: std_logic;
-	signal rec_a_dx: std_logic;
-	signal rec_b_dx: std_logic;
-	signal rec_b_xm: std_logic;
-	signal rec_o_xm: std_logic;
-	signal rec_o_mw: std_logic;
+	signal rec_ir_DX: std_logic;
+	signal rec_ir_XM: std_logic;
+	signal rec_ir_MW: std_logic;
+	signal rec_pc_FD: std_logic;
+	signal rec_pc_DX: std_logic;
+	signal rec_pc_XM: std_logic;
+	signal rec_a_DX: std_logic;
+	signal rec_b_DX: std_logic;
+	signal rec_b_XM: std_logic;
+	signal rec_o_XM: std_logic;
+	signal rec_o_MW: std_logic;
+	
+	signal latch_error: std_logic;
 		
 BEGIN
 	
 	-- Your processor here
 	--latches--
-	IRlatch_FD: razor_latch port map (imem_out, '1', clock, reset, ir_FD, rec_ir_fd); -- CREATE ir_FD_in
-	IRlatch_DX: razor_latch port map (ir_DX_in, '1', clock, reset, ir_DX, rec_ir_dx);
-	IRlatch_XM: razor_latch port map (ir_DX, '1', clock, reset, ir_XM, rec_ir_xm);
-	IRlatch_MW: razor_latch port map (ir_XM, '1', clock, reset, ir_MW, rec_ir_mw);
-	PClatch_FD: razor_latch port map (pc_out, '1', clock, reset, pc_FD, rec_pc_fd);
-	PClatch_DX: razor_latch port map (pc_FD, '1', clock, reset, pc_DX, rec_pc_DX);
-	PClatch_XM: razor_latch port map (pc_DX, '1', clock, reset, pc_XM, rec_pc_XM);
-	Alatch_DX: razor_latch port map (regFile_rA, '1', clock, reset, a_DX, rec_a_DX);
-	Blatch_DX: razor_latch port map (regFile_rB, '1', clock, reset, b_DX, rec_b_DX);
-	Blatch_XM: razor_latch port map (b_DX, '1', clock, reset, b_XM, rec_b_XM);
-	Olatch_XM: razor_latch port map (alu_out, '1', clock, reset, o_XM, rec_o_XM);
-	Olatch_MW: razor_latch port map (o_XM, '1', clock, reset, o_MW, rec_o_MW);
-	PC_set_val: reg_32 port map (pc_set_val_buff, '1',not clock, reset, pc_set);
+	IRlatch_FD: razor_latch port map (ir_FD_in, '1', clock, reset, ir_FD, rec_ir_FD); -- CREATE ir_FD_in
+	IRlatch_DX: razor_latch port map (ir_DX_in, '1', clock, reset, ir_DX, rec_ir_DX);
+	IRlatch_XM: razor_latch port map (ir_XM_in, '1', clock, reset, ir_XM, rec_ir_XM);
+	IRlatch_MW: razor_latch port map (ir_MW_in, '1', clock, reset, ir_MW, rec_ir_MW);
+	PClatch_FD: razor_latch port map (pc_FD_in, '1', clock, reset, pc_FD, rec_pc_FD);
+	PClatch_DX: razor_latch port map (pc_DX_in, '1', clock, reset, pc_DX, rec_pc_DX);
+	PClatch_XM: razor_latch port map (pc_XM_in, '1', clock, reset, pc_XM, rec_pc_XM);
+	Alatch_DX: razor_latch port map (a_DX_in, '1', clock, reset, a_DX, rec_a_DX);
+	Blatch_DX: razor_latch port map (b_DX_in, '1', clock, reset, b_DX, rec_b_DX);
+	Blatch_XM: razor_latch port map (b_XM_in, '1', clock, reset, b_XM, rec_b_XM);
+	Olatch_XM: razor_latch port map (o_XM_in, '1', clock, reset, o_XM, rec_o_XM);
+	Olatch_MW: razor_latch port map (o_MW_in, '1', clock, reset, o_MW, rec_o_MW);
+	PC_set_val: reg_32 port map (pc_set_val_buff, '1', not clock, reset, pc_set);
 	branch_latch: reg_32 port map (pc_add1_out, ctrl_jal_fd or
-											(ctrl_iu_fd and goup) or
-											(ctrl_id_fd and godown) or
-											(ctrl_il_fd and goleft) or
-											(ctrl_ir_fd and goright) ,clock , reset, branch_reg);
+									(ctrl_iu_fd and goup) or
+									(ctrl_id_fd and godown) or
+									(ctrl_il_fd and goleft) or
+									(ctrl_il_fd and goright), clock, reset, branch_reg);
 	-----------
 	
 	pc_counter: pc port map (clock, reset , not stall, ctrl_pc_set, pc_set, pc_out);
@@ -440,14 +452,26 @@ BEGIN
 	ctrl_R_mw <= not ir_MW(31) and not ir_MW(30) and not ir_MW(29) and not ir_MW(28) and not ir_MW(27); -- R
 	ctrl_addi_mw <= not ir_MW(31) and not ir_MW(30) and not ir_MW(29) and not ir_MW(28) and ir_MW(27); -- addi
 	
-	ir_DX_in <= "00000000000000000000000000000000" when stall = '1' else ir_FD;
-	stall <=  (ctrl_lw_dx)-- lw 00010
+	ir_FD_in <= "00000000000000000000000000000000" when FD_stall else imem_out;
+	ir_DX_in <= "00000000000000000000000000000000" when DX_stall else ir_FD;
+	ir_XM_in <= "00000000000000000000000000000000" when (rec_ir_XM ='1' or rec_pc_XM ='1') and not(clock) else ir_DX;
+	ir_MW_in <= "00000000000000000000000000000000" when rec_ir_MW ='1' and not(clock) else ir_XM;
+	pc_FD_in <= "00000000000000000000000000000000" when FD_stall else pc_out;
+	pc_DX_in <= "00000000000000000000000000000000" when ((rec_ir_DX ='1' or rec_pc_DX ='1') and not(clock)) or load_stall_data_hzd else pc_FD;
+	pc_XM_in <= "00000000000000000000000000000000" when (rec_ir_XM ='1' or rec_pc_XM ='1') and not(clock) else pc_DX;
+	a_DX_in <= "00000000000000000000000000000000" when DX_stall else regFile_rA;
+	b_DX_in <= "00000000000000000000000000000000" when DX_stall else regFile_rB;
+	stall <= load_stall_data_hzd or latch_error;
+	latch_error <= rec_ir_FD or rec_ir_DX or rec_ir_O or rec_ir_XM or rec_ir_MW or rec_pr_FD or rec_pc_DX or rec_pc_XM or rec_pc_XM or rec_b_DX or rec_b_XM or rec_o_XM or rec_o_MW when clock = '0' else '0';			
+	load_stall_data_hzd <= (ctrl_lw_dx)-- lw 00010
 			and 
 			((dhazd_rsFD_eq_rdDX and (ctrl_R_fd or ctrl_addi_fd or ctrl_lw_fd or ctrl_sw_fd or ctrl_bne_fd or ctrl_blt_fd or ctrl_out_fd))
 			or (dhazd_rtFD_eq_rdDX and (ctrl_R_fd))
-			or (dhazd_rdFD_eq_rdDX and (ctrl_sw_fd or ctrl_bne_fd or ctrl_blt_fd))); -- no check for instr read rd or rt
+			or (dhazd_rdFD_eq_rdDX and (ctrl_sw_fd or ctrl_bne_fd or ctrl_blt_fd))); -- no check for instr read rd or
 	
-	
+	FD_stall <= ((rec_ir_FD ='1' or rec_pc_FD ='1') and not(clock));
+	DX_stall <= ((rec_ir_DX ='1' or rec_pc_DX ='1' or rec_a_DX ='1' or rec_b_DX ='1') and not(clock)) or load_stall_data_hzd;
+	XM_stall <= (rec_ir_XM ='1' or rec_pc_XM ='1' or rec_o_XM ='1' or rec_b_XM ='1') and not(clock);
 	
 --	lcd_data <= imem_out;
 --	debug <= regFile_rA;
