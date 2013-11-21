@@ -470,7 +470,8 @@ BEGIN
 			or (dhazd_rdFD_eq_rdDX and (ctrl_sw_fd or ctrl_bne_fd or ctrl_blt_fd))); -- no check for instr read rd or
 	
 	FD_stall <= ((rec_ir_FD ='1' or rec_pc_FD ='1') and not(clock));
-	DX_stall <= ((rec_ir_DX ='1' or rec_pc_DX ='1' or rec_a_DX = '1' or rec_b_DX = '1') and not(clock)) or load_stall_data_hzd;
+	DX_stall <= ((rec_ir_DX ='1' or rec_pc_DX ='1' or rec_a_DX ='1' or rec_b_DX ='1') and not(clock)) or load_stall_data_hzd;
+	XM_stall <= (rec_ir_XM ='1' or rec_pc_XM ='1' or rec_o_XM ='1' or rec_b_XM ='1') and not(clock);
 	
 --	lcd_data <= imem_out;
 --	debug <= regFile_rA;

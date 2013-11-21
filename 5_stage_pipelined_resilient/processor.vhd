@@ -457,8 +457,8 @@ BEGIN
 	ir_XM_in <= "00000000000000000000000000000000" when (rec_ir_XM ='1' or rec_pc_XM ='1') and not(clock) else ir_DX;
 	ir_MW_in <= "00000000000000000000000000000000" when rec_ir_MW ='1' and not(clock) else ir_XM;
 	pc_FD_in <= "00000000000000000000000000000000" when FD_stall else pc_out;
-	pc_DX_in <= "00000000000000000000000000000000" when ((rec_ir_DX ='1' or rec_pc_DX ='1') and not(clock)) or load_stall_data_hzd else pc_FD;
-	pc_XM_in <= "00000000000000000000000000000000" when (rec_ir_XM ='1' or rec_pc_XM ='1') and not(clock) else pc_DX;
+	pc_DX_in <= "00000000000000000000000000000000" when DX_stall else pc_FD;
+	pc_XM_in <= "00000000000000000000000000000000" when XM_stall else pc_DX;
 	a_DX_in <= "00000000000000000000000000000000" when DX_stall else regFile_rA;
 	b_DX_in <= "00000000000000000000000000000000" when DX_stall else regFile_rB;
 	stall <= load_stall_data_hzd or latch_error;
