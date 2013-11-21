@@ -12,10 +12,10 @@ ENTITY processor IS
 --			instr_DX: out std_logic_vector(31 downto 0);
 --			instr_XM: out std_logic_vector(31 downto 0);
 --			instr_MW: out std_logic_vector(31 downto 0);
---			dmem_out_d: out std_logic_vector(31 downto 0);
+			dmem_out_d: out std_logic_vector(31 downto 0);
 			alu_a: out std_logic_vector(31 downto 0);
 			alu_b: out std_logic_vector(31 downto 0);
---			rf_in: out std_logic_vector(31 downto 0);
+			rf_in: out std_logic_vector(31 downto 0)
 --			pc_out_d: out std_logic_vector(31 downto 0);
 --			pc_set_d: out std_logic_vector(31 downto 0)
 --			b4: out std_logic
@@ -83,6 +83,16 @@ ARCHITECTURE Structure OF processor IS
 	clock: IN STD_LOGIC;
 	reset: IN STD_LOGIC;
 	output : OUT STD_LOGIC_VECTOR(31 downto 0));
+	END component;
+	
+	component razor_latch is
+	PORT ( input : IN STD_LOGIC_VECTOR(31 downto 0);
+	write_enable :IN STD_LOGIC;
+	clock: IN STD_LOGIC;
+	reset: IN STD_LOGIC;
+	output : OUT STD_LOGIC_VECTOR(31 downto 0);
+	-- shadow_out: OUT STD_LOGIC_VECTOR(31 downto 0);
+	error: out std_logic );
 	END component;
 	
 	component sx_17to32 is
@@ -183,6 +193,8 @@ ARCHITECTURE Structure OF processor IS
 	signal pc_set_val_buff: std_logic_vector(31 downto 0);
 	signal ctrl_pc_set_delay: std_logic;
 			
+--	signal ir_DX_in: STD_LOGIC_VECTOR(31 downto 0);
+	signal ir_FD: STD_LOGIC_VECTOR(31 downto 0);
 	signal ir_DX_in: STD_LOGIC_VECTOR(31 downto 0);
 	signal ir_DX: STD_LOGIC_VECTOR(31 downto 0);
 	signal ir_XM: STD_LOGIC_VECTOR(31 downto 0);
@@ -246,22 +258,37 @@ ARCHITECTURE Structure OF processor IS
 	signal dhazd_rtDX_eq_rdMW: std_logic;
 	signal dhazd_rdDX_eq_rdMW: std_logic;
 	signal stall: std_logic;
+	
+	-- Recovery Signals for Error Detection Scheme
+	signal rec_ir_FD: std_logic;
+	signal rec_ir_dx: std_logic;
+	signal rec_ir_xm: std_logic;
+	signal rec_ir_mw: std_logic;
+	signal rec_pc_fd: std_logic;
+	signal rec_pc_dx: std_logic;
+	signal rec_pc_xm: std_logic;
+	signal rec_a_dx: std_logic;
+	signal rec_b_dx: std_logic;
+	signal rec_b_xm: std_logic;
+	signal rec_o_xm: std_logic;
+	signal rec_o_mw: std_logic;
 		
 BEGIN
 	
 	-- Your processor here
 	--latches--
-	IRlatch_DX: reg_32 port map (ir_DX_in, '1', clock, reset, ir_DX);
-	IRlatch_XM: reg_32 port map (ir_DX, '1', clock, reset, ir_XM);
-	IRlatch_MW: reg_32 port map (ir_XM, '1', clock, reset, ir_MW);
-	PClatch_FD: reg_32 port map (pc_out, '1', clock, reset, pc_FD);
-	PClatch_DX: reg_32 port map (pc_FD, '1', clock, reset, pc_DX);
-	PClatch_XM: reg_32 port map (pc_DX, '1', clock, reset, pc_XM);
-	Alatch_DX: reg_32 port map (regFile_rA, '1', clock, reset, a_DX);
-	Blatch_DX: reg_32 port map (regFile_rB, '1', clock, reset, b_DX);
-	Blatch_XM: reg_32 port map (b_DX, '1', clock, reset, b_XM);
-	Olatch_XM: reg_32 port map (alu_out, '1', clock, reset, o_XM);
-	Olatch_MW: reg_32 port map (o_XM, '1', clock, reset, o_MW);
+	IRlatch_FD: razor_latch port map (imem_out, '1', clock, reset, ir_FD, rec_ir_fd); -- CREATE ir_FD_in
+	IRlatch_DX: razor_latch port map (ir_FD, '1', clock, reset, ir_DX, rec_ir_dx);
+	IRlatch_XM: razor_latch port map (ir_DX, '1', clock, reset, ir_XM, rec_ir_xm);
+	IRlatch_MW: razor_latch port map (ir_XM, '1', clock, reset, ir_MW, rec_ir_mw);
+	PClatch_FD: razor_latch port map (pc_out, '1', clock, reset, pc_FD, rec_pc_fd);
+	PClatch_DX: razor_latch port map (pc_FD, '1', clock, reset, pc_DX, rec_pc_DX);
+	PClatch_XM: razor_latch port map (pc_DX, '1', clock, reset, pc_XM, rec_pc_XM);
+	Alatch_DX: razor_latch port map (regFile_rA, '1', clock, reset, a_DX, rec_a_DX);
+	Blatch_DX: razor_latch port map (regFile_rB, '1', clock, reset, b_DX, rec_b_DX);
+	Blatch_XM: razor_latch port map (b_DX, '1', clock, reset, b_XM, rec_b_XM);
+	Olatch_XM: razor_latch port map (alu_out, '1', clock, reset, o_XM, rec_o_XM);
+	Olatch_MW: razor_latch port map (o_XM, '1', clock, reset, o_MW, rec_o_MW);
 	PC_set_val: reg_32 port map (pc_set_val_buff, '1',not clock, reset, pc_set);
 	branch_latch: reg_32 port map (pc_add1_out, ctrl_jal_fd or
 											(ctrl_iu_fd and goup) or
@@ -317,7 +344,7 @@ BEGIN
 			else regFile_in when (ctrl_R_mw = '1' or ctrl_addi_mw = '1' or ctrl_lw_mw = '1') and dhazd_rsFD_eq_rdMW = '1'
 			else regFileAout;
 
-	instr_memory: imem PORT MAP(pc_out(11 downto 0),not stall,clock, imem_out);
+	instr_memory: imem PORT MAP(pc_out(11 downto 0),not stall, not clock, imem_out); -- not clock because need to read at falling edge!!
 	data_memory: dmem port map (o_XM(11 downto 0), clock, dmem_in, ctrl_dmem, dmem_q);
 	dmem_in<= b_XM; 
 													
@@ -413,12 +440,14 @@ BEGIN
 	ctrl_R_mw <= not ir_MW(31) and not ir_MW(30) and not ir_MW(29) and not ir_MW(28) and not ir_MW(27); -- R
 	ctrl_addi_mw <= not ir_MW(31) and not ir_MW(30) and not ir_MW(29) and not ir_MW(28) and ir_MW(27); -- addi
 	
-	ir_DX_in <= "00000000000000000000000000000000" when stall = '1' else imem_out;
+	ir_DX_in <= "00000000000000000000000000000000" when stall = '1' else ir_FD;
 	stall <=  (ctrl_lw_dx)-- lw 00010
 			and 
 			((dhazd_rsFD_eq_rdDX and (ctrl_R_fd or ctrl_addi_fd or ctrl_lw_fd or ctrl_sw_fd or ctrl_bne_fd or ctrl_blt_fd or ctrl_out_fd))
 			or (dhazd_rtFD_eq_rdDX and (ctrl_R_fd))
 			or (dhazd_rdFD_eq_rdDX and (ctrl_sw_fd or ctrl_bne_fd or ctrl_blt_fd))); -- no check for instr read rd or rt
+	
+	
 	
 --	lcd_data <= imem_out;
 --	debug <= regFile_rA;
@@ -426,10 +455,10 @@ BEGIN
 --	instr_FD <= imem_out;
 --	instr_XM <= ir_XM;
 --	instr_MW <= ir_MW;
---	dmem_out_d<= dmem_q;
---	alu_a <= alu_a_in;
---	alu_b <= alu_b_in;
---	rf_in<= regFile_in;
+	dmem_out_d<= dmem_q;
+	alu_a <= alu_a_in;
+	alu_b <= alu_b_in;
+	rf_in<= regFile_in;
 --	pc_out_d <= pc_out;
 --	pc_set_d <=  pc_set;
 --	b2_d <= branch_reg;

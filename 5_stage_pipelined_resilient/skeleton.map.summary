@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Nov 18 22:31:50 2013
+Analysis & Synthesis Status : Successful - Thu Nov 21 00:32:47 2013
 Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
 Revision Name : skeleton
-Top-level Entity Name : razor_latch
+Top-level Entity Name : processor
 Family : Cyclone II
-Total logic elements : 710
-    Total combinational functions : 678
-    Dedicated logic registers : 64
-Total registers : 64
-Total pins : 100
+Total logic elements : 12,585
+    Total combinational functions : 11,385
+    Dedicated logic registers : 1,757
+Total registers : 1757
+Total pins : 148
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 262,144
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

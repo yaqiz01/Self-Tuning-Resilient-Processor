@@ -42,7 +42,7 @@ signal enable_comb: STD_LOGIC_VECTOR(1 downto 0);
 signal main_shadow_equal: std_logic;
 
 BEGIN
-enable_comb(0) <= '0';
+enable_comb(0) <= main_shadow_equal;
 enable_comb(1) <= write_enable;
 G1: for i in 31 downto 0 generate
 	d: razor_dflipflop port map(clock,reset,input(i),shadow_latch_out(i),enable_comb,main_ff_out(i));

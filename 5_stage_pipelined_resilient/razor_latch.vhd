@@ -7,7 +7,7 @@ PORT ( input : IN STD_LOGIC_VECTOR(31 downto 0);
    clock: IN STD_LOGIC;
    reset: IN STD_LOGIC;
    output : OUT STD_LOGIC_VECTOR(31 downto 0);
-   shadow_out: OUT STD_LOGIC_VECTOR(31 downto 0);
+   --shadow_out: OUT STD_LOGIC_VECTOR(31 downto 0);
    error: out std_logic );
 END razor_latch;
 
@@ -51,7 +51,7 @@ end generate;
 shadow_latch: reg_32 port map (input, write_enable, not clock, reset, shadow_latch_out);
 comparator: comparator_32 port map(main_ff_out,shadow_latch_out,main_shadow_equal,open);
 output <= main_ff_out;
-shadow_out <= shadow_latch_out;
+--shadow_out <= shadow_latch_out;
 error <= main_shadow_equal;
 
 END structure;
