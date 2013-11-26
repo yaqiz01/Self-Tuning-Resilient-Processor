@@ -273,7 +273,7 @@ ARCHITECTURE Structure OF processor IS
 	signal rec_ir_FD: std_logic;
 	signal rec_ir_DX: std_logic;
 	signal rec_ir_XM: std_logic;
-	signal rec_ir_MW: std_logic;
+
 	signal rec_pc_FD: std_logic;
 	signal rec_pc_DX: std_logic;
 	signal rec_pc_XM: std_logic;
@@ -289,7 +289,7 @@ BEGIN
 	
 	-- Your processor here
 	--latches--
-	IRlatch_FD: razor_latch port map (ir_FD_in, '1', clock, reset, ir_FD, rec_ir_FD); -- CREATE ir_FD_in
+	IRlatch_FD: razor_latch port map (ir_FD_in, not DX_stall or not XM_stall or not MW_stall, clock, reset, ir_FD, rec_ir_FD); -- CREATE ir_FD_in
 	IRlatch_DX: razor_latch port map (ir_DX_in, '1', clock, reset, ir_DX, rec_ir_DX);
 	IRlatch_XM: razor_latch port map (ir_XM_in, '1', clock, reset, ir_XM, rec_ir_XM);
 	IRlatch_MW: razor_latch port map (ir_MW_in, '1', clock, reset, ir_MW, rec_ir_MW);
@@ -301,6 +301,7 @@ BEGIN
 	Blatch_XM: razor_latch port map (b_XM_in, '1', clock, reset, b_XM, rec_b_XM);
 	Olatch_XM: razor_latch port map (o_XM_in, '1', clock, reset, o_XM, rec_o_XM);
 	Olatch_MW: razor_latch port map (o_MW_in, '1', clock, reset, o_MW, rec_o_MW);
+	Dlatch_MW: razor_latch port map (dmem_q, '1', clock, reset, d_MW, 
 	PC_set_val: reg_32 port map (pc_set_val_buff, '1', not clock, reset, pc_set);
 	branch_latch: reg_32 port map (pc_add1_out, ctrl_jal_fd or
 									(ctrl_iu_fd and goup) or
@@ -471,7 +472,8 @@ BEGIN
 	
 	FD_stall <= ((rec_ir_FD ='1' or rec_pc_FD ='1') and not(clock));
 	DX_stall <= ((rec_ir_DX ='1' or rec_pc_DX ='1' or rec_a_DX ='1' or rec_b_DX ='1') and not(clock)) or load_stall_data_hzd;
-	XM_stall <= (rec_ir_XM ='1' or rec_pc_XM ='1' or rec_o_XM ='1' or rec_b_XM ='1') and not(clock);
+	XM_stall <= ((rec_ir_XM ='1' or rec_pc_XM ='1' or rec_o_XM ='1' or rec_b_XM ='1') and not(clock));
+	MW_stall <= ((rec_ir_MW ='1' or rec_o_MW ='1' or rec_d_MW='1') and not(clock));
 	
 --	lcd_data <= imem_out;
 --	debug <= regFile_rA;
