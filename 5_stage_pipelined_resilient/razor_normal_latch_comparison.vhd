@@ -1,0 +1,42 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY razor_normal_latch_comparison IS
+PORT ( input1 : IN STD_LOGIC_VECTOR(31 downto 0);
+   input2 : IN STD_LOGIC_VECTOR(31 downto 0);
+   write_enable :IN STD_LOGIC;
+   clock: IN STD_LOGIC;
+   reset: IN STD_LOGIC;
+   normal_output: OUT STD_LOGIC_VECTOR(31 downto 0);
+   razor_output : OUT STD_LOGIC_VECTOR(31 downto 0);
+   shadow_out: OUT STD_LOGIC_VECTOR(31 downto 0);
+   restore: out std_logic );
+END razor_normal_latch_comparison;
+
+ARCHITECTURE structure OF razor_normal_latch_comparison IS
+
+component reg_32
+PORT ( input : IN STD_LOGIC_VECTOR(31 downto 0);
+   write_enable :IN STD_LOGIC;
+   clock: IN STD_LOGIC;
+   reset: IN STD_LOGIC;
+   output : OUT STD_LOGIC_VECTOR(31 downto 0)
+   );
+END component;
+
+component razor_latch
+PORT ( input : IN STD_LOGIC_VECTOR(31 downto 0);
+   write_enable :IN STD_LOGIC;
+   clock: IN STD_LOGIC;
+   reset: IN STD_LOGIC;
+   output : OUT STD_LOGIC_VECTOR(31 downto 0);
+   shadow_out: OUT STD_LOGIC_VECTOR(31 downto 0);
+   restore: out std_logic );
+end component;
+
+BEGIN
+
+razor: razor_latch port map (input1, write_enable,clock,reset,razor_output,shadow_out,restore);
+normal: reg_32 port map (input2, write_enable,clock,reset,normal_output);
+
+END structure;

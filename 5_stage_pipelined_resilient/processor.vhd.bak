@@ -273,7 +273,7 @@ ARCHITECTURE Structure OF processor IS
 	signal rec_ir_FD: std_logic;
 	signal rec_ir_DX: std_logic;
 	signal rec_ir_XM: std_logic;
-	signal rec_ir_MW: std_logic;
+
 	signal rec_pc_FD: std_logic;
 	signal rec_pc_DX: std_logic;
 	signal rec_pc_XM: std_logic;
@@ -301,6 +301,7 @@ BEGIN
 	Blatch_XM: razor_latch port map (b_XM_in, '1', clock, reset, b_XM, rec_b_XM);
 	Olatch_XM: razor_latch port map (o_XM_in, '1', clock, reset, o_XM, rec_o_XM);
 	Olatch_MW: razor_latch port map (o_MW_in, '1', clock, reset, o_MW, rec_o_MW);
+	Dlatch_MW: razor_latch port map (dmem_q, '1', clock, reset, d_MW, 
 	PC_set_val: reg_32 port map (pc_set_val_buff, '1', not clock, reset, pc_set);
 	branch_latch: reg_32 port map (pc_add1_out, ctrl_jal_fd or
 									(ctrl_iu_fd and goup) or
