@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C35F672C7
-set_global_assignment -name TOP_LEVEL_ENTITY razor_latch
+set_global_assignment -name TOP_LEVEL_ENTITY processor
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:01:22  DECEMBER 26, 2009"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
@@ -141,9 +141,10 @@ set_global_assignment -name VHDL_FILE razor_dflipflop.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE razor_dff_test.vwf
 set_global_assignment -name VHDL_FILE razor_normal_latch_comparison.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE comparison.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE razor_test.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name MISC_FILE "C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/skeleton.dpf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE lab5.vwf

@@ -1,5 +1,5 @@
 Flow report for skeleton
-Wed Nov 27 05:53:04 2013
+Sat Nov 30 17:41:38 2013
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -38,21 +38,21 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 27 05:53:03 2013        ;
+; Flow Status                        ; Successful - Sat Nov 30 17:41:38 2013        ;
 ; Quartus II Version                 ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name                      ; skeleton                                     ;
-; Top-level Entity Name              ; razor_latch                                  ;
+; Top-level Entity Name              ; processor                                    ;
 ; Family                             ; Cyclone II                                   ;
 ; Device                             ; EP2C35F672C7                                 ;
 ; Timing Models                      ; Final                                        ;
-; Met timing requirements            ; Yes                                          ;
-; Total logic elements               ; 683 / 33,216 ( 2 % )                         ;
-;     Total combinational functions  ; 682 / 33,216 ( 2 % )                         ;
-;     Dedicated logic registers      ; 65 / 33,216 ( < 1 % )                        ;
-; Total registers                    ; 65                                           ;
-; Total pins                         ; 100 / 475 ( 21 % )                           ;
+; Met timing requirements            ; No                                           ;
+; Total logic elements               ; 4,051 / 33,216 ( 12 % )                      ;
+;     Total combinational functions  ; 3,843 / 33,216 ( 12 % )                      ;
+;     Dedicated logic registers      ; 1,338 / 33,216 ( 4 % )                       ;
+; Total registers                    ; 1338                                         ;
+; Total pins                         ; 84 / 475 ( 18 % )                            ;
 ; Total virtual pins                 ; 0                                            ;
-; Total memory bits                  ; 0 / 483,840 ( 0 % )                          ;
+; Total memory bits                  ; 262,144 / 483,840 ( 54 % )                   ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                               ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                ;
 +------------------------------------+----------------------------------------------+
@@ -63,40 +63,41 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/27/2013 05:52:41 ;
+; Start date & time ; 11/30/2013 17:40:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; skeleton            ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                    ;
-+------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 123250727100888.138554956009560 ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; ROM: 1-PORT                     ; --            ; --          ; --             ;
-; IP_TOOL_NAME                       ; RAM: 1-PORT                     ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP             ; 85                              ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP             ; 0                               ; --            ; --          ; --             ;
-; MISC_FILE                          ; skeleton.dpf                    ; --            ; --          ; --             ;
-; MISC_FILE                          ; imem_inst.vhd                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; imem.cmp                        ; --            ; --          ; --             ;
-; MISC_FILE                          ; dmem_inst.vhd                   ; --            ; --          ; --             ;
-; MISC_FILE                          ; dmem.cmp                        ; --            ; --          ; --             ;
-; MISC_FILE                          ; hw5/skeleton/skeleton.dpf       ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                        ; --            ; razor_latch ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; razor_latch ; Top            ;
-; SEARCH_PATH                        ; hw3/                            ; --            ; --          ; --             ;
-; SEARCH_PATH                        ; hw4/                            ; --            ; --          ; --             ;
-; SEARCH_PATH                        ; hw5/skeleton/                   ; --            ; --          ; --             ;
-; SEARCH_PATH                        ; regfile/                        ; --            ; --          ; --             ;
-; SYNTH_TIMING_DRIVEN_SYNTHESIS      ; Off                             ; On            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                   ; razor_latch                     ; skeleton      ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --          ; eda_blast_fpga ;
-+------------------------------------+---------------------------------+---------------+-------------+----------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                        ;
++------------------------------------+-------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                                                                               ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+-------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 123250727100888.138585123603344                                                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; ROM: 1-PORT                                                                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; RAM: 1-PORT                                                                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                                                                                 ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                                                                                 ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                                                                                  ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                                                                                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; skeleton.dpf                                                                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; imem_inst.vhd                                                                       ; --            ; --          ; --             ;
+; MISC_FILE                          ; imem.cmp                                                                            ; --            ; --          ; --             ;
+; MISC_FILE                          ; dmem_inst.vhd                                                                       ; --            ; --          ; --             ;
+; MISC_FILE                          ; dmem.cmp                                                                            ; --            ; --          ; --             ;
+; MISC_FILE                          ; hw5/skeleton/skeleton.dpf                                                           ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/skeleton.dpf ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                                                                            ; --            ; processor   ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                                                                              ; --            ; processor   ; Top            ;
+; SEARCH_PATH                        ; hw3/                                                                                ; --            ; --          ; --             ;
+; SEARCH_PATH                        ; hw4/                                                                                ; --            ; --          ; --             ;
+; SEARCH_PATH                        ; hw5/skeleton/                                                                       ; --            ; --          ; --             ;
+; SEARCH_PATH                        ; regfile/                                                                            ; --            ; --          ; --             ;
+; SYNTH_TIMING_DRIVEN_SYNTHESIS      ; Off                                                                                 ; On            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                   ; processor                                                                           ; skeleton      ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                                                 ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+-------------------------------------------------------------------------------------+---------------+-------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -104,11 +105,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:08     ; 1.0                     ; 239 MB              ; 00:00:07                           ;
-; Fitter                  ; 00:00:08     ; 1.0                     ; 270 MB              ; 00:00:08                           ;
-; Assembler               ; 00:00:02     ; 1.0                     ; 252 MB              ; 00:00:02                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 163 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:18     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Synthesis    ; 00:00:28     ; 1.0                     ; 270 MB              ; 00:00:28                           ;
+; Fitter                  ; 00:00:19     ; 1.0                     ; 288 MB              ; 00:00:19                           ;
+; Assembler               ; 00:00:03     ; 1.0                     ; 263 MB              ; 00:00:03                           ;
+; Classic Timing Analyzer ; 00:00:02     ; 1.0                     ; 201 MB              ; 00:00:02                           ;
+; Total                   ; 00:00:52     ; --                      ; --                  ; 00:00:52                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

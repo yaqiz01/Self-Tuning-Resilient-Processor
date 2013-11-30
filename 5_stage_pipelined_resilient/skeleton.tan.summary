@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 4.261 ns
-From           : input[31]
-To             : razor_dflipflop:\G1:31:d31_1|output
+Actual Time    : 4.304 ns
+From           : keyboard_in[3]
+To             : input_ctrl:input_control|check[0]
 From Clock     : --
 To Clock       : clock
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 10.457 ns
-From           : reg_32:shadow_latch|dflipflop:\G1:10:d|output
-To             : shadow_out[10]
+Actual Time    : 20.596 ns
+From           : led_ctrl:output_control|assert_signal:assert4|output
+To             : led_14[4]
 From Clock     : clock
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 0.680 ns
-From           : write_enable
-To             : razor_dflipflop:\G1:17:d31_1|output
+Actual Time    : -3.559 ns
+From           : keyboard_in[0]
+To             : input_ctrl:input_control|check[0]
 From Clock     : --
 To Clock       : clock
 Failed Paths   : 0
@@ -35,12 +35,22 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clock'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 21.33 MHz ( period = 46.876 ns )
-From           : reg_32:shadow_latch|dflipflop:\G1:12:d|output
-To             : razor_dflipflop:\G1:14:d31_1|output
+Actual Time    : 22.39 MHz ( period = 44.656 ns )
+From           : reg_32:IRlatch_MW|dflipflop:\G1:23:d|output
+To             : reg_32:PC_set_val|dflipflop:\G1:1:d|output
 From Clock     : clock
 To Clock       : clock
 Failed Paths   : 0
+
+Type           : Clock Hold: 'clock'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : reg_32:IRlatch_FD|dflipflop:\G1:20:d|output
+To             : led_ctrl:output_control|assert_signal:assert1|output
+From Clock     : clock
+To Clock       : clock
+Failed Paths   : 6903
 
 Type           : Total number of failed paths
 Slack          : 
@@ -50,7 +60,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 0
+Failed Paths   : 6903
 
 --------------------------------------------------------------------------------------
 

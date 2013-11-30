@@ -13,7 +13,7 @@ END entity assert_signal;
 
 ARCHITECTURE Behavioral OF assert_signal IS
 begin
-   process (enable, clock, preset_val, assert_on) is
+   process (enable, clock, preset_val, assert_on,reset) is
 	variable set : integer := 0;
 	begin
 		if (rising_edge(enable)) then

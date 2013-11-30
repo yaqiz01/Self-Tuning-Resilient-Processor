@@ -327,7 +327,7 @@ BEGIN
 			else dmem_q when (ctrl_lw_MW = '1' and dhazd_rsDX_eq_rdMW = '1'
 							and (ctrl_R_dx = '1' or ctrl_addi_dx = '1' or ctrl_lw_dx = '1' or ctrl_sw_dx = '1'))
 			else o_XM when (dhazd_rsDX_eq_rdXM = '1'
-						and (ctrl_R_xm = '1' or ctrl_addi_xm = '1')
+						and (ctrl_R_xm = '1' or ctrl_addi_xm = '1')-- write to RF, not include lw bc not available at xm
 						and (ctrl_R_dx = '1' or ctrl_addi_dx = '1' or ctrl_lw_dx = '1' or ctrl_sw_dx = '1'))
 			else a_DX ;
 	-- when a_DX;
@@ -337,8 +337,9 @@ BEGIN
 			else dmem_q when ctrl_lw_MW = '1' -- write RF
 						and ((dhazd_rtDX_eq_rdMW = '1' and ctrl_R_dx = '1') -- read rt
 						or(dhazd_rdDX_eq_rdMW = '1' and (ctrl_R_dx = '1' or ctrl_sw_dx = '1'))) --read rd
-			else o_XM when (ctrl_R_xm = '1' or ctrl_addi_xm = '1')-- write regFile
-							and ((dhazd_rtDX_eq_rdXM = '1' and ctrl_R_dx = '1') --read rt
+			else o_XM when (dhazd_rtDX_eq_rdXM = '1'
+							and (ctrl_R_xm = '1' or ctrl_addi_xm = '1')-- write regFile, not include lw bc not available at xm
+							and  ctrl_R_dx = '1') --read rt, not hurt to by pass sll and sra
 								or (dhazd_rdDX_eq_rdXM = '1' and (ctrl_R_dx = '1' or ctrl_sw_dx = '1')))-- rd
 			else sx_out_dx when ctrl_I_instr = '1'
 			else b_DX;
@@ -350,9 +351,9 @@ BEGIN
 	alu_compo: alu port map (alu_a_in, alu_b_in, alu_op , ir_DX(11 downto 7), alu_out, open, open);
 	
 	register_file: regfile port map (clock, ctrl_regFWE, reset,regFile_write_addr ,regFile_a_addr, regFile_b_addr,regFile_in ,regFileAout,regFileBout);
-	regFile_b_addr <= imem_out(26 downto 22) when (ctrl_sw_fd = '1' or ctrl_bne_fd = '1' or ctrl_blt_fd = '1' ) -- rs when sw, bne, blt, jr
+	regFile_b_addr <= imem_out(26 downto 22) when (ctrl_sw_fd = '1' or ctrl_bne_fd = '1' or ctrl_blt_fd = '1' ) -- rd when sw, bne, blt
 					else imem_out(16 downto 12); --rt for R, lw, jal and addi don't care
-	regFile_a_addr <= imem_out(21 downto 17);
+	regFile_a_addr <= imem_out(21 downto 17); -- rs
 	
 	regFile_in <= dmem_q when ctrl_lw_MW = '1' 
 		else o_MW;
@@ -364,7 +365,7 @@ BEGIN
 	sign_extension_dx: sx_17to32 port map (ir_DX(16 downto 0), sx_out_dx);
 	sign_extension_fd: sx_17to32 port map (imem_out(16 downto 0), sx_out_fd);
 	
-	rsDX_eq_rdXM: addr_eq port map (ir_DX(21 downto 17), ir_XM(26 downto 22), dhazd_rsDX_eq_rdXM);
+	rsDX_eq_rdXM: addr_eq port map (ir_DX(21 downto 17), ir_XM(26 downto 22), dhazd_rsDX_eq_rdXM); 
 	rtDX_eq_rdXM: addr_eq port map (ir_DX(16 downto 12), ir_XM(26 downto 22), dhazd_rtDX_eq_rdXM);
 	rdDX_eq_rdXM: addr_eq port map (ir_DX(26 downto 22), ir_XM(26 downto 22), dhazd_rdDX_eq_rdXM);
 	

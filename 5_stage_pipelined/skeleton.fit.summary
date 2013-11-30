@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Nov 29 19:07:42 2013
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : skeleton
+Top-level Entity Name : processor
+Family : Cyclone II
+Device : EP2C35F672C7
+Timing Models : Final
+Total logic elements : 4,367 / 33,216 ( 13 % )
+    Total combinational functions : 3,942 / 33,216 ( 12 % )
+    Dedicated logic registers : 1,286 / 33,216 ( 4 % )
+Total registers : 1286
+Total pins : 20 / 475 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 262,144 / 483,840 ( 54 % )
+Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
