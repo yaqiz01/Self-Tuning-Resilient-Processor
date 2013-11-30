@@ -6289,8 +6289,8 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/l
 VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/db/skeleton.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 837911;
+		ZBEGIN = 2262357;
+		ZEND = 3100268;
 		NUMERATOR = 1099;
 		DENOMINATOR = 825148;
 		TOP_INDEX = 0;

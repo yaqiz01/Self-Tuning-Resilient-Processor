@@ -302,6 +302,7 @@ BEGIN
 									and ctrl_sw_dx = '1'
 									and ctrl_mw_write_rd = '1'
 						else b_DX;
+		pc_add_one: add_one port map (pc_FD, open, pc_add1_out);
         -----------
         
         pc_counter: pc port map (clock, reset , not stall, ctrl_pc_set, pc_set, pc_out);
@@ -325,7 +326,9 @@ BEGIN
         ctrl_bnedx_bltdx <= ((ctrl_bne_dx and RdNeqRs) 
 							or (ctrl_blt_dx and RdSTRs));--pc + 1 + n;
 
-        pc_set_buff <= (ctrl_bne_dx and RdNeqRs) or (ctrl_blt_dx and RdSTRs) or ctrl_jr_f or ctrl_j_f or ctrl_jal_f
+        pc_set_buff <= ctrl_jf_jalf_inputf or ctrl_bnedx_bltdx or ctrl_jr_f;
+        
+        (ctrl_bne_dx and RdNeqRs) or (ctrl_blt_dx and RdSTRs) or ctrl_jr_f or ctrl_j_f or ctrl_jal_f
                                         or (ctrl_iu_f and goup )
                                         or (ctrl_id_f and godown)
                                         or (ctrl_il_f and goleft)
@@ -402,7 +405,7 @@ BEGIN
                                 or ctrl_lw_dx -- lw 00010
                                 or ctrl_sw_dx; --sw 00011        
         alu_op <= ir_DX(6 downto 2) when ir_DX(31 downto 27) = "00000" else "00000";
-        alu_compo: alu port map (alu_a_in, alu_b_in, alu_op , ir_DX(11 downto 7), alu_out, open, open);
+        alu_unit: alu port map (alu_a_in, alu_b_in, alu_op , ir_DX(11 downto 7), alu_out, open, open);
         
         -- Register File --
         register_file: regfile port map (not clock, ctrl_mw_write_rd, reset,regFile_write_addr ,regFile_a_addr, regFile_b_addr,regFile_in ,regFileAout,regFileBout);
@@ -414,8 +417,7 @@ BEGIN
                 else o_MW;
         regFile_write_addr <= ir_MW(26 downto 22);
         
-        pc_add_one: add_one port map (pc_FD, open, pc_add1_out);
-        
+        -- sign extension --
         sign_extension_dx: sx_17to32 port map (ir_DX(16 downto 0), sx_out_dx);
         sign_extension_fd: sx_17to32 port map (imem_out(16 downto 0), sx_out_fd);
         

@@ -302,6 +302,7 @@ BEGIN
 									and ctrl_sw_dx = '1'
 									and ctrl_mw_write_rd = '1'
 						else b_DX;
+		pc_add_one: add_one port map (pc_FD, open, pc_add1_out);
         -----------
         
         pc_counter: pc port map (clock, reset , not stall, ctrl_pc_set, pc_set, pc_out);
@@ -325,11 +326,8 @@ BEGIN
         ctrl_bnedx_bltdx <= ((ctrl_bne_dx and RdNeqRs) 
 							or (ctrl_blt_dx and RdSTRs));--pc + 1 + n;
 
-        pc_set_buff <= (ctrl_bne_dx and RdNeqRs) or (ctrl_blt_dx and RdSTRs) or ctrl_jr_f or ctrl_j_f or ctrl_jal_f
-                                        or (ctrl_iu_f and goup )
-                                        or (ctrl_id_f and godown)
-                                        or (ctrl_il_f and goleft)
-                                        or (ctrl_ir_f and goright);
+        pc_set_buff <= ctrl_jf_jalf_inputf or ctrl_bnedx_bltdx or ctrl_jr_f;
+        
         pc_add_1_add_N: three_inputs_adder port map (sx_out_fd, pc_FD, "00000000000000000000000000000001",pc_p1_pN,open);
         
         --- IO----
@@ -414,8 +412,7 @@ BEGIN
                 else o_MW;
         regFile_write_addr <= ir_MW(26 downto 22);
         
-        pc_add_one: add_one port map (pc_FD, open, pc_add1_out);
-        
+        -- sign extension --
         sign_extension_dx: sx_17to32 port map (ir_DX(16 downto 0), sx_out_dx);
         sign_extension_fd: sx_17to32 port map (imem_out(16 downto 0), sx_out_fd);
         
