@@ -69,8 +69,8 @@ reg_32:Blatch_XM
 reg_32:Olatch_XM
 reg_32:Olatch_MW
 reg_32:DLatch_MW
-reg_32:PC_set_val
 reg_32:branch_latch
+pc:pc_counter|reg_32:pc_counter
 }
 # lmf
 ..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
@@ -487,38 +487,6 @@ reg_32:DLatch_MW|dflipflop:\G1:3:d
 reg_32:DLatch_MW|dflipflop:\G1:2:d
 reg_32:DLatch_MW|dflipflop:\G1:1:d
 reg_32:DLatch_MW|dflipflop:\G1:0:d
-reg_32:PC_set_val|dflipflop:\G1:31:d
-reg_32:PC_set_val|dflipflop:\G1:30:d
-reg_32:PC_set_val|dflipflop:\G1:29:d
-reg_32:PC_set_val|dflipflop:\G1:28:d
-reg_32:PC_set_val|dflipflop:\G1:27:d
-reg_32:PC_set_val|dflipflop:\G1:26:d
-reg_32:PC_set_val|dflipflop:\G1:25:d
-reg_32:PC_set_val|dflipflop:\G1:24:d
-reg_32:PC_set_val|dflipflop:\G1:23:d
-reg_32:PC_set_val|dflipflop:\G1:22:d
-reg_32:PC_set_val|dflipflop:\G1:21:d
-reg_32:PC_set_val|dflipflop:\G1:20:d
-reg_32:PC_set_val|dflipflop:\G1:19:d
-reg_32:PC_set_val|dflipflop:\G1:18:d
-reg_32:PC_set_val|dflipflop:\G1:17:d
-reg_32:PC_set_val|dflipflop:\G1:16:d
-reg_32:PC_set_val|dflipflop:\G1:15:d
-reg_32:PC_set_val|dflipflop:\G1:14:d
-reg_32:PC_set_val|dflipflop:\G1:13:d
-reg_32:PC_set_val|dflipflop:\G1:12:d
-reg_32:PC_set_val|dflipflop:\G1:11:d
-reg_32:PC_set_val|dflipflop:\G1:10:d
-reg_32:PC_set_val|dflipflop:\G1:9:d
-reg_32:PC_set_val|dflipflop:\G1:8:d
-reg_32:PC_set_val|dflipflop:\G1:7:d
-reg_32:PC_set_val|dflipflop:\G1:6:d
-reg_32:PC_set_val|dflipflop:\G1:5:d
-reg_32:PC_set_val|dflipflop:\G1:4:d
-reg_32:PC_set_val|dflipflop:\G1:3:d
-reg_32:PC_set_val|dflipflop:\G1:2:d
-reg_32:PC_set_val|dflipflop:\G1:1:d
-reg_32:PC_set_val|dflipflop:\G1:0:d
 reg_32:branch_latch|dflipflop:\G1:31:d
 reg_32:branch_latch|dflipflop:\G1:30:d
 reg_32:branch_latch|dflipflop:\G1:29:d
@@ -551,39 +519,38 @@ reg_32:branch_latch|dflipflop:\G1:3:d
 reg_32:branch_latch|dflipflop:\G1:2:d
 reg_32:branch_latch|dflipflop:\G1:1:d
 reg_32:branch_latch|dflipflop:\G1:0:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:31:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:30:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:29:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:28:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:27:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:26:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:25:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:24:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:23:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:22:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:21:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:20:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:19:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:18:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:17:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:16:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:15:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:14:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:13:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:12:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:11:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:10:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:9:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:8:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:7:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:6:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:5:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:4:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:3:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:2:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:1:d
-pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:0:d
-dflipflop:set_at_fall
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:31:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:30:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:29:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:28:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:27:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:26:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:25:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:24:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:23:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:22:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:21:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:20:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:19:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:18:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:17:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:16:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:15:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:14:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:13:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:12:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:11:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:10:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:9:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:8:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:7:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:6:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:5:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:4:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:3:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:2:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:1:d
+pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:0:d
 regfile:register_file|reg:\IFF:1:G2:regcomp|dflipflop:\IFF:0:dffcomp
 regfile:register_file|reg:\IFF:1:G2:regcomp|dflipflop:\IFF:1:dffcomp
 regfile:register_file|reg:\IFF:1:G2:regcomp|dflipflop:\IFF:2:dffcomp
@@ -1584,49 +1551,6 @@ regfile:register_file|reg:\IFF:31:G2:regcomp|dflipflop:\IFF:31:dffcomp
 
 # end
 # entity
-pc
-# storage
-db|skeleton.(3).cnf
-db|skeleton.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-pc.vhd
-a61cf297df97aba926e56e96acfd420
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(set_value)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(pc_value)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-pc:pc_counter
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 pc_reg
 # storage
 db|skeleton.(4).cnf
@@ -1659,9 +1583,6 @@ USR
 31 downto 0
 PARAMETER_STRING
 USR
-}
-# hierarchies {
-pc:pc_counter|pc_reg:pc_counter
 }
 # lmf
 ..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
@@ -6387,7 +6308,6 @@ USR
 }
 # hierarchies {
 sx_17to32:sign_extension_dx
-sx_17to32:sign_extension_fd
 }
 # lmf
 ..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
@@ -6843,6 +6763,49 @@ led_ctrl:output_control|assert_signal:assert6
 
 # end
 # entity
+pc
+# storage
+db|skeleton.(3).cnf
+db|skeleton.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+pc.vhd
+9223b83f31887595401f8b5372d93d16
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(set_value)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(pc_value)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+pc:pc_counter
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
 altsyncram_7h81
 # storage
 db|skeleton.(17).cnf
@@ -6994,7 +6957,7 @@ address_a0
 }
 # memory_file {
 imem.mif
-fa9c07695662a579cdf961d4374396
+3f244c407584d95991e51f4f9c41dbdf
 }
 # hierarchies {
 imem:instr_memory|altsyncram:altsyncram_component|altsyncram_7h81:auto_generated
@@ -7014,7 +6977,7 @@ ON
 # case_insensitive
 # source_file
 processor.vhd
-503c2c14a04bfedd4856af5989b96fa6
+63b997666635bc4badfc41849847201f
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

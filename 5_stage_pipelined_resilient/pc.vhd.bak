@@ -27,7 +27,7 @@ signal sum : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
 	pc_counter: reg_32 port map (pc_in,enable, clock,reset, pc_out);
-	adder: add_one port map (pc_out,open, sum);
+	adder: add_one port map (pc_out_buff,open, sum);
 	pc_value <= pc_out;
 --	pc_out <= sum when sel_set = '0' else set_value;
 	pc_in <= sum when sel_set = '0' else set_value;

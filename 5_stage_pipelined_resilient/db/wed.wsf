@@ -6289,11 +6289,11 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/l
 VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/db/skeleton.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 2262357;
-		ZEND = 3100268;
+		ZBEGIN = 586537;
+		ZEND = 1424448;
 		NUMERATOR = 1099;
 		DENOMINATOR = 825148;
-		TOP_INDEX = 0;
+		TOP_INDEX = 1;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -6480,7 +6480,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d";
+		SIGNAL = "rf_in";
 		INDEX = 22;
 		FORMAT = T;
 		SCALE = 1;
@@ -6488,7 +6488,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[31]";
+		SIGNAL = "rf_in[31]";
 		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
@@ -6496,7 +6496,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[30]";
+		SIGNAL = "rf_in[30]";
 		INDEX = 24;
 		FORMAT = E;
 		SCALE = 1;
@@ -6504,7 +6504,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[29]";
+		SIGNAL = "rf_in[29]";
 		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
@@ -6512,7 +6512,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[28]";
+		SIGNAL = "rf_in[28]";
 		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
@@ -6520,7 +6520,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[27]";
+		SIGNAL = "rf_in[27]";
 		INDEX = 27;
 		FORMAT = E;
 		SCALE = 1;
@@ -6528,7 +6528,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[26]";
+		SIGNAL = "rf_in[26]";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -6536,7 +6536,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[25]";
+		SIGNAL = "rf_in[25]";
 		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
@@ -6544,7 +6544,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[24]";
+		SIGNAL = "rf_in[24]";
 		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
@@ -6552,7 +6552,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[23]";
+		SIGNAL = "rf_in[23]";
 		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
@@ -6560,7 +6560,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[22]";
+		SIGNAL = "rf_in[22]";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -6568,7 +6568,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[21]";
+		SIGNAL = "rf_in[21]";
 		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
@@ -6576,7 +6576,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[20]";
+		SIGNAL = "rf_in[20]";
 		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
@@ -6584,7 +6584,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[19]";
+		SIGNAL = "rf_in[19]";
 		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
@@ -6592,7 +6592,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[18]";
+		SIGNAL = "rf_in[18]";
 		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
@@ -6600,7 +6600,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[17]";
+		SIGNAL = "rf_in[17]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -6608,7 +6608,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[16]";
+		SIGNAL = "rf_in[16]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -6616,7 +6616,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[15]";
+		SIGNAL = "rf_in[15]";
 		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
@@ -6624,7 +6624,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[14]";
+		SIGNAL = "rf_in[14]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -6632,7 +6632,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[13]";
+		SIGNAL = "rf_in[13]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -6640,7 +6640,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[12]";
+		SIGNAL = "rf_in[12]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -6648,7 +6648,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[11]";
+		SIGNAL = "rf_in[11]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -6656,7 +6656,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[10]";
+		SIGNAL = "rf_in[10]";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -6664,7 +6664,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[9]";
+		SIGNAL = "rf_in[9]";
 		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
@@ -6672,7 +6672,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[8]";
+		SIGNAL = "rf_in[8]";
 		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
@@ -6680,7 +6680,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[7]";
+		SIGNAL = "rf_in[7]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -6688,7 +6688,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[6]";
+		SIGNAL = "rf_in[6]";
 		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
@@ -6696,7 +6696,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[5]";
+		SIGNAL = "rf_in[5]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -6704,7 +6704,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[4]";
+		SIGNAL = "rf_in[4]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -6712,7 +6712,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[3]";
+		SIGNAL = "rf_in[3]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -6720,7 +6720,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[2]";
+		SIGNAL = "rf_in[2]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -6728,7 +6728,7 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[1]";
+		SIGNAL = "rf_in[1]";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -6736,272 +6736,8 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/d
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "dmem_out_d[0]";
-		INDEX = 54;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in";
-		INDEX = 55;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[31]";
-		INDEX = 56;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[30]";
-		INDEX = 57;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[29]";
-		INDEX = 58;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[28]";
-		INDEX = 59;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[27]";
-		INDEX = 60;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[26]";
-		INDEX = 61;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[25]";
-		INDEX = 62;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[24]";
-		INDEX = 63;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[23]";
-		INDEX = 64;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[22]";
-		INDEX = 65;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[21]";
-		INDEX = 66;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[20]";
-		INDEX = 67;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[19]";
-		INDEX = 68;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[18]";
-		INDEX = 69;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[17]";
-		INDEX = 70;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[16]";
-		INDEX = 71;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[15]";
-		INDEX = 72;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[14]";
-		INDEX = 73;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[13]";
-		INDEX = 74;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[12]";
-		INDEX = 75;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[11]";
-		INDEX = 76;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[10]";
-		INDEX = 77;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[9]";
-		INDEX = 78;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[8]";
-		INDEX = 79;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[7]";
-		INDEX = 80;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[6]";
-		INDEX = 81;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[5]";
-		INDEX = 82;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[4]";
-		INDEX = 83;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[3]";
-		INDEX = 84;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[2]";
-		INDEX = 85;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rf_in[1]";
-		INDEX = 86;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "rf_in[0]";
-		INDEX = 87;
+		INDEX = 54;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

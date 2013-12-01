@@ -69,6 +69,17 @@ set_location_assignment PIN_R19 -to led_14[14]
 set_location_assignment PIN_N25 -to reset
 set_global_assignment -name END_TIME "1 ms"
 set_global_assignment -name MISC_FILE skeleton.dpf
+set_global_assignment -name MISC_FILE hw5/skeleton/skeleton.dpf
+set_global_assignment -name SEARCH_PATH hw3/ -tag from_archive
+set_global_assignment -name SEARCH_PATH hw4/ -tag from_archive
+set_global_assignment -name SEARCH_PATH hw5/skeleton/ -tag from_archive
+set_global_assignment -name SEARCH_PATH regfile/ -tag from_archive
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name MISC_FILE "C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/skeleton.dpf"
 set_global_assignment -name VHDL_FILE regfile/decoder.vhd
 set_global_assignment -name VHDL_FILE regfile/decoder2to4.vhd
 set_global_assignment -name VHDL_FILE regfile/decoder3to8.vhd
@@ -109,8 +120,8 @@ set_global_assignment -name QIP_FILE dmem.qip
 set_global_assignment -name MIF_FILE imem.mif
 set_global_assignment -name MIF_FILE dmem.mif
 set_global_assignment -name VECTOR_WAVEFORM_FILE lab5.vwf
-set_global_assignment -name VHDL_FILE pc.vhd
 set_global_assignment -name VHDL_FILE add_one.vhd
+set_global_assignment -name VHDL_FILE pc.vhd
 set_global_assignment -name VHDL_FILE hw4/reg_32.vhd
 set_global_assignment -name VHDL_FILE sx_17to32.vhd
 set_global_assignment -name VHDL_FILE onebitfulladder.vhd
@@ -125,14 +136,9 @@ set_global_assignment -name VHDL_FILE input_ctrl.vhd
 set_global_assignment -name VHDL_FILE led_ctrl.vhd
 set_global_assignment -name VHDL_FILE decoder_6.vhd
 set_global_assignment -name VHDL_FILE led_test.vhd
-set_global_assignment -name MISC_FILE hw5/skeleton/skeleton.dpf
 set_global_assignment -name VHDL_FILE preset.vhd
 set_global_assignment -name VHDL_FILE assert_signal.vhd
 set_global_assignment -name VHDL_FILE set_falling_clock.vhd
-set_global_assignment -name SEARCH_PATH hw3/ -tag from_archive
-set_global_assignment -name SEARCH_PATH hw4/ -tag from_archive
-set_global_assignment -name SEARCH_PATH hw5/skeleton/ -tag from_archive
-set_global_assignment -name SEARCH_PATH regfile/ -tag from_archive
 set_global_assignment -name VHDL_FILE razor_latch.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE razor_test.vwf
 set_global_assignment -name VHDL_FILE comparator_32_fast.vhd
@@ -141,10 +147,4 @@ set_global_assignment -name VHDL_FILE razor_dflipflop.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE razor_dff_test.vwf
 set_global_assignment -name VHDL_FILE razor_normal_latch_comparison.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE comparison.vwf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name MISC_FILE "C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined_resilient/skeleton.dpf"
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE lab5.vwf

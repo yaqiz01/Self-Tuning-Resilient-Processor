@@ -15,17 +15,13 @@ clock => reg_32:IRlatch_MW.clock
 clock => reg_32:IRlatch_XM.clock
 clock => reg_32:IRlatch_DX.clock
 clock => reg_32:IRlatch_FD.clock
-clock => reg_32:PC_set_val.clock
-clock => dflipflop:set_at_fall.clock
 clock => imem:instr_memory.clock
 clock => dmem:data_memory.clock
 clock => regfile:register_file.clock
 reset => regfile:register_file.ctrl_reset
 reset => led_ctrl:output_control.reset
-reset => dflipflop:set_at_fall.reset
 reset => pc:pc_counter.reset
 reset => reg_32:branch_latch.reset
-reset => reg_32:PC_set_val.reset
 reset => reg_32:DLatch_MW.reset
 reset => reg_32:Olatch_MW.reset
 reset => reg_32:Olatch_XM.reset
@@ -59,38 +55,6 @@ led_14[11] <= led_ctrl:output_control.pin[11]
 led_14[12] <= led_ctrl:output_control.pin[12]
 led_14[13] <= led_ctrl:output_control.pin[13]
 led_14[14] <= led_ctrl:output_control.pin[14]
-dmem_out_d[0] <= dmem:data_memory.q[0]
-dmem_out_d[1] <= dmem:data_memory.q[1]
-dmem_out_d[2] <= dmem:data_memory.q[2]
-dmem_out_d[3] <= dmem:data_memory.q[3]
-dmem_out_d[4] <= dmem:data_memory.q[4]
-dmem_out_d[5] <= dmem:data_memory.q[5]
-dmem_out_d[6] <= dmem:data_memory.q[6]
-dmem_out_d[7] <= dmem:data_memory.q[7]
-dmem_out_d[8] <= dmem:data_memory.q[8]
-dmem_out_d[9] <= dmem:data_memory.q[9]
-dmem_out_d[10] <= dmem:data_memory.q[10]
-dmem_out_d[11] <= dmem:data_memory.q[11]
-dmem_out_d[12] <= dmem:data_memory.q[12]
-dmem_out_d[13] <= dmem:data_memory.q[13]
-dmem_out_d[14] <= dmem:data_memory.q[14]
-dmem_out_d[15] <= dmem:data_memory.q[15]
-dmem_out_d[16] <= dmem:data_memory.q[16]
-dmem_out_d[17] <= dmem:data_memory.q[17]
-dmem_out_d[18] <= dmem:data_memory.q[18]
-dmem_out_d[19] <= dmem:data_memory.q[19]
-dmem_out_d[20] <= dmem:data_memory.q[20]
-dmem_out_d[21] <= dmem:data_memory.q[21]
-dmem_out_d[22] <= dmem:data_memory.q[22]
-dmem_out_d[23] <= dmem:data_memory.q[23]
-dmem_out_d[24] <= dmem:data_memory.q[24]
-dmem_out_d[25] <= dmem:data_memory.q[25]
-dmem_out_d[26] <= dmem:data_memory.q[26]
-dmem_out_d[27] <= dmem:data_memory.q[27]
-dmem_out_d[28] <= dmem:data_memory.q[28]
-dmem_out_d[29] <= dmem:data_memory.q[29]
-dmem_out_d[30] <= dmem:data_memory.q[30]
-dmem_out_d[31] <= dmem:data_memory.q[31]
 rf_in[0] <= regFile_in[0].DB_MAX_OUTPUT_PORT_TYPE
 rf_in[1] <= regFile_in[1].DB_MAX_OUTPUT_PORT_TYPE
 rf_in[2] <= regFile_in[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -5153,425 +5117,6 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|reg_32:PC_set_val
-input[0] => dflipflop:G1:0:d.data
-input[1] => dflipflop:G1:1:d.data
-input[2] => dflipflop:G1:2:d.data
-input[3] => dflipflop:G1:3:d.data
-input[4] => dflipflop:G1:4:d.data
-input[5] => dflipflop:G1:5:d.data
-input[6] => dflipflop:G1:6:d.data
-input[7] => dflipflop:G1:7:d.data
-input[8] => dflipflop:G1:8:d.data
-input[9] => dflipflop:G1:9:d.data
-input[10] => dflipflop:G1:10:d.data
-input[11] => dflipflop:G1:11:d.data
-input[12] => dflipflop:G1:12:d.data
-input[13] => dflipflop:G1:13:d.data
-input[14] => dflipflop:G1:14:d.data
-input[15] => dflipflop:G1:15:d.data
-input[16] => dflipflop:G1:16:d.data
-input[17] => dflipflop:G1:17:d.data
-input[18] => dflipflop:G1:18:d.data
-input[19] => dflipflop:G1:19:d.data
-input[20] => dflipflop:G1:20:d.data
-input[21] => dflipflop:G1:21:d.data
-input[22] => dflipflop:G1:22:d.data
-input[23] => dflipflop:G1:23:d.data
-input[24] => dflipflop:G1:24:d.data
-input[25] => dflipflop:G1:25:d.data
-input[26] => dflipflop:G1:26:d.data
-input[27] => dflipflop:G1:27:d.data
-input[28] => dflipflop:G1:28:d.data
-input[29] => dflipflop:G1:29:d.data
-input[30] => dflipflop:G1:30:d.data
-input[31] => dflipflop:G1:31:d.data
-write_enable => dflipflop:G1:0:d.enable
-write_enable => dflipflop:G1:1:d.enable
-write_enable => dflipflop:G1:2:d.enable
-write_enable => dflipflop:G1:3:d.enable
-write_enable => dflipflop:G1:4:d.enable
-write_enable => dflipflop:G1:5:d.enable
-write_enable => dflipflop:G1:6:d.enable
-write_enable => dflipflop:G1:7:d.enable
-write_enable => dflipflop:G1:8:d.enable
-write_enable => dflipflop:G1:9:d.enable
-write_enable => dflipflop:G1:10:d.enable
-write_enable => dflipflop:G1:11:d.enable
-write_enable => dflipflop:G1:12:d.enable
-write_enable => dflipflop:G1:13:d.enable
-write_enable => dflipflop:G1:14:d.enable
-write_enable => dflipflop:G1:15:d.enable
-write_enable => dflipflop:G1:16:d.enable
-write_enable => dflipflop:G1:17:d.enable
-write_enable => dflipflop:G1:18:d.enable
-write_enable => dflipflop:G1:19:d.enable
-write_enable => dflipflop:G1:20:d.enable
-write_enable => dflipflop:G1:21:d.enable
-write_enable => dflipflop:G1:22:d.enable
-write_enable => dflipflop:G1:23:d.enable
-write_enable => dflipflop:G1:24:d.enable
-write_enable => dflipflop:G1:25:d.enable
-write_enable => dflipflop:G1:26:d.enable
-write_enable => dflipflop:G1:27:d.enable
-write_enable => dflipflop:G1:28:d.enable
-write_enable => dflipflop:G1:29:d.enable
-write_enable => dflipflop:G1:30:d.enable
-write_enable => dflipflop:G1:31:d.enable
-clock => dflipflop:G1:0:d.clock
-clock => dflipflop:G1:1:d.clock
-clock => dflipflop:G1:2:d.clock
-clock => dflipflop:G1:3:d.clock
-clock => dflipflop:G1:4:d.clock
-clock => dflipflop:G1:5:d.clock
-clock => dflipflop:G1:6:d.clock
-clock => dflipflop:G1:7:d.clock
-clock => dflipflop:G1:8:d.clock
-clock => dflipflop:G1:9:d.clock
-clock => dflipflop:G1:10:d.clock
-clock => dflipflop:G1:11:d.clock
-clock => dflipflop:G1:12:d.clock
-clock => dflipflop:G1:13:d.clock
-clock => dflipflop:G1:14:d.clock
-clock => dflipflop:G1:15:d.clock
-clock => dflipflop:G1:16:d.clock
-clock => dflipflop:G1:17:d.clock
-clock => dflipflop:G1:18:d.clock
-clock => dflipflop:G1:19:d.clock
-clock => dflipflop:G1:20:d.clock
-clock => dflipflop:G1:21:d.clock
-clock => dflipflop:G1:22:d.clock
-clock => dflipflop:G1:23:d.clock
-clock => dflipflop:G1:24:d.clock
-clock => dflipflop:G1:25:d.clock
-clock => dflipflop:G1:26:d.clock
-clock => dflipflop:G1:27:d.clock
-clock => dflipflop:G1:28:d.clock
-clock => dflipflop:G1:29:d.clock
-clock => dflipflop:G1:30:d.clock
-clock => dflipflop:G1:31:d.clock
-reset => dflipflop:G1:0:d.reset
-reset => dflipflop:G1:1:d.reset
-reset => dflipflop:G1:2:d.reset
-reset => dflipflop:G1:3:d.reset
-reset => dflipflop:G1:4:d.reset
-reset => dflipflop:G1:5:d.reset
-reset => dflipflop:G1:6:d.reset
-reset => dflipflop:G1:7:d.reset
-reset => dflipflop:G1:8:d.reset
-reset => dflipflop:G1:9:d.reset
-reset => dflipflop:G1:10:d.reset
-reset => dflipflop:G1:11:d.reset
-reset => dflipflop:G1:12:d.reset
-reset => dflipflop:G1:13:d.reset
-reset => dflipflop:G1:14:d.reset
-reset => dflipflop:G1:15:d.reset
-reset => dflipflop:G1:16:d.reset
-reset => dflipflop:G1:17:d.reset
-reset => dflipflop:G1:18:d.reset
-reset => dflipflop:G1:19:d.reset
-reset => dflipflop:G1:20:d.reset
-reset => dflipflop:G1:21:d.reset
-reset => dflipflop:G1:22:d.reset
-reset => dflipflop:G1:23:d.reset
-reset => dflipflop:G1:24:d.reset
-reset => dflipflop:G1:25:d.reset
-reset => dflipflop:G1:26:d.reset
-reset => dflipflop:G1:27:d.reset
-reset => dflipflop:G1:28:d.reset
-reset => dflipflop:G1:29:d.reset
-reset => dflipflop:G1:30:d.reset
-reset => dflipflop:G1:31:d.reset
-output[0] <= dflipflop:G1:0:d.output
-output[1] <= dflipflop:G1:1:d.output
-output[2] <= dflipflop:G1:2:d.output
-output[3] <= dflipflop:G1:3:d.output
-output[4] <= dflipflop:G1:4:d.output
-output[5] <= dflipflop:G1:5:d.output
-output[6] <= dflipflop:G1:6:d.output
-output[7] <= dflipflop:G1:7:d.output
-output[8] <= dflipflop:G1:8:d.output
-output[9] <= dflipflop:G1:9:d.output
-output[10] <= dflipflop:G1:10:d.output
-output[11] <= dflipflop:G1:11:d.output
-output[12] <= dflipflop:G1:12:d.output
-output[13] <= dflipflop:G1:13:d.output
-output[14] <= dflipflop:G1:14:d.output
-output[15] <= dflipflop:G1:15:d.output
-output[16] <= dflipflop:G1:16:d.output
-output[17] <= dflipflop:G1:17:d.output
-output[18] <= dflipflop:G1:18:d.output
-output[19] <= dflipflop:G1:19:d.output
-output[20] <= dflipflop:G1:20:d.output
-output[21] <= dflipflop:G1:21:d.output
-output[22] <= dflipflop:G1:22:d.output
-output[23] <= dflipflop:G1:23:d.output
-output[24] <= dflipflop:G1:24:d.output
-output[25] <= dflipflop:G1:25:d.output
-output[26] <= dflipflop:G1:26:d.output
-output[27] <= dflipflop:G1:27:d.output
-output[28] <= dflipflop:G1:28:d.output
-output[29] <= dflipflop:G1:29:d.output
-output[30] <= dflipflop:G1:30:d.output
-output[31] <= dflipflop:G1:31:d.output
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:31:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:30:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:29:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:28:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:27:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:26:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:25:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:24:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:23:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:22:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:21:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:20:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:19:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:18:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:17:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:16:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:15:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:14:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:13:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:12:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:11:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:10:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:9:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:8:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:7:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:6:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:5:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:4:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:3:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:2:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:1:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|reg_32:PC_set_val|dflipflop:\G1:0:d
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |processor|reg_32:branch_latch
 input[0] => dflipflop:G1:0:d.data
 input[1] => dflipflop:G1:1:d.data
@@ -6413,9 +5958,9 @@ sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processor|pc:pc_counter
-clock => pc_reg:pc_counter.clock
-reset => pc_reg:pc_counter.reset
-enable => pc_reg:pc_counter.write_enable
+clock => reg_32:pc_counter.clock
+reset => reg_32:pc_counter.reset
+enable => reg_32:pc_counter.write_enable
 sel_set => pc_in[0].OUTPUTSELECT
 sel_set => pc_in[1].OUTPUTSELECT
 sel_set => pc_in[2].OUTPUTSELECT
@@ -6480,41 +6025,41 @@ set_value[28] => pc_in[28].DATAA
 set_value[29] => pc_in[29].DATAA
 set_value[30] => pc_in[30].DATAA
 set_value[31] => pc_in[31].DATAA
-pc_value[0] <= pc_in[0].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[1] <= pc_in[1].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[2] <= pc_in[2].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[3] <= pc_in[3].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[4] <= pc_in[4].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[5] <= pc_in[5].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[6] <= pc_in[6].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[7] <= pc_in[7].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[8] <= pc_in[8].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[9] <= pc_in[9].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[10] <= pc_in[10].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[11] <= pc_in[11].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[12] <= pc_in[12].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[13] <= pc_in[13].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[14] <= pc_in[14].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[15] <= pc_in[15].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[16] <= pc_in[16].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[17] <= pc_in[17].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[18] <= pc_in[18].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[19] <= pc_in[19].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[20] <= pc_in[20].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[21] <= pc_in[21].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[22] <= pc_in[22].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[23] <= pc_in[23].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[24] <= pc_in[24].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[25] <= pc_in[25].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[26] <= pc_in[26].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[27] <= pc_in[27].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[28] <= pc_in[28].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[29] <= pc_in[29].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[30] <= pc_in[30].DB_MAX_OUTPUT_PORT_TYPE
-pc_value[31] <= pc_in[31].DB_MAX_OUTPUT_PORT_TYPE
+pc_value[0] <= reg_32:pc_counter.output[0]
+pc_value[1] <= reg_32:pc_counter.output[1]
+pc_value[2] <= reg_32:pc_counter.output[2]
+pc_value[3] <= reg_32:pc_counter.output[3]
+pc_value[4] <= reg_32:pc_counter.output[4]
+pc_value[5] <= reg_32:pc_counter.output[5]
+pc_value[6] <= reg_32:pc_counter.output[6]
+pc_value[7] <= reg_32:pc_counter.output[7]
+pc_value[8] <= reg_32:pc_counter.output[8]
+pc_value[9] <= reg_32:pc_counter.output[9]
+pc_value[10] <= reg_32:pc_counter.output[10]
+pc_value[11] <= reg_32:pc_counter.output[11]
+pc_value[12] <= reg_32:pc_counter.output[12]
+pc_value[13] <= reg_32:pc_counter.output[13]
+pc_value[14] <= reg_32:pc_counter.output[14]
+pc_value[15] <= reg_32:pc_counter.output[15]
+pc_value[16] <= reg_32:pc_counter.output[16]
+pc_value[17] <= reg_32:pc_counter.output[17]
+pc_value[18] <= reg_32:pc_counter.output[18]
+pc_value[19] <= reg_32:pc_counter.output[19]
+pc_value[20] <= reg_32:pc_counter.output[20]
+pc_value[21] <= reg_32:pc_counter.output[21]
+pc_value[22] <= reg_32:pc_counter.output[22]
+pc_value[23] <= reg_32:pc_counter.output[23]
+pc_value[24] <= reg_32:pc_counter.output[24]
+pc_value[25] <= reg_32:pc_counter.output[25]
+pc_value[26] <= reg_32:pc_counter.output[26]
+pc_value[27] <= reg_32:pc_counter.output[27]
+pc_value[28] <= reg_32:pc_counter.output[28]
+pc_value[29] <= reg_32:pc_counter.output[29]
+pc_value[30] <= reg_32:pc_counter.output[30]
+pc_value[31] <= reg_32:pc_counter.output[31]
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter
+|processor|pc:pc_counter|reg_32:pc_counter
 input[0] => dflipflop:G1:0:d.data
 input[1] => dflipflop:G1:1:d.data
 input[2] => dflipflop:G1:2:d.data
@@ -6677,7 +6222,7 @@ output[30] <= dflipflop:G1:30:d.output
 output[31] <= dflipflop:G1:31:d.output
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:31:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:31:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6685,7 +6230,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:30:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:30:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6693,7 +6238,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:29:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:29:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6701,7 +6246,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:28:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:28:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6709,7 +6254,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:27:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:27:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6717,7 +6262,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:26:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:26:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6725,7 +6270,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:25:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:25:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6733,7 +6278,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:24:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:24:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6741,7 +6286,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:23:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:23:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6749,7 +6294,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:22:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:22:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6757,7 +6302,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:21:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:21:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6765,7 +6310,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:20:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:20:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6773,7 +6318,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:19:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:19:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6781,7 +6326,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:18:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:18:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6789,7 +6334,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:17:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:17:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6797,7 +6342,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:16:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:16:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6805,7 +6350,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:15:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:15:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6813,7 +6358,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:14:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:14:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6821,7 +6366,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:13:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:13:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6829,7 +6374,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:12:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:12:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6837,7 +6382,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:11:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:11:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6845,7 +6390,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:10:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:10:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6853,7 +6398,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:9:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:9:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6861,7 +6406,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:8:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:8:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6869,7 +6414,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:7:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:7:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6877,7 +6422,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:6:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:6:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6885,7 +6430,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:5:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:5:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6893,7 +6438,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:4:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:4:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6901,7 +6446,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:3:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:3:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6909,7 +6454,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:2:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:2:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6917,7 +6462,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:1:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:1:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -6925,7 +6470,7 @@ data => output~reg0.DATAIN
 output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|pc:pc_counter|pc_reg:pc_counter|dflipflop:\G1:0:d
+|processor|pc:pc_counter|reg_32:pc_counter|dflipflop:\G1:0:d
 clock => output~reg0.CLK
 reset => output~reg0.ACLR
 enable => output~reg0.ENA
@@ -7352,14 +6897,6 @@ carryin => carryout~1.IN1
 carryin => sum~0.IN1
 carryout <= carryout~3.DB_MAX_OUTPUT_PORT_TYPE
 sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|dflipflop:set_at_fall
-clock => output~reg0.CLK
-reset => output~reg0.ACLR
-enable => output~reg0.ENA
-data => output~reg0.DATAIN
-output <= output~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processor|three_inputs_adder:pc_add_1_add_N
@@ -54477,73 +54014,6 @@ output[0] <= output[0]~31.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processor|sx_17to32:sign_extension_dx
-input[0] => output[0].DATAIN
-input[1] => output[1].DATAIN
-input[2] => output[2].DATAIN
-input[3] => output[3].DATAIN
-input[4] => output[4].DATAIN
-input[5] => output[5].DATAIN
-input[6] => output[6].DATAIN
-input[7] => output[7].DATAIN
-input[8] => output[8].DATAIN
-input[9] => output[9].DATAIN
-input[10] => output[10].DATAIN
-input[11] => output[11].DATAIN
-input[12] => output[12].DATAIN
-input[13] => output[13].DATAIN
-input[14] => output[14].DATAIN
-input[15] => output[15].DATAIN
-input[16] => output[16].DATAIN
-input[16] => output[31].DATAIN
-input[16] => output[30].DATAIN
-input[16] => output[29].DATAIN
-input[16] => output[28].DATAIN
-input[16] => output[27].DATAIN
-input[16] => output[26].DATAIN
-input[16] => output[25].DATAIN
-input[16] => output[24].DATAIN
-input[16] => output[23].DATAIN
-input[16] => output[22].DATAIN
-input[16] => output[21].DATAIN
-input[16] => output[20].DATAIN
-input[16] => output[19].DATAIN
-input[16] => output[18].DATAIN
-input[16] => output[17].DATAIN
-output[0] <= input[0].DB_MAX_OUTPUT_PORT_TYPE
-output[1] <= input[1].DB_MAX_OUTPUT_PORT_TYPE
-output[2] <= input[2].DB_MAX_OUTPUT_PORT_TYPE
-output[3] <= input[3].DB_MAX_OUTPUT_PORT_TYPE
-output[4] <= input[4].DB_MAX_OUTPUT_PORT_TYPE
-output[5] <= input[5].DB_MAX_OUTPUT_PORT_TYPE
-output[6] <= input[6].DB_MAX_OUTPUT_PORT_TYPE
-output[7] <= input[7].DB_MAX_OUTPUT_PORT_TYPE
-output[8] <= input[8].DB_MAX_OUTPUT_PORT_TYPE
-output[9] <= input[9].DB_MAX_OUTPUT_PORT_TYPE
-output[10] <= input[10].DB_MAX_OUTPUT_PORT_TYPE
-output[11] <= input[11].DB_MAX_OUTPUT_PORT_TYPE
-output[12] <= input[12].DB_MAX_OUTPUT_PORT_TYPE
-output[13] <= input[13].DB_MAX_OUTPUT_PORT_TYPE
-output[14] <= input[14].DB_MAX_OUTPUT_PORT_TYPE
-output[15] <= input[15].DB_MAX_OUTPUT_PORT_TYPE
-output[16] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[17] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[18] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[19] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[20] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[21] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[22] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[23] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[24] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[25] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[26] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[27] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[28] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[29] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[30] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-output[31] <= input[16].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|sx_17to32:sign_extension_fd
 input[0] => output[0].DATAIN
 input[1] => output[1].DATAIN
 input[2] => output[2].DATAIN

@@ -7,23 +7,26 @@ ENTITY processor IS
                         keyboard_in        : IN STD_LOGIC_VECTOR(3 downto 0);
                         led_14: out std_logic_vector(14 downto 1);
 --                        lcd_data        : OUT STD_LOGIC_VECTOR(31 downto 0);
-                        --debug: out std_logic_vector(31 downto 0);
+--                        debug: out std_logic_vector(31 downto 0);
                         --reg_addr_write: out std_logic_vector(4 downto 0);
                         --reg_addr_A: out std_logic_vector(4 downto 0);
                         --reg_addr_B: out std_logic_vector(4 downto 0);
                         --regFileAout_d: out std_logic_vector(31 downto 0);
 						--regFileBout_d: out std_logic_vector(31 downto 0);
-                        --instr_FD: out std_logic_vector(31 downto 0);
-                        --instr_DX: out std_logic_vector(31 downto 0);
-                        --instr_XM: out std_logic_vector(31 downto 0);
-                        --instr_MW: out std_logic_vector(31 downto 0);
-                        dmem_out_d: out std_logic_vector(31 downto 0);
+--						imem_out_d: out std_logic_vector(31 downto 0);
+--                        instr_FD: out std_logic_vector(31 downto 0)
+--                        instr_DX: out std_logic_vector(31 downto 0);
+--                        instr_XM: out std_logic_vector(31 downto 0);
+--                        instr_MW: out std_logic_vector(31 downto 0);
+--                        dmem_out_d: out std_logic_vector(31 downto 0);
                         --dmem_in_d: out std_logic_vector(31 downto 0);
                         --dmem_enable: out std_logic;
                         --alu_a: out std_logic_vector(31 downto 0);
                         --alu_b: out std_logic_vector(31 downto 0);
-                        rf_in: out std_logic_vector(31 downto 0)
 --                        pc_out_d: out std_logic_vector(31 downto 0);
+--                        pc_FD_d: out std_logic_vector(31 downto 0);
+--                        pc_DX_d: out std_logic_vector(31 downto 0);
+                        rf_in: out std_logic_vector(31 downto 0)
 --                        pc_set_d: out std_logic_vector(31 downto 0)
 --                        b4: out std_logic
 --                        b2: out std_logic;
@@ -167,7 +170,7 @@ ARCHITECTURE Structure OF processor IS
         signal regFile_a_addr: STD_LOGIC_VECTOR(4 downto 0);
         signal regFile_write_addr: STD_LOGIC_VECTOR(4 downto 0);
         signal sx_out_dx : STD_LOGIC_VECTOR(31 downto 0);
-        signal sx_out_fd : STD_LOGIC_VECTOR(31 downto 0);
+--        signal sx_out_fd : STD_LOGIC_VECTOR(31 downto 0);
         signal alu_a_in: STD_LOGIC_VECTOR(31 downto 0);
         signal alu_b_in: STD_LOGIC_VECTOR(31 downto 0);
         signal alu_op: STD_LOGIC_VECTOR(4 downto 0);
@@ -290,7 +293,7 @@ BEGIN
         Olatch_XM: reg_32 port map (alu_out, '1', clock, reset, o_XM);
         Olatch_MW: reg_32 port map (o_XM, '1', clock, reset, o_MW);
         DLatch_MW: reg_32 port map (dmem_q,'1',clock,reset,d_MW);
-        PC_set_val: reg_32 port map (pc_set_val_buff, '1',not clock, reset, pc_set);
+--        PC_set_val: reg_32 port map (pc_set_val_buff, '1',not clock, reset, pc_set);
         branch_latch: reg_32 port map (pc_add1_out, ctrl_jal_f or
                                                                                         (ctrl_iu_f and goup) or
                                                                                         (ctrl_id_f and godown) or
@@ -305,7 +308,7 @@ BEGIN
 		pc_add_one: add_one port map (pc_FD, open, pc_add1_out);
         -----------
         
-        pc_counter: pc port map (clock, reset , not stall, ctrl_pc_set, pc_set, pc_out);
+        pc_counter: pc port map (clock, reset , not stall, ctrl_pc_set, pc_set_val_buff, pc_out);
         pc_set_val_buff(31 downto 27) <= pc_out( 31 downto 27) when ctrl_jf_jalf_inputf = '1'
                                                         else branch_reg(31 downto 27) when ctrl_jr_f = '1' -- jr PC = $rd
                                                         else pc_p1_pN(31 downto 27) when ctrl_bnedx_bltdx = '1'
@@ -314,7 +317,7 @@ BEGIN
                                                         else branch_reg(26 downto 0) when ctrl_jr_f = '1' -- pc = $rd jr
                                                         else pc_p1_pN(26 downto 0) when ctrl_bnedx_bltdx = '1'
                                                         else "000000000000000000000000000";
-        set_at_fall : dflipflop port map (not clock, reset,'1',pc_set_buff, ctrl_pc_set);
+--        set_at_fall : dflipflop port map (not clock, reset,'1',pc_set_buff, ctrl_pc_set);
 --        delay_one_cycle : dflipflop port map (clock, reset,'1',pc_set_buff, ctrl_pc_set_delay);
         
         ctrl_jf_jalf_inputf <= ctrl_j_f 
@@ -326,9 +329,9 @@ BEGIN
         ctrl_bnedx_bltdx <= ((ctrl_bne_dx and RdNeqRs) 
 							or (ctrl_blt_dx and RdSTRs));--pc + 1 + n;
 
-        pc_set_buff <= ctrl_jf_jalf_inputf or ctrl_bnedx_bltdx or ctrl_jr_f;
+        ctrl_pc_set <= ctrl_jf_jalf_inputf or ctrl_bnedx_bltdx or ctrl_jr_f;
         
-        pc_add_1_add_N: three_inputs_adder port map (sx_out_fd, pc_FD, "00000000000000000000000000000001",pc_p1_pN,open);
+        pc_add_1_add_N: three_inputs_adder port map (sx_out_dx, pc_DX, "00000000000000000000000000000001",pc_p1_pN,open);
         
         --- IO----
         input_control: input_ctrl port map(clock, keyboard_in, ctrl_iu_f or reset, ctrl_id_f or reset, ctrl_il_f or reset, ctrl_ir_f or reset, goup, godown, goleft, goright);
@@ -414,7 +417,7 @@ BEGIN
         
         -- sign extension --
         sign_extension_dx: sx_17to32 port map (ir_DX(16 downto 0), sx_out_dx);
-        sign_extension_fd: sx_17to32 port map (imem_out(16 downto 0), sx_out_fd);
+        --sign_extension_fd: sx_17to32 port map (imem_out(16 downto 0), sx_out_fd);
         
         
         -- bypassing logic -- 
@@ -484,12 +487,16 @@ BEGIN
         stall <= '0' ;
         
 --        lcd_data <= imem_out;
-        --debug <= d_MW;
-        --instr_DX <= ir_DX;
-        --instr_FD <= ir_FD;
-        --instr_XM <= ir_XM;
-        --instr_MW <= ir_MW;
-        dmem_out_d<= dmem_q;
+--        debug <= pc_set_val_buff;
+--        pc_out_d <= pc_out;        
+--        pc_FD_d <= pc_FD;
+--		pc_DX_d <= pc_DX;
+--        imem_out_d <= imem_out;
+--        instr_FD <= ir_FD;
+--        instr_DX <= ir_DX;
+--        instr_XM <= ir_XM;
+--        instr_MW <= ir_MW;
+--        dmem_out_d<= dmem_q;
         --alu_a <= alu_a_in;
         --alu_b <= alu_b_in;
         rf_in <= regFile_in;
@@ -500,8 +507,6 @@ BEGIN
         --reg_addr_B <= regFile_b_addr;
         --regFileAout_d <= regFileAout;
         --regFileBout_d <= regFileBout;
-        
---        pc_out_d <= pc_out;
 --        pc_set_d <=  pc_set;
 --        b2_d <= branch_reg;
 --        b3 <=  ctrl_pc_set_delay;
