@@ -13,21 +13,21 @@ ENTITY processor IS
                         --reg_addr_B: out std_logic_vector(4 downto 0);
                         --regFileAout_d: out std_logic_vector(31 downto 0);
 						--regFileBout_d: out std_logic_vector(31 downto 0);
---						imem_out_d: out std_logic_vector(31 downto 0);
---                        instr_FD: out std_logic_vector(31 downto 0)
---                        instr_DX: out std_logic_vector(31 downto 0);
---                        instr_XM: out std_logic_vector(31 downto 0);
---                        instr_MW: out std_logic_vector(31 downto 0);
---                        dmem_out_d: out std_logic_vector(31 downto 0);
+						imem_out_d: out std_logic_vector(31 downto 0);
+                        instr_FD: out std_logic_vector(31 downto 0);
+                        instr_DX: out std_logic_vector(31 downto 0);
+                        instr_XM: out std_logic_vector(31 downto 0);
+                        instr_MW: out std_logic_vector(31 downto 0);
+                        dmem_out_d: out std_logic_vector(31 downto 0);
                         --dmem_in_d: out std_logic_vector(31 downto 0);
                         --dmem_enable: out std_logic;
-                        --alu_a: out std_logic_vector(31 downto 0);
-                        --alu_b: out std_logic_vector(31 downto 0);
---                        pc_out_d: out std_logic_vector(31 downto 0);
---                        pc_FD_d: out std_logic_vector(31 downto 0);
---                        pc_DX_d: out std_logic_vector(31 downto 0);
-                        rf_in: out std_logic_vector(31 downto 0)
---                        pc_set_d: out std_logic_vector(31 downto 0)
+                        alu_a: out std_logic_vector(31 downto 0);
+                        alu_b: out std_logic_vector(31 downto 0);
+                        pc_out_d: out std_logic_vector(31 downto 0);
+                        pc_FD_d: out std_logic_vector(31 downto 0);
+                        pc_DX_d: out std_logic_vector(31 downto 0);
+                        rf_in: out std_logic_vector(31 downto 0);
+                        pc_set_d: out std_logic_vector(31 downto 0)
 --                        b4: out std_logic
 --                        b2: out std_logic;
 --                        b3: out std_logic;
@@ -209,7 +209,7 @@ ARCHITECTURE Structure OF processor IS
         signal o_MW: STD_LOGIC_VECTOR(31 downto 0);
         signal d_MW: STD_LOGIC_VECTOR(31 downto 0);
        
-        signal ir_FD_reset: std_logic;
+        signal FD_reset: std_logic;
         
         signal ctrl_I_instr: std_logic;
         signal ctrl_alu_a: std_logic;
@@ -217,9 +217,6 @@ ARCHITECTURE Structure OF processor IS
         signal ctrl_odlatch: std_logic;
 --        signal ctrl_regFWE: std_logic;
         signal ctrl_pc_set: std_logic;
-        signal ctrl_jr_f: std_logic;
-        signal ctrl_j_f: std_logic;
-        signal ctrl_jal_f: std_logic;
         signal ctrl_sw_fd: std_logic;
         signal ctrl_bne_fd: std_logic;
         signal ctrl_blt_fd: std_logic;
@@ -237,6 +234,9 @@ ARCHITECTURE Structure OF processor IS
         signal ctrl_sw_dx: std_logic;
         signal ctrl_bne_dx: std_logic;
         signal ctrl_blt_dx: std_logic;
+        signal ctrl_jr_dx: std_logic;
+        signal ctrl_j_dx: std_logic;
+        signal ctrl_jal_dx: std_logic;
         signal ctrl_lw_mw: std_logic;
         signal ctrl_R_mw: std_logic;
         signal ctrl_addi_mw: std_logic;
@@ -250,7 +250,7 @@ ARCHITECTURE Structure OF processor IS
         signal ctrl_xm_write_d: std_logic;
         signal ctrl_mw_write_rd: std_logic;
         signal ctrl_R_addi_lw_sw_dx: std_logic;
-        signal ctrl_jf_jalf_inputf: std_logic;
+        signal ctrl_jdx_jaldx_inputf: std_logic;
         signal ctrl_bnedx_bltdx: std_logic;
                 
         signal dhazd_rsDX_eq_rdXM: std_logic;
@@ -280,11 +280,11 @@ BEGIN
         
         -- Your processor here
         --latches--
-        IRlatch_FD: reg_32 port map (ir_FD_in, '1', clock, ir_FD_reset, ir_FD);
+        IRlatch_FD: reg_32 port map (ir_FD_in, '1', clock, FD_reset, ir_FD);
         IRlatch_DX: reg_32 port map (ir_FD, '1', clock, reset, ir_DX);
         IRlatch_XM: reg_32 port map (ir_DX, '1', clock, reset, ir_XM);
         IRlatch_MW: reg_32 port map (ir_XM, '1', clock, reset, ir_MW);
-        PClatch_FD: reg_32 port map (pc_out, '1', clock, reset, pc_FD);
+        PClatch_FD: reg_32 port map (pc_out, '1', clock, FD_reset, pc_FD);
         PClatch_DX: reg_32 port map (pc_FD, '1', clock, reset, pc_DX);
 --        PClatch_XM: reg_32 port map (pc_DX, '1', clock, reset, pc_XM);
         Alatch_DX: reg_32 port map (regFileAout, '1', clock, reset, a_DX);
@@ -294,12 +294,12 @@ BEGIN
         Olatch_MW: reg_32 port map (o_XM, '1', clock, reset, o_MW);
         DLatch_MW: reg_32 port map (dmem_q,'1',clock,reset,d_MW);
 --        PC_set_val: reg_32 port map (pc_set_val_buff, '1',not clock, reset, pc_set);
-        branch_latch: reg_32 port map (pc_add1_out, ctrl_jal_f or
+        branch_latch: reg_32 port map (pc_add1_out, ctrl_jal_dx or
                                                                                         (ctrl_iu_f and goup) or
                                                                                         (ctrl_id_f and godown) or
                                                                                         (ctrl_il_f and goleft) or
                                                                                         (ctrl_ir_f and goright) ,clock , reset, branch_reg);
-        ir_FD_reset <= (ctrl_bne_dx and RdNeqRs) or (ctrl_blt_dx and RdSTRs);
+        FD_reset <= ctrl_pc_set;
         
         b_XM_in <= regFile_in when dhazd_rdDX_eq_rdMW = '1'
 									and ctrl_sw_dx = '1'
@@ -309,19 +309,19 @@ BEGIN
         -----------
         
         pc_counter: pc port map (clock, reset , not stall, ctrl_pc_set, pc_set_val_buff, pc_out);
-        pc_set_val_buff(31 downto 27) <= pc_out( 31 downto 27) when ctrl_jf_jalf_inputf = '1'
-                                                        else branch_reg(31 downto 27) when ctrl_jr_f = '1' -- jr PC = $rd
+        pc_set_val_buff(31 downto 27) <= pc_DX( 31 downto 27) when ctrl_jdx_jaldx_inputf = '1'
+                                                        else branch_reg(31 downto 27) when ctrl_jr_dx = '1' -- jr PC = $rd
                                                         else pc_p1_pN(31 downto 27) when ctrl_bnedx_bltdx = '1'
                                                         else "00000";
-        pc_set_val_buff(26 downto 0) <= imem_out (26 downto 0) when ctrl_jf_jalf_inputf = '1'
-                                                        else branch_reg(26 downto 0) when ctrl_jr_f = '1' -- pc = $rd jr
+        pc_set_val_buff(26 downto 0) <= ir_DX (26 downto 0) when ctrl_jdx_jaldx_inputf = '1'
+                                                        else branch_reg(26 downto 0) when ctrl_jr_dx = '1' -- pc = $rd jr
                                                         else pc_p1_pN(26 downto 0) when ctrl_bnedx_bltdx = '1'
                                                         else "000000000000000000000000000";
 --        set_at_fall : dflipflop port map (not clock, reset,'1',pc_set_buff, ctrl_pc_set);
 --        delay_one_cycle : dflipflop port map (clock, reset,'1',pc_set_buff, ctrl_pc_set_delay);
         
-        ctrl_jf_jalf_inputf <= ctrl_j_f 
-                            or ctrl_jal_f 
+        ctrl_jdx_jaldx_inputf <= ctrl_j_dx 
+                            or ctrl_jal_dx 
                             or (ctrl_iu_f and goup)
                             or (ctrl_id_f and godown)
                             or (ctrl_il_f and goleft)
@@ -329,7 +329,7 @@ BEGIN
         ctrl_bnedx_bltdx <= ((ctrl_bne_dx and RdNeqRs) 
 							or (ctrl_blt_dx and RdSTRs));--pc + 1 + n;
 
-        ctrl_pc_set <= ctrl_jf_jalf_inputf or ctrl_bnedx_bltdx or ctrl_jr_f;
+        ctrl_pc_set <= ctrl_jdx_jaldx_inputf or ctrl_bnedx_bltdx or ctrl_jr_dx;
         
         pc_add_1_add_N: three_inputs_adder port map (sx_out_dx, pc_DX, "00000000000000000000000000000001",pc_p1_pN,open);
         
@@ -451,11 +451,7 @@ BEGIN
         ctrl_bne_fd <= not ir_FD(31) and not ir_FD(30) and ir_FD(29) and not ir_FD(28) and not ir_FD(27); -- bne 00100
         ctrl_blt_fd <=  not ir_FD(31) and not ir_FD(30) and ir_FD(29) and not ir_FD(28) and ir_FD(27);-- blt 00101
         ctrl_sw_fd <= not ir_FD(31) and not ir_FD(30) and not ir_FD(29) and ir_FD(28) and ir_FD(27); -- sw 00011
-
         
-        ctrl_jr_f <= not imem_out(31) and imem_out(30) and not imem_out(29) and not imem_out(28) and not imem_out(27); --jr 01000                
-        ctrl_j_f <= not imem_out(31) and not imem_out(30) and imem_out(29) and imem_out(28) and not imem_out(27);-- j 00110
-        ctrl_jal_f <= not imem_out(31) and not imem_out(30) and imem_out(29) and imem_out(28) and imem_out(27);-- jal 00111
 --        ctrl_R_fd <= not imem_out(31) and not imem_out(30) and not imem_out(29) and not imem_out(28) and not imem_out(27); -- R00000
 --        ctrl_addi_fd <= not imem_out(31) and not imem_out(30) and not imem_out(29) and not imem_out(28) and imem_out(27);-- addi 00001
 --        ctrl_lw_fd <= not imem_out(31) and not imem_out(30) and not imem_out(29) and imem_out(28) and not imem_out(27); -- lw 00010
@@ -476,7 +472,9 @@ BEGIN
         ctrl_sw_dx <= not ir_DX(31) and not ir_DX(30) and not ir_DX(29) and ir_DX(28)and ir_DX(27); --sw 00011
         ctrl_bne_dx <= not ir_DX(31) and not ir_DX(30) and ir_DX(29) and not ir_DX(28) and not ir_DX(27); -- bne 00100
         ctrl_blt_dx <=  not ir_DX(31) and not ir_DX(30) and ir_DX(29) and not ir_DX(28) and ir_DX(27);-- blt 00101
-        
+        ctrl_jr_dx <= not ir_DX(31) and ir_DX(30) and not ir_DX(29) and not ir_DX(28) and not ir_DX(27); --jr 01000                
+        ctrl_j_dx <= not ir_DX(31) and not ir_DX(30) and ir_DX(29) and ir_DX(28) and not ir_DX(27);-- j 00110
+        ctrl_jal_dx <= not ir_DX(31) and not ir_DX(30) and ir_DX(29) and ir_DX(28) and ir_DX(27);-- jal 00111
         ctrl_lw_mw <= not ir_MW(31) and not ir_MW(30) and not ir_MW(29) and ir_MW(28) and not ir_MW(27);-- lw 00010
         ctrl_R_mw <= not ir_MW(31) and not ir_MW(30) and not ir_MW(29) and not ir_MW(28) and not ir_MW(27); -- R
         ctrl_addi_mw <= not ir_MW(31) and not ir_MW(30) and not ir_MW(29) and not ir_MW(28) and ir_MW(27); -- addi
@@ -488,17 +486,17 @@ BEGIN
         
 --        lcd_data <= imem_out;
 --        debug <= pc_set_val_buff;
---        pc_out_d <= pc_out;        
---        pc_FD_d <= pc_FD;
---		pc_DX_d <= pc_DX;
---        imem_out_d <= imem_out;
---        instr_FD <= ir_FD;
---        instr_DX <= ir_DX;
---        instr_XM <= ir_XM;
---        instr_MW <= ir_MW;
---        dmem_out_d<= dmem_q;
-        --alu_a <= alu_a_in;
-        --alu_b <= alu_b_in;
+        pc_out_d <= pc_out;        
+        pc_FD_d <= pc_FD;
+		pc_DX_d <= pc_DX;
+        imem_out_d <= imem_out;
+        instr_FD <= ir_FD;
+        instr_DX <= ir_DX;
+        instr_XM <= ir_XM;
+        instr_MW <= ir_MW;
+        dmem_out_d<= dmem_q;
+        alu_a <= alu_a_in;
+        alu_b <= alu_b_in;
         rf_in <= regFile_in;
         --dmem_in_d <= dmem_in;
         --dmem_enable <= ctrl_sw_xm;
@@ -507,14 +505,14 @@ BEGIN
         --reg_addr_B <= regFile_b_addr;
         --regFileAout_d <= regFileAout;
         --regFileBout_d <= regFileBout;
---        pc_set_d <=  pc_set;
+        pc_set_d <=  pc_set;
 --        b2_d <= branch_reg;
 --        b3 <=  ctrl_pc_set_delay;
 --        b4 <=  ctrl_pc_set;
 ---        b(1) <= (ctrl_bne_fd and RdNeqRs);
 --        b(2) <= (ctrl_sw_fd = '1' or ctrl_bne_fd = '1' or ctrl_blt_fd = '1' )
---        b(3) <= ctrl_jr_f or ctrl_j_f;
---        b(4) <= ctrl_jal_f;
+--        b(3) <= ctrl_jr_dx or ctrl_j_dx;
+--        b(4) <= ctrl_jal_dx;
 --        b(5) <= (ctrl_iu_f and goup );
 --        b(6) <= (ctrl_id_f and godown);
 --        b(7) <= (ctrl_il_f and goleft);

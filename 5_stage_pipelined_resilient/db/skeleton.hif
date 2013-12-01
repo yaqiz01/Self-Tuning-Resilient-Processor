@@ -1551,50 +1551,10 @@ regfile:register_file|reg:\IFF:31:G2:regcomp|dflipflop:\IFF:31:dffcomp
 
 # end
 # entity
-pc_reg
-# storage
-db|skeleton.(4).cnf
-db|skeleton.(4).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-pc_reg.vhd
-756c56e2cb56ec1ed3f549b5dbff37
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(input)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(output)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 add_one
 # storage
-db|skeleton.(5).cnf
-db|skeleton.(5).cnf
+db|skeleton.(3).cnf
+db|skeleton.(3).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -1637,8 +1597,8 @@ pc:pc_counter|add_one:adder
 # entity
 onebitfulladder
 # storage
-db|skeleton.(6).cnf
-db|skeleton.(6).cnf
+db|skeleton.(4).cnf
+db|skeleton.(4).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -1763,10 +1723,53 @@ three_inputs_adder:pc_add_1_add_N|onebitfulladder:\IFF1:0:firstrow
 
 # end
 # entity
+pc
+# storage
+db|skeleton.(5).cnf
+db|skeleton.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+pc.vhd
+9223b83f31887595401f8b5372d93d16
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(set_value)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(pc_value)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+pc:pc_counter
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
 three_inputs_adder
 # storage
-db|skeleton.(7).cnf
-db|skeleton.(7).cnf
+db|skeleton.(6).cnf
+db|skeleton.(6).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -1816,8 +1819,8 @@ three_inputs_adder:pc_add_1_add_N
 # entity
 onebitadder
 # storage
-db|skeleton.(8).cnf
-db|skeleton.(8).cnf
+db|skeleton.(7).cnf
+db|skeleton.(7).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -4056,8 +4059,8 @@ alu:alu_unit|carrysaveadder:comp|onebitadder:\IFF2:0:IFF3:0:G2:halfadder3
 # entity
 input_ctrl
 # storage
-db|skeleton.(9).cnf
-db|skeleton.(9).cnf
+db|skeleton.(8).cnf
+db|skeleton.(8).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -4095,8 +4098,8 @@ input_ctrl:input_control
 # entity
 decoder_6
 # storage
-db|skeleton.(10).cnf
-db|skeleton.(10).cnf
+db|skeleton.(9).cnf
+db|skeleton.(9).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -4138,8 +4141,8 @@ decoder_6:decode
 # entity
 led_ctrl
 # storage
-db|skeleton.(11).cnf
-db|skeleton.(11).cnf
+db|skeleton.(10).cnf
+db|skeleton.(10).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -4179,10 +4182,56 @@ led_ctrl:output_control
 
 # end
 # entity
+assert_signal
+# storage
+db|skeleton.(11).cnf
+db|skeleton.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+assert_signal.vhd
+bf968fee6f30ee5472df4dddd12e7a19
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+led_ctrl:output_control|assert_signal:assert9
+led_ctrl:output_control|assert_signal:assert14
+led_ctrl:output_control|assert_signal:assert8
+led_ctrl:output_control|assert_signal:assert12
+led_ctrl:output_control|assert_signal:assert5
+led_ctrl:output_control|assert_signal:assert1
+led_ctrl:output_control|assert_signal:assert7
+led_ctrl:output_control|assert_signal:assert2
+led_ctrl:output_control|assert_signal:assert13
+led_ctrl:output_control|assert_signal:assert3
+led_ctrl:output_control|assert_signal:assert4
+led_ctrl:output_control|assert_signal:assert11
+led_ctrl:output_control|assert_signal:assert10
+led_ctrl:output_control|assert_signal:assert6
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
 comparator_32
 # storage
-db|skeleton.(13).cnf
-db|skeleton.(13).cnf
+db|skeleton.(12).cnf
+db|skeleton.(12).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -4224,8 +4273,8 @@ comparator_32:compare
 # entity
 carrysaveadder
 # storage
-db|skeleton.(14).cnf
-db|skeleton.(14).cnf
+db|skeleton.(13).cnf
+db|skeleton.(13).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -4273,8 +4322,8 @@ alu:alu_unit|carrysaveadder:comp
 # entity
 imem
 # storage
-db|skeleton.(15).cnf
-db|skeleton.(15).cnf
+db|skeleton.(14).cnf
+db|skeleton.(14).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -4316,8 +4365,8 @@ imem:instr_memory
 # entity
 altsyncram
 # storage
-db|skeleton.(16).cnf
-db|skeleton.(16).cnf
+db|skeleton.(15).cnf
+db|skeleton.(15).cnf
 # case_insensitive
 # source_file
 ..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altsyncram.tdf
@@ -4666,24 +4715,24 @@ address_a0
 3
 }
 # include_file {
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|lpm_decode.inc
-bd0e2f5e01c1bd360461dceb53d48
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altram.inc
-e66a83eccf6717bed97c99d891ad085
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altrom.inc
-d4e3a69a331d3a99d3281790d99a1ebd
 ..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|lpm_mux.inc
 c22bfd353214c01495b560fc34e47d79
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altqpram.inc
-74e08939f96a7ea8e7a4d59a5b01fe7
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|stratix_ram_block.inc
-2263a3bdfffeb150af977ee13902f70
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|a_rdenreg.inc
-60d229340bc3c24acb0a137b4849830
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altdpram.inc
-99d442b5b66c88db4daf94d99c6e4e77
 ..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|lpm_decode.inc
+bd0e2f5e01c1bd360461dceb53d48
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|a_rdenreg.inc
+60d229340bc3c24acb0a137b4849830
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altqpram.inc
+74e08939f96a7ea8e7a4d59a5b01fe7
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altdpram.inc
+99d442b5b66c88db4daf94d99c6e4e77
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altrom.inc
+d4e3a69a331d3a99d3281790d99a1ebd
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|stratix_ram_block.inc
+2263a3bdfffeb150af977ee13902f70
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altram.inc
+e66a83eccf6717bed97c99d891ad085
 }
 # hierarchies {
 imem:instr_memory|altsyncram:altsyncram_component
@@ -4694,8 +4743,8 @@ imem:instr_memory|altsyncram:altsyncram_component
 # entity
 dmem
 # storage
-db|skeleton.(18).cnf
-db|skeleton.(18).cnf
+db|skeleton.(17).cnf
+db|skeleton.(17).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -4741,8 +4790,8 @@ dmem:data_memory
 # entity
 altsyncram
 # storage
-db|skeleton.(19).cnf
-db|skeleton.(19).cnf
+db|skeleton.(18).cnf
+db|skeleton.(18).cnf
 # case_insensitive
 # source_file
 ..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altsyncram.tdf
@@ -5187,24 +5236,24 @@ address_a0
 3
 }
 # include_file {
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|lpm_decode.inc
-bd0e2f5e01c1bd360461dceb53d48
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altram.inc
-e66a83eccf6717bed97c99d891ad085
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altrom.inc
-d4e3a69a331d3a99d3281790d99a1ebd
 ..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|lpm_mux.inc
 c22bfd353214c01495b560fc34e47d79
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altqpram.inc
-74e08939f96a7ea8e7a4d59a5b01fe7
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|stratix_ram_block.inc
-2263a3bdfffeb150af977ee13902f70
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|a_rdenreg.inc
-60d229340bc3c24acb0a137b4849830
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altdpram.inc
-99d442b5b66c88db4daf94d99c6e4e77
 ..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|lpm_decode.inc
+bd0e2f5e01c1bd360461dceb53d48
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|a_rdenreg.inc
+60d229340bc3c24acb0a137b4849830
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altqpram.inc
+74e08939f96a7ea8e7a4d59a5b01fe7
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altdpram.inc
+99d442b5b66c88db4daf94d99c6e4e77
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altrom.inc
+d4e3a69a331d3a99d3281790d99a1ebd
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|stratix_ram_block.inc
+2263a3bdfffeb150af977ee13902f70
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|libraries|megafunctions|altram.inc
+e66a83eccf6717bed97c99d891ad085
 }
 # hierarchies {
 dmem:data_memory|altsyncram:altsyncram_component
@@ -5213,1258 +5262,10 @@ dmem:data_memory|altsyncram:altsyncram_component
 
 # end
 # entity
-alu
-# storage
-db|skeleton.(21).cnf
-db|skeleton.(21).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|alu.vhd
-617821aefbc2abcaec372192be87ee
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_operandb)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(ctrl_aluopcode)
-4 downto 0
-PARAMETER_STRING
-USR
- constraint(ctrl_shiftamt)
-4 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-rs_32bit
-# storage
-db|skeleton.(22).cnf
-db|skeleton.(22).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|rs_32bit.vhd
-2aa2f54d3e026749e72a4b350f65e5a
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(ctrl_shiftamt)
-4 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|rs_32bit:rightshift
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-rs_16bit
-# storage
-db|skeleton.(23).cnf
-db|skeleton.(23).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|rs_16bit.vhd
-d1a17c898d47416e7fdb2a67c5211
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|rs_32bit:rightshift|rs_16bit:rs16
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-rs_8bit
-# storage
-db|skeleton.(24).cnf
-db|skeleton.(24).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|rs_8bit.vhd
-9aa336c6634d8f7ab3b72274538d161
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|rs_32bit:rightshift|rs_8bit:rs8
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-rs_4bit
-# storage
-db|skeleton.(25).cnf
-db|skeleton.(25).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|rs_4bit.vhd
-47fca2648962a97f0defbe57da29478
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|rs_32bit:rightshift|rs_4bit:rs4
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-rs_2bit
-# storage
-db|skeleton.(26).cnf
-db|skeleton.(26).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|rs_2bit.vhd
-97b5fe4b46d6a2ac79c375f96478fcde
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|rs_32bit:rightshift|rs_2bit:rs2
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-rs_1bit
-# storage
-db|skeleton.(27).cnf
-db|skeleton.(27).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|rs_1bit.vhd
-9ba7f766b5ed98d1b2845865be7517
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|rs_32bit:rightshift|rs_1bit:rs1
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-ls_32bit
-# storage
-db|skeleton.(28).cnf
-db|skeleton.(28).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|ls_32bit.vhd
-6c1c7d2697e27a6d4b659ffe6bc3c4
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(ctrl_shiftamt)
-4 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|ls_32bit:leftshift
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-ls_16bit
-# storage
-db|skeleton.(29).cnf
-db|skeleton.(29).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|ls_16bit.vhd
-b1c6c32eb498e9543ef648434bdcf42
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|ls_32bit:leftshift|ls_16bit:ls16
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-ls_8bit
-# storage
-db|skeleton.(30).cnf
-db|skeleton.(30).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|ls_8bit.vhd
-6d97beaf2a19a918bb9b204a93173076
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|ls_32bit:leftshift|ls_8bit:ls8
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-ls_4bit
-# storage
-db|skeleton.(31).cnf
-db|skeleton.(31).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|ls_4bit.vhd
-82ceed32699ab24d961b1f2419d2a393
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|ls_32bit:leftshift|ls_4bit:ls4
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-ls_2bit
-# storage
-db|skeleton.(32).cnf
-db|skeleton.(32).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|ls_2bit.vhd
-6b7894cc337b7f664732f479bf6c90
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|ls_32bit:leftshift|ls_2bit:ls2
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-ls_1bit
-# storage
-db|skeleton.(33).cnf
-db|skeleton.(33).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|ls_1bit.vhd
-3674541d1cbf7bdb3a97686e0ef472a
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|ls_32bit:leftshift|ls_1bit:ls1
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-bitwiseor
-# storage
-db|skeleton.(34).cnf
-db|skeleton.(34).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|bitwiseor.vhd
-7afe9fbee0d837518a6f957a428f5cf2
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_operandb)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|bitwiseor:op_or
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-bitwiseand
-# storage
-db|skeleton.(35).cnf
-db|skeleton.(35).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|bitwiseand.vhd
-66edde53e8b0652adbeb1d8e3ab755
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_operanda)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_operandb)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_result)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|bitwiseand:op_and
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-tristate
-# storage
-db|skeleton.(36).cnf
-db|skeleton.(36).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-hw3|tristate.vhd
-80587d50ece1948455a664ebfda86be2
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(input)
-0 to 31
-PARAMETER_STRING
-USR
- constraint(output)
-0 to 31
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-alu:alu_unit|tristate:control1
-alu:alu_unit|tristate:control2
-alu:alu_unit|tristate:control3
-alu:alu_unit|tristate:control4
-alu:alu_unit|tristate:control5
-regfile:register_file|tristate:\IFF:0:dataReadA
-regfile:register_file|tristate:\IFF:0:dataReadB
-regfile:register_file|tristate:\IFF:1:dataReadA
-regfile:register_file|tristate:\IFF:1:dataReadB
-regfile:register_file|tristate:\IFF:2:dataReadA
-regfile:register_file|tristate:\IFF:2:dataReadB
-regfile:register_file|tristate:\IFF:3:dataReadA
-regfile:register_file|tristate:\IFF:3:dataReadB
-regfile:register_file|tristate:\IFF:4:dataReadA
-regfile:register_file|tristate:\IFF:4:dataReadB
-regfile:register_file|tristate:\IFF:5:dataReadA
-regfile:register_file|tristate:\IFF:5:dataReadB
-regfile:register_file|tristate:\IFF:6:dataReadA
-regfile:register_file|tristate:\IFF:6:dataReadB
-regfile:register_file|tristate:\IFF:7:dataReadA
-regfile:register_file|tristate:\IFF:7:dataReadB
-regfile:register_file|tristate:\IFF:8:dataReadA
-regfile:register_file|tristate:\IFF:8:dataReadB
-regfile:register_file|tristate:\IFF:9:dataReadA
-regfile:register_file|tristate:\IFF:9:dataReadB
-regfile:register_file|tristate:\IFF:10:dataReadA
-regfile:register_file|tristate:\IFF:10:dataReadB
-regfile:register_file|tristate:\IFF:11:dataReadA
-regfile:register_file|tristate:\IFF:11:dataReadB
-regfile:register_file|tristate:\IFF:12:dataReadA
-regfile:register_file|tristate:\IFF:12:dataReadB
-regfile:register_file|tristate:\IFF:13:dataReadA
-regfile:register_file|tristate:\IFF:13:dataReadB
-regfile:register_file|tristate:\IFF:14:dataReadA
-regfile:register_file|tristate:\IFF:14:dataReadB
-regfile:register_file|tristate:\IFF:15:dataReadA
-regfile:register_file|tristate:\IFF:15:dataReadB
-regfile:register_file|tristate:\IFF:16:dataReadA
-regfile:register_file|tristate:\IFF:16:dataReadB
-regfile:register_file|tristate:\IFF:17:dataReadA
-regfile:register_file|tristate:\IFF:17:dataReadB
-regfile:register_file|tristate:\IFF:18:dataReadA
-regfile:register_file|tristate:\IFF:18:dataReadB
-regfile:register_file|tristate:\IFF:19:dataReadA
-regfile:register_file|tristate:\IFF:19:dataReadB
-regfile:register_file|tristate:\IFF:20:dataReadA
-regfile:register_file|tristate:\IFF:20:dataReadB
-regfile:register_file|tristate:\IFF:21:dataReadA
-regfile:register_file|tristate:\IFF:21:dataReadB
-regfile:register_file|tristate:\IFF:22:dataReadA
-regfile:register_file|tristate:\IFF:22:dataReadB
-regfile:register_file|tristate:\IFF:23:dataReadA
-regfile:register_file|tristate:\IFF:23:dataReadB
-regfile:register_file|tristate:\IFF:24:dataReadA
-regfile:register_file|tristate:\IFF:24:dataReadB
-regfile:register_file|tristate:\IFF:25:dataReadA
-regfile:register_file|tristate:\IFF:25:dataReadB
-regfile:register_file|tristate:\IFF:26:dataReadA
-regfile:register_file|tristate:\IFF:26:dataReadB
-regfile:register_file|tristate:\IFF:27:dataReadA
-regfile:register_file|tristate:\IFF:27:dataReadB
-regfile:register_file|tristate:\IFF:28:dataReadA
-regfile:register_file|tristate:\IFF:28:dataReadB
-regfile:register_file|tristate:\IFF:29:dataReadA
-regfile:register_file|tristate:\IFF:29:dataReadB
-regfile:register_file|tristate:\IFF:30:dataReadA
-regfile:register_file|tristate:\IFF:30:dataReadB
-regfile:register_file|tristate:\IFF:31:dataReadA
-regfile:register_file|tristate:\IFF:31:dataReadB
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-regfile
-# storage
-db|skeleton.(37).cnf
-db|skeleton.(37).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-regfile|regfile.vhd
-526fae217b1e3a56867fdd9e87deeae
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(ctrl_writereg)
-4 downto 0
-PARAMETER_STRING
-USR
- constraint(ctrl_readrega)
-4 downto 0
-PARAMETER_STRING
-USR
- constraint(ctrl_readregb)
-4 downto 0
-PARAMETER_STRING
-USR
- constraint(data_writereg)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_readrega)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_readregb)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-regfile:register_file
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-decoder5to32
-# storage
-db|skeleton.(38).cnf
-db|skeleton.(38).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-regfile|decoder5to32.vhd
-fa485dbf681574ca17fccfb75b459190
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(w)
-0 to 4
-PARAMETER_STRING
-USR
- constraint(y)
-0 to 31
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-regfile:register_file|decoder5to32:write_decoder
-regfile:register_file|decoder5to32:readA_decoder
-regfile:register_file|decoder5to32:readB_decoder
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-decoder2to4
-# storage
-db|skeleton.(39).cnf
-db|skeleton.(39).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-regfile|decoder2to4.vhd
-5b67f4bc30ffde19fa8f416db506d62
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(address)
-0 to 1
-PARAMETER_STRING
-USR
- constraint(output)
-0 to 3
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-regfile:register_file|decoder5to32:write_decoder|decoder2to4:Dec_left
-regfile:register_file|decoder5to32:readA_decoder|decoder2to4:Dec_left
-regfile:register_file|decoder5to32:readB_decoder|decoder2to4:Dec_left
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-decoder3To8
-# storage
-db|skeleton.(40).cnf
-db|skeleton.(40).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-regfile|decoder3to8.vhd
-cfd99aa2ee6c21b57aa178bfd3fd8
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(address)
-0 to 2
-PARAMETER_STRING
-USR
- constraint(output)
-0 to 7
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-regfile:register_file|decoder5to32:write_decoder|decoder3To8:\G1:0:Dec_ri
-regfile:register_file|decoder5to32:write_decoder|decoder3To8:\G1:1:Dec_ri
-regfile:register_file|decoder5to32:write_decoder|decoder3To8:\G1:2:Dec_ri
-regfile:register_file|decoder5to32:write_decoder|decoder3To8:\G1:3:Dec_ri
-regfile:register_file|decoder5to32:readA_decoder|decoder3To8:\G1:0:Dec_ri
-regfile:register_file|decoder5to32:readA_decoder|decoder3To8:\G1:1:Dec_ri
-regfile:register_file|decoder5to32:readA_decoder|decoder3To8:\G1:2:Dec_ri
-regfile:register_file|decoder5to32:readA_decoder|decoder3To8:\G1:3:Dec_ri
-regfile:register_file|decoder5to32:readB_decoder|decoder3To8:\G1:0:Dec_ri
-regfile:register_file|decoder5to32:readB_decoder|decoder3To8:\G1:1:Dec_ri
-regfile:register_file|decoder5to32:readB_decoder|decoder3To8:\G1:2:Dec_ri
-regfile:register_file|decoder5to32:readB_decoder|decoder3To8:\G1:3:Dec_ri
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-reg
-# storage
-db|skeleton.(41).cnf
-db|skeleton.(41).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-regfile|reg.vhd
-1de314b2d695ee3d0b7aeaa24e55d39
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(data_writereg)
-31 downto 0
-PARAMETER_STRING
-USR
- constraint(data_readreg)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-regfile:register_file|reg:\IFF:1:G2:regcomp
-regfile:register_file|reg:\IFF:2:G2:regcomp
-regfile:register_file|reg:\IFF:3:G2:regcomp
-regfile:register_file|reg:\IFF:4:G2:regcomp
-regfile:register_file|reg:\IFF:5:G2:regcomp
-regfile:register_file|reg:\IFF:6:G2:regcomp
-regfile:register_file|reg:\IFF:7:G2:regcomp
-regfile:register_file|reg:\IFF:8:G2:regcomp
-regfile:register_file|reg:\IFF:9:G2:regcomp
-regfile:register_file|reg:\IFF:10:G2:regcomp
-regfile:register_file|reg:\IFF:11:G2:regcomp
-regfile:register_file|reg:\IFF:12:G2:regcomp
-regfile:register_file|reg:\IFF:13:G2:regcomp
-regfile:register_file|reg:\IFF:14:G2:regcomp
-regfile:register_file|reg:\IFF:15:G2:regcomp
-regfile:register_file|reg:\IFF:16:G2:regcomp
-regfile:register_file|reg:\IFF:17:G2:regcomp
-regfile:register_file|reg:\IFF:18:G2:regcomp
-regfile:register_file|reg:\IFF:19:G2:regcomp
-regfile:register_file|reg:\IFF:20:G2:regcomp
-regfile:register_file|reg:\IFF:21:G2:regcomp
-regfile:register_file|reg:\IFF:22:G2:regcomp
-regfile:register_file|reg:\IFF:23:G2:regcomp
-regfile:register_file|reg:\IFF:24:G2:regcomp
-regfile:register_file|reg:\IFF:25:G2:regcomp
-regfile:register_file|reg:\IFF:26:G2:regcomp
-regfile:register_file|reg:\IFF:27:G2:regcomp
-regfile:register_file|reg:\IFF:28:G2:regcomp
-regfile:register_file|reg:\IFF:29:G2:regcomp
-regfile:register_file|reg:\IFF:30:G2:regcomp
-regfile:register_file|reg:\IFF:31:G2:regcomp
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-sx_17to32
-# storage
-db|skeleton.(42).cnf
-db|skeleton.(42).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-sx_17to32.vhd
-9bdcf246bb145bf184bdc6fc41de73b8
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(input)
-16 downto 0
-PARAMETER_STRING
-USR
- constraint(output)
-31 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-sx_17to32:sign_extension_dx
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-addr_eq
-# storage
-db|skeleton.(43).cnf
-db|skeleton.(43).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-addr_eq.vhd
-bde83f74b49e886bba5a16d31418fd
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(addr1)
-4 downto 0
-PARAMETER_STRING
-USR
- constraint(addr2)
-4 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-addr_eq:rsDX_eq_rdXM
-addr_eq:rtDX_eq_rdXM
-addr_eq:rdDX_eq_rdXM
-addr_eq:rsDX_eq_rdMW
-addr_eq:rtDX_eq_rdMW
-addr_eq:rdDX_eq_rdMW
-addr_eq:rdXM_eq_rdMW
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-razor_check
-# storage
-db|skeleton.(44).cnf
-db|skeleton.(44).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-razor_check.vhd
-459672d05485a1e89840eac2f07d52c4
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-razor_dflipflop
-# storage
-db|skeleton.(46).cnf
-db|skeleton.(46).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-razor_dflipflop.vhd
-9bba531cf559989ccb2c1c156c1b6a0
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
- constraint(enable)
-1 downto 0
-PARAMETER_STRING
-USR
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-razor_normal_latch_comparison
-# storage
-db|skeleton.(45).cnf
-db|skeleton.(45).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-razor_normal_latch_comparison.vhd
-2f232e945ecbdc64fe5e7f955e82f11
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
 altsyncram_vqc1
 # storage
-db|skeleton.(20).cnf
-db|skeleton.(20).cnf
+db|skeleton.(19).cnf
+db|skeleton.(19).cnf
 # case_insensitive
 # source_file
 db|altsyncram_vqc1.tdf
@@ -6717,64 +5518,18 @@ dmem:data_memory|altsyncram:altsyncram_component|altsyncram_vqc1:auto_generated
 
 # end
 # entity
-assert_signal
+alu
 # storage
-db|skeleton.(12).cnf
-db|skeleton.(12).cnf
+db|skeleton.(20).cnf
+db|skeleton.(20).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_insensitive
 # source_file
-assert_signal.vhd
-bf968fee6f30ee5472df4dddd12e7a19
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-led_ctrl:output_control|assert_signal:assert9
-led_ctrl:output_control|assert_signal:assert14
-led_ctrl:output_control|assert_signal:assert8
-led_ctrl:output_control|assert_signal:assert12
-led_ctrl:output_control|assert_signal:assert5
-led_ctrl:output_control|assert_signal:assert1
-led_ctrl:output_control|assert_signal:assert7
-led_ctrl:output_control|assert_signal:assert2
-led_ctrl:output_control|assert_signal:assert13
-led_ctrl:output_control|assert_signal:assert3
-led_ctrl:output_control|assert_signal:assert4
-led_ctrl:output_control|assert_signal:assert11
-led_ctrl:output_control|assert_signal:assert10
-led_ctrl:output_control|assert_signal:assert6
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
-# macro_sequence
-
-# end
-# entity
-pc
-# storage
-db|skeleton.(3).cnf
-db|skeleton.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-pc.vhd
-9223b83f31887595401f8b5372d93d16
+hw3|alu.vhd
+617821aefbc2abcaec372192be87ee
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -6787,17 +5542,1159 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # user_parameter {
- constraint(set_value)
+ constraint(data_operanda)
 31 downto 0
 PARAMETER_STRING
 USR
- constraint(pc_value)
+ constraint(data_operandb)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(ctrl_aluopcode)
+4 downto 0
+PARAMETER_STRING
+USR
+ constraint(ctrl_shiftamt)
+4 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
 31 downto 0
 PARAMETER_STRING
 USR
 }
 # hierarchies {
-pc:pc_counter
+alu:alu_unit
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+rs_32bit
+# storage
+db|skeleton.(21).cnf
+db|skeleton.(21).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|rs_32bit.vhd
+2aa2f54d3e026749e72a4b350f65e5a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(ctrl_shiftamt)
+4 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|rs_32bit:rightshift
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+rs_16bit
+# storage
+db|skeleton.(22).cnf
+db|skeleton.(22).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|rs_16bit.vhd
+d1a17c898d47416e7fdb2a67c5211
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|rs_32bit:rightshift|rs_16bit:rs16
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+rs_8bit
+# storage
+db|skeleton.(23).cnf
+db|skeleton.(23).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|rs_8bit.vhd
+9aa336c6634d8f7ab3b72274538d161
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|rs_32bit:rightshift|rs_8bit:rs8
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+rs_4bit
+# storage
+db|skeleton.(24).cnf
+db|skeleton.(24).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|rs_4bit.vhd
+47fca2648962a97f0defbe57da29478
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|rs_32bit:rightshift|rs_4bit:rs4
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+rs_2bit
+# storage
+db|skeleton.(25).cnf
+db|skeleton.(25).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|rs_2bit.vhd
+97b5fe4b46d6a2ac79c375f96478fcde
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|rs_32bit:rightshift|rs_2bit:rs2
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+rs_1bit
+# storage
+db|skeleton.(26).cnf
+db|skeleton.(26).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|rs_1bit.vhd
+9ba7f766b5ed98d1b2845865be7517
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|rs_32bit:rightshift|rs_1bit:rs1
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ls_32bit
+# storage
+db|skeleton.(27).cnf
+db|skeleton.(27).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|ls_32bit.vhd
+6c1c7d2697e27a6d4b659ffe6bc3c4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(ctrl_shiftamt)
+4 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|ls_32bit:leftshift
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ls_16bit
+# storage
+db|skeleton.(28).cnf
+db|skeleton.(28).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|ls_16bit.vhd
+b1c6c32eb498e9543ef648434bdcf42
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|ls_32bit:leftshift|ls_16bit:ls16
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ls_8bit
+# storage
+db|skeleton.(29).cnf
+db|skeleton.(29).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|ls_8bit.vhd
+6d97beaf2a19a918bb9b204a93173076
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|ls_32bit:leftshift|ls_8bit:ls8
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ls_4bit
+# storage
+db|skeleton.(30).cnf
+db|skeleton.(30).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|ls_4bit.vhd
+82ceed32699ab24d961b1f2419d2a393
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|ls_32bit:leftshift|ls_4bit:ls4
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ls_2bit
+# storage
+db|skeleton.(31).cnf
+db|skeleton.(31).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|ls_2bit.vhd
+6b7894cc337b7f664732f479bf6c90
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|ls_32bit:leftshift|ls_2bit:ls2
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ls_1bit
+# storage
+db|skeleton.(32).cnf
+db|skeleton.(32).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|ls_1bit.vhd
+3674541d1cbf7bdb3a97686e0ef472a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|ls_32bit:leftshift|ls_1bit:ls1
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+bitwiseor
+# storage
+db|skeleton.(33).cnf
+db|skeleton.(33).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|bitwiseor.vhd
+7afe9fbee0d837518a6f957a428f5cf2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_operandb)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|bitwiseor:op_or
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+bitwiseand
+# storage
+db|skeleton.(34).cnf
+db|skeleton.(34).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|bitwiseand.vhd
+66edde53e8b0652adbeb1d8e3ab755
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_operanda)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_operandb)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_result)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|bitwiseand:op_and
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+tristate
+# storage
+db|skeleton.(35).cnf
+db|skeleton.(35).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+hw3|tristate.vhd
+80587d50ece1948455a664ebfda86be2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(input)
+0 to 31
+PARAMETER_STRING
+USR
+ constraint(output)
+0 to 31
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu_unit|tristate:control1
+alu:alu_unit|tristate:control2
+alu:alu_unit|tristate:control3
+alu:alu_unit|tristate:control4
+alu:alu_unit|tristate:control5
+regfile:register_file|tristate:\IFF:0:dataReadA
+regfile:register_file|tristate:\IFF:0:dataReadB
+regfile:register_file|tristate:\IFF:1:dataReadA
+regfile:register_file|tristate:\IFF:1:dataReadB
+regfile:register_file|tristate:\IFF:2:dataReadA
+regfile:register_file|tristate:\IFF:2:dataReadB
+regfile:register_file|tristate:\IFF:3:dataReadA
+regfile:register_file|tristate:\IFF:3:dataReadB
+regfile:register_file|tristate:\IFF:4:dataReadA
+regfile:register_file|tristate:\IFF:4:dataReadB
+regfile:register_file|tristate:\IFF:5:dataReadA
+regfile:register_file|tristate:\IFF:5:dataReadB
+regfile:register_file|tristate:\IFF:6:dataReadA
+regfile:register_file|tristate:\IFF:6:dataReadB
+regfile:register_file|tristate:\IFF:7:dataReadA
+regfile:register_file|tristate:\IFF:7:dataReadB
+regfile:register_file|tristate:\IFF:8:dataReadA
+regfile:register_file|tristate:\IFF:8:dataReadB
+regfile:register_file|tristate:\IFF:9:dataReadA
+regfile:register_file|tristate:\IFF:9:dataReadB
+regfile:register_file|tristate:\IFF:10:dataReadA
+regfile:register_file|tristate:\IFF:10:dataReadB
+regfile:register_file|tristate:\IFF:11:dataReadA
+regfile:register_file|tristate:\IFF:11:dataReadB
+regfile:register_file|tristate:\IFF:12:dataReadA
+regfile:register_file|tristate:\IFF:12:dataReadB
+regfile:register_file|tristate:\IFF:13:dataReadA
+regfile:register_file|tristate:\IFF:13:dataReadB
+regfile:register_file|tristate:\IFF:14:dataReadA
+regfile:register_file|tristate:\IFF:14:dataReadB
+regfile:register_file|tristate:\IFF:15:dataReadA
+regfile:register_file|tristate:\IFF:15:dataReadB
+regfile:register_file|tristate:\IFF:16:dataReadA
+regfile:register_file|tristate:\IFF:16:dataReadB
+regfile:register_file|tristate:\IFF:17:dataReadA
+regfile:register_file|tristate:\IFF:17:dataReadB
+regfile:register_file|tristate:\IFF:18:dataReadA
+regfile:register_file|tristate:\IFF:18:dataReadB
+regfile:register_file|tristate:\IFF:19:dataReadA
+regfile:register_file|tristate:\IFF:19:dataReadB
+regfile:register_file|tristate:\IFF:20:dataReadA
+regfile:register_file|tristate:\IFF:20:dataReadB
+regfile:register_file|tristate:\IFF:21:dataReadA
+regfile:register_file|tristate:\IFF:21:dataReadB
+regfile:register_file|tristate:\IFF:22:dataReadA
+regfile:register_file|tristate:\IFF:22:dataReadB
+regfile:register_file|tristate:\IFF:23:dataReadA
+regfile:register_file|tristate:\IFF:23:dataReadB
+regfile:register_file|tristate:\IFF:24:dataReadA
+regfile:register_file|tristate:\IFF:24:dataReadB
+regfile:register_file|tristate:\IFF:25:dataReadA
+regfile:register_file|tristate:\IFF:25:dataReadB
+regfile:register_file|tristate:\IFF:26:dataReadA
+regfile:register_file|tristate:\IFF:26:dataReadB
+regfile:register_file|tristate:\IFF:27:dataReadA
+regfile:register_file|tristate:\IFF:27:dataReadB
+regfile:register_file|tristate:\IFF:28:dataReadA
+regfile:register_file|tristate:\IFF:28:dataReadB
+regfile:register_file|tristate:\IFF:29:dataReadA
+regfile:register_file|tristate:\IFF:29:dataReadB
+regfile:register_file|tristate:\IFF:30:dataReadA
+regfile:register_file|tristate:\IFF:30:dataReadB
+regfile:register_file|tristate:\IFF:31:dataReadA
+regfile:register_file|tristate:\IFF:31:dataReadB
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+regfile
+# storage
+db|skeleton.(36).cnf
+db|skeleton.(36).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regfile|regfile.vhd
+526fae217b1e3a56867fdd9e87deeae
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(ctrl_writereg)
+4 downto 0
+PARAMETER_STRING
+USR
+ constraint(ctrl_readrega)
+4 downto 0
+PARAMETER_STRING
+USR
+ constraint(ctrl_readregb)
+4 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_writereg)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_readrega)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_readregb)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regfile:register_file
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+decoder5to32
+# storage
+db|skeleton.(37).cnf
+db|skeleton.(37).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regfile|decoder5to32.vhd
+fa485dbf681574ca17fccfb75b459190
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(w)
+0 to 4
+PARAMETER_STRING
+USR
+ constraint(y)
+0 to 31
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regfile:register_file|decoder5to32:write_decoder
+regfile:register_file|decoder5to32:readA_decoder
+regfile:register_file|decoder5to32:readB_decoder
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+decoder2to4
+# storage
+db|skeleton.(38).cnf
+db|skeleton.(38).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regfile|decoder2to4.vhd
+5b67f4bc30ffde19fa8f416db506d62
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(address)
+0 to 1
+PARAMETER_STRING
+USR
+ constraint(output)
+0 to 3
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regfile:register_file|decoder5to32:write_decoder|decoder2to4:Dec_left
+regfile:register_file|decoder5to32:readA_decoder|decoder2to4:Dec_left
+regfile:register_file|decoder5to32:readB_decoder|decoder2to4:Dec_left
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+decoder3To8
+# storage
+db|skeleton.(39).cnf
+db|skeleton.(39).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regfile|decoder3to8.vhd
+cfd99aa2ee6c21b57aa178bfd3fd8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(address)
+0 to 2
+PARAMETER_STRING
+USR
+ constraint(output)
+0 to 7
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regfile:register_file|decoder5to32:write_decoder|decoder3To8:\G1:0:Dec_ri
+regfile:register_file|decoder5to32:write_decoder|decoder3To8:\G1:1:Dec_ri
+regfile:register_file|decoder5to32:write_decoder|decoder3To8:\G1:2:Dec_ri
+regfile:register_file|decoder5to32:write_decoder|decoder3To8:\G1:3:Dec_ri
+regfile:register_file|decoder5to32:readA_decoder|decoder3To8:\G1:0:Dec_ri
+regfile:register_file|decoder5to32:readA_decoder|decoder3To8:\G1:1:Dec_ri
+regfile:register_file|decoder5to32:readA_decoder|decoder3To8:\G1:2:Dec_ri
+regfile:register_file|decoder5to32:readA_decoder|decoder3To8:\G1:3:Dec_ri
+regfile:register_file|decoder5to32:readB_decoder|decoder3To8:\G1:0:Dec_ri
+regfile:register_file|decoder5to32:readB_decoder|decoder3To8:\G1:1:Dec_ri
+regfile:register_file|decoder5to32:readB_decoder|decoder3To8:\G1:2:Dec_ri
+regfile:register_file|decoder5to32:readB_decoder|decoder3To8:\G1:3:Dec_ri
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+reg
+# storage
+db|skeleton.(40).cnf
+db|skeleton.(40).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+regfile|reg.vhd
+1de314b2d695ee3d0b7aeaa24e55d39
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_writereg)
+31 downto 0
+PARAMETER_STRING
+USR
+ constraint(data_readreg)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regfile:register_file|reg:\IFF:1:G2:regcomp
+regfile:register_file|reg:\IFF:2:G2:regcomp
+regfile:register_file|reg:\IFF:3:G2:regcomp
+regfile:register_file|reg:\IFF:4:G2:regcomp
+regfile:register_file|reg:\IFF:5:G2:regcomp
+regfile:register_file|reg:\IFF:6:G2:regcomp
+regfile:register_file|reg:\IFF:7:G2:regcomp
+regfile:register_file|reg:\IFF:8:G2:regcomp
+regfile:register_file|reg:\IFF:9:G2:regcomp
+regfile:register_file|reg:\IFF:10:G2:regcomp
+regfile:register_file|reg:\IFF:11:G2:regcomp
+regfile:register_file|reg:\IFF:12:G2:regcomp
+regfile:register_file|reg:\IFF:13:G2:regcomp
+regfile:register_file|reg:\IFF:14:G2:regcomp
+regfile:register_file|reg:\IFF:15:G2:regcomp
+regfile:register_file|reg:\IFF:16:G2:regcomp
+regfile:register_file|reg:\IFF:17:G2:regcomp
+regfile:register_file|reg:\IFF:18:G2:regcomp
+regfile:register_file|reg:\IFF:19:G2:regcomp
+regfile:register_file|reg:\IFF:20:G2:regcomp
+regfile:register_file|reg:\IFF:21:G2:regcomp
+regfile:register_file|reg:\IFF:22:G2:regcomp
+regfile:register_file|reg:\IFF:23:G2:regcomp
+regfile:register_file|reg:\IFF:24:G2:regcomp
+regfile:register_file|reg:\IFF:25:G2:regcomp
+regfile:register_file|reg:\IFF:26:G2:regcomp
+regfile:register_file|reg:\IFF:27:G2:regcomp
+regfile:register_file|reg:\IFF:28:G2:regcomp
+regfile:register_file|reg:\IFF:29:G2:regcomp
+regfile:register_file|reg:\IFF:30:G2:regcomp
+regfile:register_file|reg:\IFF:31:G2:regcomp
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+sx_17to32
+# storage
+db|skeleton.(41).cnf
+db|skeleton.(41).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sx_17to32.vhd
+9bdcf246bb145bf184bdc6fc41de73b8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(input)
+16 downto 0
+PARAMETER_STRING
+USR
+ constraint(output)
+31 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+sx_17to32:sign_extension_dx
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+addr_eq
+# storage
+db|skeleton.(42).cnf
+db|skeleton.(42).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+addr_eq.vhd
+bde83f74b49e886bba5a16d31418fd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(addr1)
+4 downto 0
+PARAMETER_STRING
+USR
+ constraint(addr2)
+4 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+addr_eq:rsDX_eq_rdXM
+addr_eq:rtDX_eq_rdXM
+addr_eq:rdDX_eq_rdXM
+addr_eq:rsDX_eq_rdMW
+addr_eq:rtDX_eq_rdMW
+addr_eq:rdDX_eq_rdMW
+addr_eq:rdXM_eq_rdMW
+}
+# lmf
+..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+processor
+# storage
+db|skeleton.(0).cnf
+db|skeleton.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+processor.vhd
+1825e5bba7a8e1afa2eee5eba2fcddd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
 }
 # lmf
 ..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
@@ -6808,8 +6705,8 @@ pc:pc_counter
 # entity
 altsyncram_7h81
 # storage
-db|skeleton.(17).cnf
-db|skeleton.(17).cnf
+db|skeleton.(16).cnf
+db|skeleton.(16).cnf
 # case_insensitive
 # source_file
 db|altsyncram_7h81.tdf
@@ -6957,44 +6854,11 @@ address_a0
 }
 # memory_file {
 imem.mif
-3f244c407584d95991e51f4f9c41dbdf
+1f55822776e1fac1c8547593e91fc6ba
 }
 # hierarchies {
 imem:instr_memory|altsyncram:altsyncram_component|altsyncram_7h81:auto_generated
 }
-# macro_sequence
-
-# end
-# entity
-processor
-# storage
-db|skeleton.(0).cnf
-db|skeleton.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-processor.vhd
-63b997666635bc4badfc41849847201f
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-|
-}
-# lmf
-..|..|..|..|..|..|program files (x86)|quartus|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
 # end

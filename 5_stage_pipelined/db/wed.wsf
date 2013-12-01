@@ -3754,10 +3754,10 @@ VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined/lab5.vwf")
 VECTOR("C:/Users/Yaqi/Documents/Duke/Final Project/5_stage_pipelined/db/skeleton.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 250000000;
+		ZBEGIN = 793442;
+		ZEND = 1281723;
 		NUMERATOR = 917;
-		DENOMINATOR = 250000000;
+		DENOMINATOR = 488281;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
